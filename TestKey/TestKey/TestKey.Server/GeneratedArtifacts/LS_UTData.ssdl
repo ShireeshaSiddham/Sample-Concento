@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="LS_UTDataStore" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="LS_UTDataStore">
+    <EntitySet Name="EmployeeMonths" EntityType="LS_UTDataStore.EmployeeMonth" store:Type="Tables" Schema="dbo" Table="EmployeeMonth" />
+    <EntitySet Name="EmployeeProjects" EntityType="LS_UTDataStore.EmployeeProject" store:Type="Tables" Schema="dbo" Table="EmployeeProject" />
+    <EntitySet Name="EmployeeTables" EntityType="LS_UTDataStore.EmployeeTable" store:Type="Tables" Schema="dbo" Table="EmployeeTable" />
+    <EntitySet Name="EmpProjs" EntityType="LS_UTDataStore.EmpProj" store:Type="Tables" Schema="dbo" Table="EmpProj" />
+    <EntitySet Name="MonthTables" EntityType="LS_UTDataStore.MonthTable" store:Type="Tables" Schema="dbo" Table="MonthTable" />
+    <EntitySet Name="ProjectTables" EntityType="LS_UTDataStore.ProjectTable" store:Type="Tables" Schema="dbo" Table="ProjectTable" />
+    <AssociationSet Name="FK__EmployeeM__EmpID__74AE54BC" Association="LS_UTDataStore.FK__EmployeeM__EmpID__74AE54BC">
+      <End Role="EmployeeTable" EntitySet="EmployeeTables" />
+      <End Role="EmployeeMonth" EntitySet="EmployeeMonths" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeTable_ManagerID" Association="LS_UTDataStore.FK_EmployeeTable_ManagerID">
+      <End Role="EmployeeTable" EntitySet="EmployeeTables" />
+      <End Role="EmployeeTable1" EntitySet="EmployeeTables" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EmployeeM__Month__73BA3083" Association="LS_UTDataStore.FK__EmployeeM__Month__73BA3083">
+      <End Role="MonthTable" EntitySet="MonthTables" />
+      <End Role="EmployeeMonth" EntitySet="EmployeeMonths" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeProject_ProjectTable" Association="LS_UTDataStore.FK_EmployeeProject_ProjectTable">
+      <End Role="ProjectTable" EntitySet="ProjectTables" />
+      <End Role="EmployeeProject" EntitySet="EmployeeProjects" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="EmployeeMonth">
+    <Key>
+      <PropertyRef Name="EmpID" />
+      <PropertyRef Name="MonthID" />
+    </Key>
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="MonthID" Type="int" Nullable="false" />
+    <Property Name="NoOfHolidays" Type="int" />
+    <Property Name="NoOfLeaves" Type="int" />
+    <Property Name="TotalHours" Type="int" />
+  </EntityType>
+  <EntityType Name="EmployeeProject">
+    <Key>
+      <PropertyRef Name="EmpID" />
+      <PropertyRef Name="ProjectID" />
+      <PropertyRef Name="TaskID" />
+    </Key>
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="ProjectID" Type="int" Nullable="false" />
+    <Property Name="TaskID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SubProject" Type="nvarchar" MaxLength="300" />
+    <Property Name="MonthID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="date" />
+    <Property Name="Hours" Type="decimal" Nullable="false" Precision="5" />
+  </EntityType>
+  <EntityType Name="EmployeeTable">
+    <Key>
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="EmpName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Designation" Type="nvarchar" MaxLength="100" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="100" />
+    <Property Name="ManagerID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EmpProj">
+    <Key>
+      <PropertyRef Name="MonthName" />
+      <PropertyRef Name="Hours" />
+    </Key>
+    <Property Name="MonthName" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="SubProject" Type="nvarchar" MaxLength="300" />
+    <Property Name="Date" Type="date" />
+    <Property Name="Hours" Type="decimal" Nullable="false" Precision="5" />
+  </EntityType>
+  <EntityType Name="MonthTable">
+    <Key>
+      <PropertyRef Name="MonthID" />
+    </Key>
+    <Property Name="MonthID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MonthName" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="NoOfDays" Type="int" Nullable="false" />
+    <Property Name="WeekDays" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProjectTable">
+    <Key>
+      <PropertyRef Name="EmpID" />
+      <PropertyRef Name="ProjectID" />
+    </Key>
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="ProjectID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Complexity" Type="int" />
+    <Property Name="Scope" Type="int" />
+    <Property Name="ProjectType" Type="nvarchar" MaxLength="30" />
+    <Property Name="ProjectStatus" Type="nvarchar" MaxLength="20" />
+    <Property Name="StartDate" Type="date" />
+    <Property Name="EndDate" Type="date" />
+  </EntityType>
+  <Association Name="FK__EmployeeM__EmpID__74AE54BC">
+    <End Role="EmployeeTable" Type="LS_UTDataStore.EmployeeTable" Multiplicity="1">
+      <OnDeleteAnnotation Action="Unset" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="EmployeeMonth" Type="LS_UTDataStore.EmployeeMonth" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeeTable">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="EmployeeMonth">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeTable_ManagerID">
+    <End Role="EmployeeTable" Type="LS_UTDataStore.EmployeeTable" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="EmployeeTable1" Type="LS_UTDataStore.EmployeeTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeeTable">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="EmployeeTable1">
+        <PropertyRef Name="ManagerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EmployeeM__Month__73BA3083">
+    <End Role="MonthTable" Type="LS_UTDataStore.MonthTable" Multiplicity="1">
+      <OnDeleteAnnotation Action="Unset" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="EmployeeMonth" Type="LS_UTDataStore.EmployeeMonth" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MonthTable">
+        <PropertyRef Name="MonthID" />
+      </Principal>
+      <Dependent Role="EmployeeMonth">
+        <PropertyRef Name="MonthID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeProject_ProjectTable">
+    <End Role="ProjectTable" Type="LS_UTDataStore.ProjectTable" Multiplicity="1">
+      <OnDeleteAnnotation Action="Unset" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="EmployeeProject" Type="LS_UTDataStore.EmployeeProject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectTable">
+        <PropertyRef Name="EmpID" />
+        <PropertyRef Name="ProjectID" />
+      </Principal>
+      <Dependent Role="EmployeeProject">
+        <PropertyRef Name="EmpID" />
+        <PropertyRef Name="ProjectID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

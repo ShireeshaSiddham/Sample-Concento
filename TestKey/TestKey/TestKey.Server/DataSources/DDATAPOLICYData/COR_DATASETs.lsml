@@ -1,0 +1,1006 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceApplication
+  Name="LightSwitchServiceApplication" xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <ServiceApplication.Attributes>
+    <Partial />
+  </ServiceApplication.Attributes>
+  <EntityType
+    Name="COR_DATASET">
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <KeyProperty
+        Name="DATASET_ID"
+        PropertyType=":Guid">
+        <KeyProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="DATASET_NAME"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="800" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DATASET_DESCRIPTION"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DATA_SME"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DATA_STEWARD"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DATASOURCE_ID"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="TECHNICAL_SME"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="HOW_TO_ACCESS"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="TRAINING_INFORMATION"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="USERS"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="USAGE_SCENARIOS"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="USAGE_GUIDLINES"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="HISTORICAL_DATA_AVAILABLE"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="REFERENCE_DOCUMENTATION"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="UPDATE_FREQUENCY"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="GRANULARITY"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ALIASES"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ADDITIONAL_NOTES"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DATA_ACCESS_TOOLS_USED"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DATA_ACQUISITION_METHOD"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DATA_ACQUISITION_DETAILS"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DATASET_CLASSIFICATION"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DATA_CLASSIFICATION_RATIONALE"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DATASET_TYPE"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="TECHNICAL_OBJECT_TYPE_ID"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="TECHNICAL_OBJECT_NAME"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="150" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="OBJECT_TYPE_ID"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="REVIEW_STATUS"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="OLD_REVIEW_STATUS"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RECORD_TYPE_TABLE"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="128" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RECORD_TYPE_FIELD"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="128" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="FUNCTIONAL_LEAD"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DATASET_OWNER"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DEVELOPER"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="GEOGRAPHIC_SCOPE"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RETENTION_UNIT"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RETENTION_LENGTH"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="LOAD_TYPE"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DATASET_ACTIVE"
+        PropertyType=":Boolean">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="TIER"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="COMPLEXITY"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DESIGN_DATE"
+        PropertyType=":Date?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="0"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DEVELOP_DATE"
+        PropertyType=":Date?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="0"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="TEST_DATE"
+        PropertyType=":Date?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="0"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CONTROL"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="WORKSHOP_DATE"
+        PropertyType=":Date?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="0"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="WORKSHOP_NOTES"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RICEFW"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="TCODE"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="24" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="SHORT_NAME"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="24" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RELEVANCY_RULE"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="LOAD_XML_ID"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="LOAD_FILE_NAME"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="200" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="TARGET_SERVER"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="TARGET_DATABASE"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="TARGET_DATASTORE"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DESIGN_DOC"
+        PropertyType=":Binary?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="REVIEWED_BY"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="150" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="REVIEWED_ON"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CREATED_BY"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CREATED_ON"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="MODIFIED_BY"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="200" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="MODIFIED_ON"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="SOURCE_SYSTEM"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="500" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DATASET_TYPE_ID"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <NavigationProperty
+        Name="COR_SUBJECT_AREA"
+        Association="FK_COR_DATASET_COR_SUBJECT_AREA"
+        FromEnd="COR_DATASET"
+        ToEnd="COR_SUBJECT_AREA" />
+    </EntityType.Properties>
+  </EntityType>
+  <EntityContainer
+    Name="DDATAPOLICYData">
+    <EntityContainer.Attributes>
+      <Partial />
+    </EntityContainer.Attributes>
+    <EntitySet
+      Name="COR_DATASETs"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="COR_DATASET" />
+    <QueryOperation
+      Name="COR_DATASETs_Single"
+      ReturnType="COR_DATASET">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="DATASET_ID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="DATASET_ID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="COR_DATASETs" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="DATASET_ID"
+        ParameterType="Microsoft.LightSwitch:Guid?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'DATASET_ID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="COR_DATASETs_SingleOrDefault"
+      ReturnType="COR_DATASET">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="DATASET_ID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="DATASET_ID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="COR_DATASETs" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="DATASET_ID"
+        ParameterType="Microsoft.LightSwitch:Guid?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'DATASET_ID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+  </EntityContainer>
+  <DataService
+    Name="DDATAPOLICYDataDataService">
+    <DataService.Attributes>
+      <Partial />
+    </DataService.Attributes>
+    <EntitySetMapping
+      EntitySet="COR_DATASETs">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="COR_DATASET" />
+        <SsdlProperty
+          Name="DATASET_ID"
+          Nullable="False"
+          Type="uniqueidentifier"
+          Property="COR_DATASET/Properties[DATASET_ID]" />
+        <SsdlProperty
+          MaxLength="800"
+          Name="DATASET_NAME"
+          Nullable="False"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[DATASET_NAME]" />
+        <SsdlProperty
+          Name="DATASET_DESCRIPTION"
+          Nullable="False"
+          Type="nvarchar(max)"
+          Property="COR_DATASET/Properties[DATASET_DESCRIPTION]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="DATA_SME"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[DATA_SME]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="DATA_STEWARD"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[DATA_STEWARD]" />
+        <SsdlProperty
+          Name="DATASOURCE_ID"
+          Nullable="True"
+          Type="uniqueidentifier"
+          Property="COR_DATASET/Properties[DATASOURCE_ID]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="TECHNICAL_SME"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[TECHNICAL_SME]" />
+        <SsdlProperty
+          Name="HOW_TO_ACCESS"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_DATASET/Properties[HOW_TO_ACCESS]" />
+        <SsdlProperty
+          Name="TRAINING_INFORMATION"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_DATASET/Properties[TRAINING_INFORMATION]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="USERS"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[USERS]" />
+        <SsdlProperty
+          Name="USAGE_SCENARIOS"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_DATASET/Properties[USAGE_SCENARIOS]" />
+        <SsdlProperty
+          Name="USAGE_GUIDLINES"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_DATASET/Properties[USAGE_GUIDLINES]" />
+        <SsdlProperty
+          Name="HISTORICAL_DATA_AVAILABLE"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_DATASET/Properties[HISTORICAL_DATA_AVAILABLE]" />
+        <SsdlProperty
+          Name="REFERENCE_DOCUMENTATION"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_DATASET/Properties[REFERENCE_DOCUMENTATION]" />
+        <SsdlProperty
+          Name="UPDATE_FREQUENCY"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_DATASET/Properties[UPDATE_FREQUENCY]" />
+        <SsdlProperty
+          Name="GRANULARITY"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_DATASET/Properties[GRANULARITY]" />
+        <SsdlProperty
+          Name="ALIASES"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_DATASET/Properties[ALIASES]" />
+        <SsdlProperty
+          Name="ADDITIONAL_NOTES"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_DATASET/Properties[ADDITIONAL_NOTES]" />
+        <SsdlProperty
+          Name="DATA_ACCESS_TOOLS_USED"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_DATASET/Properties[DATA_ACCESS_TOOLS_USED]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="DATA_ACQUISITION_METHOD"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[DATA_ACQUISITION_METHOD]" />
+        <SsdlProperty
+          Name="DATA_ACQUISITION_DETAILS"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_DATASET/Properties[DATA_ACQUISITION_DETAILS]" />
+        <SsdlProperty
+          Name="DATASET_CLASSIFICATION"
+          Nullable="True"
+          Type="uniqueidentifier"
+          Property="COR_DATASET/Properties[DATASET_CLASSIFICATION]" />
+        <SsdlProperty
+          Name="DATA_CLASSIFICATION_RATIONALE"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_DATASET/Properties[DATA_CLASSIFICATION_RATIONALE]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="DATASET_TYPE"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[DATASET_TYPE]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="TECHNICAL_OBJECT_TYPE_ID"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[TECHNICAL_OBJECT_TYPE_ID]" />
+        <SsdlProperty
+          MaxLength="150"
+          Name="TECHNICAL_OBJECT_NAME"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[TECHNICAL_OBJECT_NAME]" />
+        <SsdlProperty
+          Name="OBJECT_TYPE_ID"
+          Nullable="True"
+          Type="int"
+          Property="COR_DATASET/Properties[OBJECT_TYPE_ID]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="REVIEW_STATUS"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[REVIEW_STATUS]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="OLD_REVIEW_STATUS"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[OLD_REVIEW_STATUS]" />
+        <SsdlProperty
+          MaxLength="128"
+          Name="RECORD_TYPE_TABLE"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[RECORD_TYPE_TABLE]" />
+        <SsdlProperty
+          MaxLength="128"
+          Name="RECORD_TYPE_FIELD"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[RECORD_TYPE_FIELD]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="FUNCTIONAL_LEAD"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[FUNCTIONAL_LEAD]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="DATASET_OWNER"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[DATASET_OWNER]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="DEVELOPER"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[DEVELOPER]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="GEOGRAPHIC_SCOPE"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[GEOGRAPHIC_SCOPE]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="RETENTION_UNIT"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[RETENTION_UNIT]" />
+        <SsdlProperty
+          Name="RETENTION_LENGTH"
+          Nullable="True"
+          Type="int"
+          Property="COR_DATASET/Properties[RETENTION_LENGTH]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="LOAD_TYPE"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[LOAD_TYPE]" />
+        <SsdlProperty
+          Name="DATASET_ACTIVE"
+          Nullable="False"
+          Type="bit"
+          Property="COR_DATASET/Properties[DATASET_ACTIVE]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="TIER"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[TIER]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="COMPLEXITY"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[COMPLEXITY]" />
+        <SsdlProperty
+          Name="DESIGN_DATE"
+          Nullable="True"
+          Type="date"
+          Property="COR_DATASET/Properties[DESIGN_DATE]" />
+        <SsdlProperty
+          Name="DEVELOP_DATE"
+          Nullable="True"
+          Type="date"
+          Property="COR_DATASET/Properties[DEVELOP_DATE]" />
+        <SsdlProperty
+          Name="TEST_DATE"
+          Nullable="True"
+          Type="date"
+          Property="COR_DATASET/Properties[TEST_DATE]" />
+        <SsdlProperty
+          Name="CONTROL"
+          Nullable="True"
+          Type="int"
+          Property="COR_DATASET/Properties[CONTROL]" />
+        <SsdlProperty
+          Name="WORKSHOP_DATE"
+          Nullable="True"
+          Type="date"
+          Property="COR_DATASET/Properties[WORKSHOP_DATE]" />
+        <SsdlProperty
+          Name="WORKSHOP_NOTES"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_DATASET/Properties[WORKSHOP_NOTES]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="RICEFW"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[RICEFW]" />
+        <SsdlProperty
+          MaxLength="24"
+          Name="TCODE"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[TCODE]" />
+        <SsdlProperty
+          MaxLength="24"
+          Name="SHORT_NAME"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[SHORT_NAME]" />
+        <SsdlProperty
+          Name="RELEVANCY_RULE"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_DATASET/Properties[RELEVANCY_RULE]" />
+        <SsdlProperty
+          Name="LOAD_XML_ID"
+          Nullable="True"
+          Type="uniqueidentifier"
+          Property="COR_DATASET/Properties[LOAD_XML_ID]" />
+        <SsdlProperty
+          MaxLength="200"
+          Name="LOAD_FILE_NAME"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[LOAD_FILE_NAME]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="TARGET_SERVER"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[TARGET_SERVER]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="TARGET_DATABASE"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[TARGET_DATABASE]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="TARGET_DATASTORE"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[TARGET_DATASTORE]" />
+        <SsdlProperty
+          Name="DESIGN_DOC"
+          Nullable="True"
+          Type="varbinary(max)"
+          Property="COR_DATASET/Properties[DESIGN_DOC]" />
+        <SsdlProperty
+          MaxLength="150"
+          Name="REVIEWED_BY"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[REVIEWED_BY]" />
+        <SsdlProperty
+          Name="REVIEWED_ON"
+          Nullable="True"
+          Type="datetime"
+          Property="COR_DATASET/Properties[REVIEWED_ON]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="CREATED_BY"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[CREATED_BY]" />
+        <SsdlProperty
+          Name="CREATED_ON"
+          Nullable="True"
+          Type="datetime"
+          Property="COR_DATASET/Properties[CREATED_ON]" />
+        <SsdlProperty
+          MaxLength="200"
+          Name="MODIFIED_BY"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[MODIFIED_BY]" />
+        <SsdlProperty
+          Name="MODIFIED_ON"
+          Nullable="True"
+          Type="datetime"
+          Property="COR_DATASET/Properties[MODIFIED_ON]" />
+        <SsdlProperty
+          MaxLength="500"
+          Name="SOURCE_SYSTEM"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_DATASET/Properties[SOURCE_SYSTEM]" />
+        <SsdlProperty
+          Name="DATASET_TYPE_ID"
+          Nullable="True"
+          Type="uniqueidentifier"
+          Property="COR_DATASET/Properties[DATASET_TYPE_ID]" />
+        <SsdlForeignKeyProperty
+          Name="SUBJECT_AREA_ID"
+          Nullable="False"
+          Type="uniqueidentifier"
+          PropertyName="SUBJECT_AREA_ID" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+  </DataService>
+</ServiceApplication>

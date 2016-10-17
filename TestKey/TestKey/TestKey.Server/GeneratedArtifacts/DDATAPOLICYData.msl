@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping CdmEntityContainer="DDATAPOLICYData" StorageEntityContainer="DDATAPOLICYDataStore">
+    <EntitySetMapping Name="COR_DATASETs">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.COR_DATASET)">
+        <MappingFragment StoreEntitySet="COR_DATASETs">
+          <ScalarProperty Name="DATASET_ID" ColumnName="DATASET_ID" />
+          <ScalarProperty Name="DATASET_NAME" ColumnName="DATASET_NAME" />
+          <ScalarProperty Name="DATASET_DESCRIPTION" ColumnName="DATASET_DESCRIPTION" />
+          <ScalarProperty Name="DATA_SME" ColumnName="DATA_SME" />
+          <ScalarProperty Name="DATA_STEWARD" ColumnName="DATA_STEWARD" />
+          <ScalarProperty Name="DATASOURCE_ID" ColumnName="DATASOURCE_ID" />
+          <ScalarProperty Name="TECHNICAL_SME" ColumnName="TECHNICAL_SME" />
+          <ScalarProperty Name="HOW_TO_ACCESS" ColumnName="HOW_TO_ACCESS" />
+          <ScalarProperty Name="TRAINING_INFORMATION" ColumnName="TRAINING_INFORMATION" />
+          <ScalarProperty Name="USERS" ColumnName="USERS" />
+          <ScalarProperty Name="USAGE_SCENARIOS" ColumnName="USAGE_SCENARIOS" />
+          <ScalarProperty Name="USAGE_GUIDLINES" ColumnName="USAGE_GUIDLINES" />
+          <ScalarProperty Name="HISTORICAL_DATA_AVAILABLE" ColumnName="HISTORICAL_DATA_AVAILABLE" />
+          <ScalarProperty Name="REFERENCE_DOCUMENTATION" ColumnName="REFERENCE_DOCUMENTATION" />
+          <ScalarProperty Name="UPDATE_FREQUENCY" ColumnName="UPDATE_FREQUENCY" />
+          <ScalarProperty Name="GRANULARITY" ColumnName="GRANULARITY" />
+          <ScalarProperty Name="ALIASES" ColumnName="ALIASES" />
+          <ScalarProperty Name="ADDITIONAL_NOTES" ColumnName="ADDITIONAL_NOTES" />
+          <ScalarProperty Name="DATA_ACCESS_TOOLS_USED" ColumnName="DATA_ACCESS_TOOLS_USED" />
+          <ScalarProperty Name="DATA_ACQUISITION_METHOD" ColumnName="DATA_ACQUISITION_METHOD" />
+          <ScalarProperty Name="DATA_ACQUISITION_DETAILS" ColumnName="DATA_ACQUISITION_DETAILS" />
+          <ScalarProperty Name="DATASET_CLASSIFICATION" ColumnName="DATASET_CLASSIFICATION" />
+          <ScalarProperty Name="DATA_CLASSIFICATION_RATIONALE" ColumnName="DATA_CLASSIFICATION_RATIONALE" />
+          <ScalarProperty Name="DATASET_TYPE" ColumnName="DATASET_TYPE" />
+          <ScalarProperty Name="TECHNICAL_OBJECT_TYPE_ID" ColumnName="TECHNICAL_OBJECT_TYPE_ID" />
+          <ScalarProperty Name="TECHNICAL_OBJECT_NAME" ColumnName="TECHNICAL_OBJECT_NAME" />
+          <ScalarProperty Name="OBJECT_TYPE_ID" ColumnName="OBJECT_TYPE_ID" />
+          <ScalarProperty Name="REVIEW_STATUS" ColumnName="REVIEW_STATUS" />
+          <ScalarProperty Name="OLD_REVIEW_STATUS" ColumnName="OLD_REVIEW_STATUS" />
+          <ScalarProperty Name="RECORD_TYPE_TABLE" ColumnName="RECORD_TYPE_TABLE" />
+          <ScalarProperty Name="RECORD_TYPE_FIELD" ColumnName="RECORD_TYPE_FIELD" />
+          <ScalarProperty Name="FUNCTIONAL_LEAD" ColumnName="FUNCTIONAL_LEAD" />
+          <ScalarProperty Name="DATASET_OWNER" ColumnName="DATASET_OWNER" />
+          <ScalarProperty Name="DEVELOPER" ColumnName="DEVELOPER" />
+          <ScalarProperty Name="GEOGRAPHIC_SCOPE" ColumnName="GEOGRAPHIC_SCOPE" />
+          <ScalarProperty Name="RETENTION_UNIT" ColumnName="RETENTION_UNIT" />
+          <ScalarProperty Name="RETENTION_LENGTH" ColumnName="RETENTION_LENGTH" />
+          <ScalarProperty Name="LOAD_TYPE" ColumnName="LOAD_TYPE" />
+          <ScalarProperty Name="DATASET_ACTIVE" ColumnName="DATASET_ACTIVE" />
+          <ScalarProperty Name="TIER" ColumnName="TIER" />
+          <ScalarProperty Name="COMPLEXITY" ColumnName="COMPLEXITY" />
+          <ScalarProperty Name="DESIGN_DATE" ColumnName="DESIGN_DATE" />
+          <ScalarProperty Name="DEVELOP_DATE" ColumnName="DEVELOP_DATE" />
+          <ScalarProperty Name="TEST_DATE" ColumnName="TEST_DATE" />
+          <ScalarProperty Name="CONTROL" ColumnName="CONTROL" />
+          <ScalarProperty Name="WORKSHOP_DATE" ColumnName="WORKSHOP_DATE" />
+          <ScalarProperty Name="WORKSHOP_NOTES" ColumnName="WORKSHOP_NOTES" />
+          <ScalarProperty Name="RICEFW" ColumnName="RICEFW" />
+          <ScalarProperty Name="TCODE" ColumnName="TCODE" />
+          <ScalarProperty Name="SHORT_NAME" ColumnName="SHORT_NAME" />
+          <ScalarProperty Name="RELEVANCY_RULE" ColumnName="RELEVANCY_RULE" />
+          <ScalarProperty Name="LOAD_XML_ID" ColumnName="LOAD_XML_ID" />
+          <ScalarProperty Name="LOAD_FILE_NAME" ColumnName="LOAD_FILE_NAME" />
+          <ScalarProperty Name="TARGET_SERVER" ColumnName="TARGET_SERVER" />
+          <ScalarProperty Name="TARGET_DATABASE" ColumnName="TARGET_DATABASE" />
+          <ScalarProperty Name="TARGET_DATASTORE" ColumnName="TARGET_DATASTORE" />
+          <ScalarProperty Name="DESIGN_DOC" ColumnName="DESIGN_DOC" />
+          <ScalarProperty Name="REVIEWED_BY" ColumnName="REVIEWED_BY" />
+          <ScalarProperty Name="REVIEWED_ON" ColumnName="REVIEWED_ON" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+          <ScalarProperty Name="MODIFIED_BY" ColumnName="MODIFIED_BY" />
+          <ScalarProperty Name="MODIFIED_ON" ColumnName="MODIFIED_ON" />
+          <ScalarProperty Name="SOURCE_SYSTEM" ColumnName="SOURCE_SYSTEM" />
+          <ScalarProperty Name="DATASET_TYPE_ID" ColumnName="DATASET_TYPE_ID" />
+          <ScalarProperty Name="SUBJECT_AREA_ID" ColumnName="SUBJECT_AREA_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COR_INFORMATION_AREAs">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.COR_INFORMATION_AREA)">
+        <MappingFragment StoreEntitySet="COR_INFORMATION_AREAs">
+          <ScalarProperty Name="INFORMATION_AREA_ID" ColumnName="INFORMATION_AREA_ID" />
+          <ScalarProperty Name="INFORMATION_AREA_NAME" ColumnName="INFORMATION_AREA_NAME" />
+          <ScalarProperty Name="INFORMATION_AREA_DESCRIPTION" ColumnName="INFORMATION_AREA_DESCRIPTION" />
+          <ScalarProperty Name="INFORMATION_ARCHITECT_ID" ColumnName="INFORMATION_ARCHITECT_ID" />
+          <ScalarProperty Name="REVIEW_STATUS" ColumnName="REVIEW_STATUS" />
+          <ScalarProperty Name="OLD_REVIEW_STATUS" ColumnName="OLD_REVIEW_STATUS" />
+          <ScalarProperty Name="REVIEWED_BY" ColumnName="REVIEWED_BY" />
+          <ScalarProperty Name="REVIEWED_ON" ColumnName="REVIEWED_ON" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+          <ScalarProperty Name="MODIFIED_ON" ColumnName="MODIFIED_ON" />
+          <ScalarProperty Name="MODIFIED_BY" ColumnName="MODIFIED_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COR_SUBJECT_AREA_GROUPs">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.COR_SUBJECT_AREA_GROUP)">
+        <MappingFragment StoreEntitySet="COR_SUBJECT_AREA_GROUPs">
+          <ScalarProperty Name="SUBJECT_AREA_GROUP_ID" ColumnName="SUBJECT_AREA_GROUP_ID" />
+          <ScalarProperty Name="INFORMATION_AREA_ID" ColumnName="INFORMATION_AREA_ID" />
+          <ScalarProperty Name="SUBJECT_AREA_GROUP_NAME" ColumnName="SUBJECT_AREA_GROUP_NAME" />
+          <ScalarProperty Name="SUBJECT_AREA_GROUP_DESCRIPTION" ColumnName="SUBJECT_AREA_GROUP_DESCRIPTION" />
+          <ScalarProperty Name="SUBJECT_AREA_GROUP_ALIASES" ColumnName="SUBJECT_AREA_GROUP_ALIASES" />
+          <ScalarProperty Name="REVIEW_STATUS" ColumnName="REVIEW_STATUS" />
+          <ScalarProperty Name="OLD_REVIEW_STATUS" ColumnName="OLD_REVIEW_STATUS" />
+          <ScalarProperty Name="SUBJECT_AREA_GROUP_OWNER" ColumnName="SUBJECT_AREA_GROUP_OWNER" />
+          <ScalarProperty Name="REVIEWED_BY" ColumnName="REVIEWED_BY" />
+          <ScalarProperty Name="REVIEWED_ON" ColumnName="REVIEWED_ON" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+          <ScalarProperty Name="MODIFIED_BY" ColumnName="MODIFIED_BY" />
+          <ScalarProperty Name="MODIFIED_ON" ColumnName="MODIFIED_ON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COR_SUBJECT_AREAs">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.COR_SUBJECT_AREA)">
+        <MappingFragment StoreEntitySet="COR_SUBJECT_AREAs">
+          <ScalarProperty Name="SUBJECT_AREA_ID" ColumnName="SUBJECT_AREA_ID" />
+          <ScalarProperty Name="SUBJECT_AREA_GROUP_ID" ColumnName="SUBJECT_AREA_GROUP_ID" />
+          <ScalarProperty Name="SUBJECT_AREA_NAME" ColumnName="SUBJECT_AREA_NAME" />
+          <ScalarProperty Name="SUBJECT_AREA_DESCRIPTION" ColumnName="SUBJECT_AREA_DESCRIPTION" />
+          <ScalarProperty Name="SUBJECT_AREA_DATA_STEWARD" ColumnName="SUBJECT_AREA_DATA_STEWARD" />
+          <ScalarProperty Name="SUBJECT_AREA_SOLUTION_MANAGER" ColumnName="SUBJECT_AREA_SOLUTION_MANAGER" />
+          <ScalarProperty Name="SUBJECT_AREA_ALIASES" ColumnName="SUBJECT_AREA_ALIASES" />
+          <ScalarProperty Name="DATA_FLOW_DIAGRAM" ColumnName="DATA_FLOW_DIAGRAM" />
+          <ScalarProperty Name="DATA_CLASSIFICATION_ID" ColumnName="DATA_CLASSIFICATION_ID" />
+          <ScalarProperty Name="DATA_CLASSIFICATION_RATIONALE" ColumnName="DATA_CLASSIFICATION_RATIONALE" />
+          <ScalarProperty Name="REVIEW_STATUS" ColumnName="REVIEW_STATUS" />
+          <ScalarProperty Name="OLD_REVIEW_STATUS" ColumnName="OLD_REVIEW_STATUS" />
+          <ScalarProperty Name="REVIEWED_BY" ColumnName="REVIEWED_BY" />
+          <ScalarProperty Name="REVIEWED_ON" ColumnName="REVIEWED_ON" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+          <ScalarProperty Name="MODIFIED_BY" ColumnName="MODIFIED_BY" />
+          <ScalarProperty Name="MODIFIED_ON" ColumnName="MODIFIED_ON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Datasets">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.Dataset)">
+        <MappingFragment StoreEntitySet="Datasets">
+          <ScalarProperty Name="INFORMATION_AREA_NAME" ColumnName="INFORMATION_AREA_NAME" />
+          <ScalarProperty Name="SUBJECT_AREA_GROUP_NAME" ColumnName="SUBJECT_AREA_GROUP_NAME" />
+          <ScalarProperty Name="SUBJECT_AREA_NAME" ColumnName="SUBJECT_AREA_NAME" />
+          <ScalarProperty Name="DATASET_NAME" ColumnName="DATASET_NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InformationAreas">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.InformationArea)">
+        <MappingFragment StoreEntitySet="InformationAreas">
+          <ScalarProperty Name="INFORMATION_AREA_NAME" ColumnName="INFORMATION_AREA_NAME" />
+          <ScalarProperty Name="Cnt" ColumnName="Cnt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subject_Area_Groups">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.Subject_Area_Group)">
+        <MappingFragment StoreEntitySet="Subject_Area_Groups">
+          <ScalarProperty Name="INFORMATION_AREA_NAME" ColumnName="INFORMATION_AREA_NAME" />
+          <ScalarProperty Name="SUBJECT_AREA_GROUP_NAME" ColumnName="SUBJECT_AREA_GROUP_NAME" />
+          <ScalarProperty Name="Cnt" ColumnName="Cnt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subject_Areas">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.Subject_Area)">
+        <MappingFragment StoreEntitySet="Subject_Areas">
+          <ScalarProperty Name="INFORMATION_AREA_NAME" ColumnName="INFORMATION_AREA_NAME" />
+          <ScalarProperty Name="SUBJECT_AREA_GROUP_NAME" ColumnName="SUBJECT_AREA_GROUP_NAME" />
+          <ScalarProperty Name="SUBJECT_AREA_NAME" ColumnName="SUBJECT_AREA_NAME" />
+          <ScalarProperty Name="Cnt" ColumnName="Cnt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

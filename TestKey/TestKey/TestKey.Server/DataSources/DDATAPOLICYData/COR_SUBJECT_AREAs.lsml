@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceApplication
+  Name="LightSwitchServiceApplication" xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <ServiceApplication.Attributes>
+    <Partial />
+  </ServiceApplication.Attributes>
+  <EntityType
+    Name="COR_SUBJECT_AREA">
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <KeyProperty
+        Name="SUBJECT_AREA_ID"
+        PropertyType=":Guid">
+        <KeyProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="SUBJECT_AREA_GROUP_ID"
+        PropertyType=":Guid">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="SUBJECT_AREA_NAME"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="800" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="SUBJECT_AREA_DESCRIPTION"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="SUBJECT_AREA_DATA_STEWARD"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="144" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="SUBJECT_AREA_SOLUTION_MANAGER"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="144" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="SUBJECT_AREA_ALIASES"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DATA_FLOW_DIAGRAM"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DATA_CLASSIFICATION_ID"
+        PropertyType=":Guid?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DATA_CLASSIFICATION_RATIONALE"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="REVIEW_STATUS"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="OLD_REVIEW_STATUS"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="REVIEWED_BY"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="REVIEWED_ON"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CREATED_BY"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CREATED_ON"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="MODIFIED_BY"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="MODIFIED_ON"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <NavigationProperty
+        Name="COR_DATASETs"
+        Association="FK_COR_DATASET_COR_SUBJECT_AREA"
+        FromEnd="COR_SUBJECT_AREA"
+        ToEnd="COR_DATASET" />
+    </EntityType.Properties>
+  </EntityType>
+  <Association
+    Name="FK_COR_DATASET_COR_SUBJECT_AREA">
+    <AssociationEnd
+      Name="COR_SUBJECT_AREA"
+      Multiplicity="One"
+      EntityType="COR_SUBJECT_AREA">
+      <AssociationEnd.Attributes>
+        <DeleteRule />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+    <AssociationEnd
+      Name="COR_DATASET"
+      Multiplicity="Many"
+      EntityType="COR_DATASET" />
+  </Association>
+  <EntityContainer
+    Name="DDATAPOLICYData">
+    <EntityContainer.Attributes>
+      <Partial />
+    </EntityContainer.Attributes>
+    <EntitySet
+      Name="COR_SUBJECT_AREAs"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="COR_SUBJECT_AREA" />
+    <AssociationSet
+      Name="FK_COR_DATASET_COR_SUBJECT_AREA"
+      Association="FK_COR_DATASET_COR_SUBJECT_AREA">
+      <AssociationSetEnd
+        Name="COR_SUBJECT_AREA"
+        EntitySet="COR_SUBJECT_AREAs" />
+      <AssociationSetEnd
+        Name="COR_DATASET"
+        EntitySet="COR_DATASETs" />
+    </AssociationSet>
+    <QueryOperation
+      Name="COR_SUBJECT_AREAs_Single"
+      ReturnType="COR_SUBJECT_AREA">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="SUBJECT_AREA_ID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="SUBJECT_AREA_ID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="COR_SUBJECT_AREAs" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="SUBJECT_AREA_ID"
+        ParameterType="Microsoft.LightSwitch:Guid?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'SUBJECT_AREA_ID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="COR_SUBJECT_AREAs_SingleOrDefault"
+      ReturnType="COR_SUBJECT_AREA">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="SUBJECT_AREA_ID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="SUBJECT_AREA_ID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="COR_SUBJECT_AREAs" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="SUBJECT_AREA_ID"
+        ParameterType="Microsoft.LightSwitch:Guid?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'SUBJECT_AREA_ID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+  </EntityContainer>
+  <DataService
+    Name="DDATAPOLICYDataDataService">
+    <DataService.Attributes>
+      <Partial />
+    </DataService.Attributes>
+    <EntitySetMapping
+      EntitySet="COR_SUBJECT_AREAs">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="COR_SUBJECT_AREA" />
+        <SsdlProperty
+          Name="SUBJECT_AREA_ID"
+          Nullable="False"
+          Type="uniqueidentifier"
+          Property="COR_SUBJECT_AREA/Properties[SUBJECT_AREA_ID]" />
+        <SsdlProperty
+          Name="SUBJECT_AREA_GROUP_ID"
+          Nullable="False"
+          Type="uniqueidentifier"
+          Property="COR_SUBJECT_AREA/Properties[SUBJECT_AREA_GROUP_ID]" />
+        <SsdlProperty
+          MaxLength="800"
+          Name="SUBJECT_AREA_NAME"
+          Nullable="False"
+          Type="nvarchar"
+          Property="COR_SUBJECT_AREA/Properties[SUBJECT_AREA_NAME]" />
+        <SsdlProperty
+          Name="SUBJECT_AREA_DESCRIPTION"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_SUBJECT_AREA/Properties[SUBJECT_AREA_DESCRIPTION]" />
+        <SsdlProperty
+          MaxLength="144"
+          Name="SUBJECT_AREA_DATA_STEWARD"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_SUBJECT_AREA/Properties[SUBJECT_AREA_DATA_STEWARD]" />
+        <SsdlProperty
+          MaxLength="144"
+          Name="SUBJECT_AREA_SOLUTION_MANAGER"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_SUBJECT_AREA/Properties[SUBJECT_AREA_SOLUTION_MANAGER]" />
+        <SsdlProperty
+          Name="SUBJECT_AREA_ALIASES"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_SUBJECT_AREA/Properties[SUBJECT_AREA_ALIASES]" />
+        <SsdlProperty
+          Name="DATA_FLOW_DIAGRAM"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_SUBJECT_AREA/Properties[DATA_FLOW_DIAGRAM]" />
+        <SsdlProperty
+          Name="DATA_CLASSIFICATION_ID"
+          Nullable="True"
+          Type="uniqueidentifier"
+          Property="COR_SUBJECT_AREA/Properties[DATA_CLASSIFICATION_ID]" />
+        <SsdlProperty
+          Name="DATA_CLASSIFICATION_RATIONALE"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_SUBJECT_AREA/Properties[DATA_CLASSIFICATION_RATIONALE]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="REVIEW_STATUS"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_SUBJECT_AREA/Properties[REVIEW_STATUS]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="OLD_REVIEW_STATUS"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_SUBJECT_AREA/Properties[OLD_REVIEW_STATUS]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="REVIEWED_BY"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_SUBJECT_AREA/Properties[REVIEWED_BY]" />
+        <SsdlProperty
+          Name="REVIEWED_ON"
+          Nullable="True"
+          Type="datetime"
+          Property="COR_SUBJECT_AREA/Properties[REVIEWED_ON]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="CREATED_BY"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_SUBJECT_AREA/Properties[CREATED_BY]" />
+        <SsdlProperty
+          Name="CREATED_ON"
+          Nullable="True"
+          Type="datetime"
+          Property="COR_SUBJECT_AREA/Properties[CREATED_ON]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="MODIFIED_BY"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_SUBJECT_AREA/Properties[MODIFIED_BY]" />
+        <SsdlProperty
+          Name="MODIFIED_ON"
+          Nullable="True"
+          Type="datetime"
+          Property="COR_SUBJECT_AREA/Properties[MODIFIED_ON]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="FK_COR_DATASET_COR_SUBJECT_AREA">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="FK_COR_DATASET_COR_SUBJECT_AREA" />
+        <SsdlAssociationSetEnd
+          End="DDATAPOLICYData/Members[FK_COR_DATASET_COR_SUBJECT_AREA]/Members[COR_SUBJECT_AREA]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="SUBJECT_AREA_ID" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="DDATAPOLICYData/Members[FK_COR_DATASET_COR_SUBJECT_AREA]/Members[COR_DATASET]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="SUBJECT_AREA_ID" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+  </DataService>
+</ServiceApplication>

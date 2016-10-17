@@ -1,0 +1,293 @@
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\vslshost.exe
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\vslshost.exe.config
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\vslshost.exe.manifest
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\ClientAccessPolicy.xml
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\Microsoft.LightSwitch.Design.svc
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\Microsoft.LightSwitch.SecurityData.svc
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\web.config
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\default.aspx
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\diagnostics.wadcfg
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\Web\Manifests\Microsoft.LightSwitch.Server.Manifest.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.Server.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\System.ServiceModel.PollingDuplex.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\Application.Server.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\Microsoft.Data.Edm.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\Microsoft.Data.OData.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\Microsoft.Data.Services.Client.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\Microsoft.Data.Services.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.AppBridge.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.CodeMarker.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.ExportProvider.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.Extensions.Server.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.ManifestService.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.Model.Xaml.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.Server.Host.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\System.IdentityModel.Tokens.Jwt.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\System.ServiceModel.DomainServices.EntityFramework.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.OData.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\System.ServiceModel.DomainServices.Server.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\System.Spatial.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\packages.config
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\LS_UTData.svc
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\dark-theme-2.5.3.css
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.css
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.min.css
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.css
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.min.css
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.css
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.min.css
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\light-theme-2.5.3.css
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\msls-2.5.3.css
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\msls-2.5.3.min.css
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\msls-dark-2.5.3.css
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\msls-light-2.5.3.css
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\user-customization.css
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\Web.config
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\ajax-loader.gif
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\icons-18-black.png
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\icons-18-white.png
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\icons-36-black.png
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\icons-36-white.png
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-black-icons-18.png
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-black-icons-36.png
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-loader-dark.gif
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-loader-light.gif
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-white-icons-18.png
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-white-icons-36.png
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-blue-icons-36.png
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\user-logo.png
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\user-logo.ico
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\user-logo-144.png
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\user-splash-screen.png
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\default.htm
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\packages.config
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Screens\EmployeeProjects\ViewEmployeeProject.lsml.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Screens\MonthTables\ViewMonthTable.lsml.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\datajs-1.1.3.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\datajs-1.1.3.min.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.intellisense.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.min.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0-vsdoc.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.min.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\msls.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\msls-2.5.3-vsdoc.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\msls-2.5.3.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\msls-2.5.3.min.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\winjs-1.0.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\winjs-1.0.min.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\Generated\generatedAssets.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\Generated\data.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\Generated\viewModel.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\Generated\usercode.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\Generated\resources.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\Resources\Generated\model.json
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Content\Resources\msls.lang-en-us.resjson
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Screens\EmployeeProjects\AddEditEmployeeProject.lsml.js
+c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\bin\Debug\HTMLClient\Screens\EmployeeProjects\BrowseEmployeeProjects.lsml.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\vslshost.exe
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\vslshost.exe.config
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\vslshost.exe.manifest
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\ClientAccessPolicy.xml
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\Microsoft.LightSwitch.Design.svc
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\Microsoft.LightSwitch.SecurityData.svc
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\web.config
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\default.aspx
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\diagnostics.wadcfg
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\Web\Manifests\Microsoft.LightSwitch.Server.Manifest.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.Server.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\System.ServiceModel.PollingDuplex.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\Application.Server.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\Microsoft.Data.Edm.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\Microsoft.Data.OData.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\Microsoft.Data.Services.Client.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\Microsoft.Data.Services.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.AppBridge.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.CodeMarker.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.ExportProvider.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.Extensions.Server.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.ManifestService.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.Model.Xaml.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.Server.Host.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\System.ServiceModel.DomainServices.EntityFramework.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.OData.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\System.ServiceModel.DomainServices.Server.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\System.Spatial.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\packages.config
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\dark-theme-2.5.3.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.min.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.min.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.min.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\light-theme-2.5.3.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\msls-2.5.3.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\msls-2.5.3.min.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\msls-dark-2.5.3.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\msls-light-2.5.3.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\user-customization.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Web.config
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\ajax-loader.gif
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\icons-18-black.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\icons-18-white.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\icons-36-black.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\icons-36-white.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-black-icons-18.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-black-icons-36.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-loader-dark.gif
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-loader-light.gif
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-white-icons-18.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-white-icons-36.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-blue-icons-36.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\user-logo.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\user-logo.ico
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\user-logo-144.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\user-splash-screen.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\default.htm
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\packages.config
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Screens\COR_INFORMATION_AREAs\ViewCOR_INFORMATION_AREA.lsml.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Screens\EmployeeProjects\AddEditEmployeeProject.lsml.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Screens\EmployeeProjects\BrowseEmployeeProjects.lsml.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Screens\EmployeeProjects\ViewEmployeeProject.lsml.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Screens\MonthTables\BrowseMonthTables.lsml.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Screens\MonthTables\ViewMonthTable.lsml.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\datajs-1.1.3.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\datajs-1.1.3.min.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.intellisense.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.min.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0-vsdoc.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.min.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\msls.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\msls-2.5.3-vsdoc.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\msls-2.5.3.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\msls-2.5.3.min.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\winjs-1.0.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\winjs-1.0.min.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\Generated\generatedAssets.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\Generated\data.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\Generated\viewModel.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\Generated\usercode.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\Generated\resources.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Resources\Generated\model.json
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Resources\msls.lang-en-us.resjson
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Screens\COR_INFORMATION_AREAs\BrowseCOR_INFORMATION_AREAs.lsml.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\add1.gif
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\Add.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\Search.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\search.png.gif
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\DDATAPOLICYData.svc
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\bin\Debug\LS_UTData.svc
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\vslshost.exe
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\vslshost.exe.config
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\vslshost.exe.manifest
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\ClientAccessPolicy.xml
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\Microsoft.LightSwitch.Design.svc
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\Microsoft.LightSwitch.SecurityData.svc
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\web.config
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\default.aspx
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\diagnostics.wadcfg
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\Web\Manifests\Microsoft.LightSwitch.Server.Manifest.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.Server.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\System.ServiceModel.PollingDuplex.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\Application.Server.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\Microsoft.Data.Edm.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\Microsoft.Data.OData.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\Microsoft.Data.Services.Client.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\Microsoft.Data.Services.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.AppBridge.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.CodeMarker.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.ExportProvider.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.Extensions.Server.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.ManifestService.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.Model.Xaml.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\Microsoft.LightSwitch.Server.Host.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\System.ServiceModel.DomainServices.EntityFramework.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.OData.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\System.ServiceModel.DomainServices.Server.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\System.Spatial.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\packages.config
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\getRecordsCount.ashx
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\DDATAPOLICYData.svc
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\LS_UTData.svc
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\dark-theme-2.5.3.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.min.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.min.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.min.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\light-theme-2.5.3.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\msls-2.5.3.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\msls-2.5.3.min.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\msls-dark-2.5.3.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\msls-light-2.5.3.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\user-customization.css
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Web.config
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\Add.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\add1.gif
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\ajax-loader.gif
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\icons-18-black.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\icons-18-white.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\icons-36-black.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\icons-36-white.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-black-icons-18.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-black-icons-36.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-loader-dark.gif
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-loader-light.gif
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-white-icons-18.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-white-icons-36.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\msls-blue-icons-36.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\Search.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\search.png.gif
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\user-logo.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\user-logo.ico
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\user-logo-144.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\user-splash-screen.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\default.htm
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\packages.config
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Screens\COR_INFORMATION_AREAs\BrowseCOR_INFORMATION_AREAs.lsml.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Screens\COR_INFORMATION_AREAs\ViewCOR_INFORMATION_AREA.lsml.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Screens\EmployeeProjects\AddEditEmployeeProject.lsml.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Screens\EmployeeProjects\BrowseEmployeeProjects.lsml.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Screens\EmployeeProjects\ViewEmployeeProject.lsml.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Screens\MonthTables\BrowseMonthTables.lsml.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Screens\MonthTables\ViewMonthTable.lsml.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\datajs-1.1.3.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\datajs-1.1.3.min.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.intellisense.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.min.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0-vsdoc.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.min.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\msls.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\msls-2.5.3-vsdoc.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\msls-2.5.3.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\msls-2.5.3.min.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\winjs-1.0.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\winjs-1.0.min.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\Generated\generatedAssets.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\Generated\data.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\Generated\viewModel.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\Generated\usercode.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Scripts\Generated\resources.js
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Resources\Generated\model.json
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Resources\msls.lang-en-us.resjson
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\View.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\Details.png
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\dd.png

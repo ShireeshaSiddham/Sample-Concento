@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Documents>
+    <Document FullPath="c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\TestKey.HTMLClient\Properties\Client.lsml" Checksum="CFAF21432E5B371FEEA2DD59C63C4A0C117173EAF9A70304252C2255096F8A47" />
+    <Document FullPath="c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\TestKey.HTMLClient\Properties\Proxies.lsml" Checksum="12BAD21FDE919FAEECEB89EEC6763820827B07D4DE4BF575FAB98BEA15D3EA85" />
+    <Document FullPath="c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\TestKey.HTMLClient\Screens\EmployeeProjects\AddEditEmployeeProject.lsml" Checksum="581D66A75C819D1E4C2550E7DDFEC0E1059672AC57842EB6AFD80FE3378450DF" />
+    <Document FullPath="c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\TestKey.HTMLClient\Screens\EmployeeProjects\ViewEmployeeProject.lsml" Checksum="B9C74293765E2A4F2F5A5E50D94EDC52B18BDEBE9D964BEA70C74B72133D6684" />
+    <Document FullPath="c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\TestKey.HTMLClient\Properties\LS_UTData\EmployeeProjects.lsml" Checksum="7A1704681DB39D0678E0C8C8BB0900BB90832FE71806612BBA6A46BA325E3A19" />
+    <Document FullPath="c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\TestKey.HTMLClient\Screens\EmployeeProjects\BrowseEmployeeProjects.lsml" Checksum="966B1D2582AD8F6CF59AB181D1FC19C25C27D45BE7BC7E698DD0712C593E21F8" />
+    <Document FullPath="c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\TestKey.HTMLClient\Screens\MonthTables\AddEditMonthTable.lsml" Checksum="28BAF7C0D13181079E7B7DA8C011664B2AA05F013F98F1A20C333AE70FA312C4" />
+    <Document FullPath="c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\TestKey.HTMLClient\Screens\MonthTables\ViewMonthTable.lsml" Checksum="9E525853D455F9668E73372D21553F570582CA2BE73031BAF148833D53386641" />
+    <Document FullPath="c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\TestKey.HTMLClient\Properties\LS_UTData\MonthTables.lsml" Checksum="4AD3BBE704EB98E559AE0D0A654483BB1F80879DCDD35236CB50F5B0A544E48A" />
+    <Document FullPath="c:\users\dmr-sireesha\documents\visual studio 2015\Projects\TestKey\TestKey\TestKey.HTMLClient\Screens\MonthTables\BrowseMonthTables.lsml" Checksum="303460242AB343C214D7D973BD7007B16B0AB8E008E183987991B77DC44A343A" />
+  </Documents>
+</ModelDocumentManifest>

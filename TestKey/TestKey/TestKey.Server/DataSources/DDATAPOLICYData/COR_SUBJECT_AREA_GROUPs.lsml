@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceApplication
+  Name="LightSwitchServiceApplication" xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <ServiceApplication.Attributes>
+    <Partial />
+  </ServiceApplication.Attributes>
+  <EntityType
+    Name="COR_SUBJECT_AREA_GROUP">
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <KeyProperty
+        Name="SUBJECT_AREA_GROUP_ID"
+        PropertyType=":Guid">
+        <KeyProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="INFORMATION_AREA_ID"
+        PropertyType=":Guid">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="SUBJECT_AREA_GROUP_NAME"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="800" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="SUBJECT_AREA_GROUP_DESCRIPTION"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="SUBJECT_AREA_GROUP_ALIASES"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="REVIEW_STATUS"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="OLD_REVIEW_STATUS"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="SUBJECT_AREA_GROUP_OWNER"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="REVIEWED_BY"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="150" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="REVIEWED_ON"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CREATED_BY"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CREATED_ON"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="MODIFIED_BY"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="MODIFIED_ON"
+        PropertyType=":DateTime?">
+        <EntityProperty.Attributes>
+          <DateTimeConstraint
+            Precision="3"
+            PreserveSeconds="True" />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+    </EntityType.Properties>
+  </EntityType>
+  <EntityContainer
+    Name="DDATAPOLICYData">
+    <EntityContainer.Attributes>
+      <Partial />
+    </EntityContainer.Attributes>
+    <EntitySet
+      Name="COR_SUBJECT_AREA_GROUPs"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="COR_SUBJECT_AREA_GROUP" />
+    <QueryOperation
+      Name="COR_SUBJECT_AREA_GROUPs_Single"
+      ReturnType="COR_SUBJECT_AREA_GROUP">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="SUBJECT_AREA_GROUP_ID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="SUBJECT_AREA_GROUP_ID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="COR_SUBJECT_AREA_GROUPs" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="SUBJECT_AREA_GROUP_ID"
+        ParameterType="Microsoft.LightSwitch:Guid?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'SUBJECT_AREA_GROUP_ID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="COR_SUBJECT_AREA_GROUPs_SingleOrDefault"
+      ReturnType="COR_SUBJECT_AREA_GROUP">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="SUBJECT_AREA_GROUP_ID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="SUBJECT_AREA_GROUP_ID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="COR_SUBJECT_AREA_GROUPs" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="SUBJECT_AREA_GROUP_ID"
+        ParameterType="Microsoft.LightSwitch:Guid?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'SUBJECT_AREA_GROUP_ID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+  </EntityContainer>
+  <DataService
+    Name="DDATAPOLICYDataDataService">
+    <DataService.Attributes>
+      <Partial />
+    </DataService.Attributes>
+    <EntitySetMapping
+      EntitySet="COR_SUBJECT_AREA_GROUPs">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="COR_SUBJECT_AREA_GROUP" />
+        <SsdlProperty
+          Name="SUBJECT_AREA_GROUP_ID"
+          Nullable="False"
+          Type="uniqueidentifier"
+          Property="COR_SUBJECT_AREA_GROUP/Properties[SUBJECT_AREA_GROUP_ID]" />
+        <SsdlProperty
+          Name="INFORMATION_AREA_ID"
+          Nullable="False"
+          Type="uniqueidentifier"
+          Property="COR_SUBJECT_AREA_GROUP/Properties[INFORMATION_AREA_ID]" />
+        <SsdlProperty
+          MaxLength="800"
+          Name="SUBJECT_AREA_GROUP_NAME"
+          Nullable="False"
+          Type="nvarchar"
+          Property="COR_SUBJECT_AREA_GROUP/Properties[SUBJECT_AREA_GROUP_NAME]" />
+        <SsdlProperty
+          Name="SUBJECT_AREA_GROUP_DESCRIPTION"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_SUBJECT_AREA_GROUP/Properties[SUBJECT_AREA_GROUP_DESCRIPTION]" />
+        <SsdlProperty
+          Name="SUBJECT_AREA_GROUP_ALIASES"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="COR_SUBJECT_AREA_GROUP/Properties[SUBJECT_AREA_GROUP_ALIASES]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="REVIEW_STATUS"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_SUBJECT_AREA_GROUP/Properties[REVIEW_STATUS]" />
+        <SsdlProperty
+          MaxLength="100"
+          Name="OLD_REVIEW_STATUS"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_SUBJECT_AREA_GROUP/Properties[OLD_REVIEW_STATUS]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="SUBJECT_AREA_GROUP_OWNER"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_SUBJECT_AREA_GROUP/Properties[SUBJECT_AREA_GROUP_OWNER]" />
+        <SsdlProperty
+          MaxLength="150"
+          Name="REVIEWED_BY"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_SUBJECT_AREA_GROUP/Properties[REVIEWED_BY]" />
+        <SsdlProperty
+          Name="REVIEWED_ON"
+          Nullable="True"
+          Type="datetime"
+          Property="COR_SUBJECT_AREA_GROUP/Properties[REVIEWED_ON]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="CREATED_BY"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_SUBJECT_AREA_GROUP/Properties[CREATED_BY]" />
+        <SsdlProperty
+          Name="CREATED_ON"
+          Nullable="True"
+          Type="datetime"
+          Property="COR_SUBJECT_AREA_GROUP/Properties[CREATED_ON]" />
+        <SsdlProperty
+          MaxLength="50"
+          Name="MODIFIED_BY"
+          Nullable="True"
+          Type="nvarchar"
+          Property="COR_SUBJECT_AREA_GROUP/Properties[MODIFIED_BY]" />
+        <SsdlProperty
+          Name="MODIFIED_ON"
+          Nullable="True"
+          Type="datetime"
+          Property="COR_SUBJECT_AREA_GROUP/Properties[MODIFIED_ON]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+  </DataService>
+</ServiceApplication>

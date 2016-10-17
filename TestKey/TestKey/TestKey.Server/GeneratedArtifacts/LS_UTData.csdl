@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" Namespace="LightSwitchApplication" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="EmployeeMonth">
+    <Key>
+      <PropertyRef Name="EmpID" />
+      <PropertyRef Name="MonthID" />
+    </Key>
+    <Property Name="EmpID" Type="Edm.Int32" Nullable="false" />
+    <Property Name="MonthID" Type="Edm.Int32" Nullable="false" />
+    <Property Name="NoOfHolidays" Type="Edm.Int32" ConcurrencyMode="Fixed" />
+    <Property Name="NoOfLeaves" Type="Edm.Int32" ConcurrencyMode="Fixed" />
+    <Property Name="TotalHours" Type="Edm.Int32" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="EmployeeTable" Relationship="LightSwitchApplication.FK__EmployeeM__EmpID__74AE54BC" ToRole="EmployeeTable" FromRole="EmployeeMonth" />
+    <NavigationProperty Name="MonthTable" Relationship="LightSwitchApplication.FK__EmployeeM__Month__73BA3083" ToRole="MonthTable" FromRole="EmployeeMonth" />
+  </EntityType>
+  <EntityType Name="EmployeeProject">
+    <Key>
+      <PropertyRef Name="EmpID" />
+      <PropertyRef Name="ProjectID" />
+      <PropertyRef Name="TaskID" />
+    </Key>
+    <Property Name="EmpID" Type="Edm.Int32" Nullable="false" />
+    <Property Name="ProjectID" Type="Edm.Int32" Nullable="false" />
+    <Property Name="TaskID" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SubProject" Type="Edm.String" MaxLength="300" ConcurrencyMode="Fixed" />
+    <Property Name="MonthID" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="c_Date" Type="Edm.DateTime" Precision="0" ConcurrencyMode="Fixed" />
+    <Property Name="Hours" Type="Edm.Decimal" Nullable="false" Precision="5" Scale="0" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="ProjectTable" Relationship="LightSwitchApplication.FK_EmployeeProject_ProjectTable" ToRole="ProjectTable" FromRole="EmployeeProject" />
+  </EntityType>
+  <EntityType Name="EmployeeTable">
+    <Key>
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Name="EmpID" Type="Edm.Int32" Nullable="false" />
+    <Property Name="EmpName" Type="Edm.String" MaxLength="100" ConcurrencyMode="Fixed" />
+    <Property Name="Designation" Type="Edm.String" MaxLength="100" ConcurrencyMode="Fixed" />
+    <Property Name="Email" Type="Edm.String" MaxLength="50" ConcurrencyMode="Fixed" />
+    <Property Name="UserName" Type="Edm.String" MaxLength="100" ConcurrencyMode="Fixed" />
+    <Property Name="ManagerID" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="EmployeeMonths" Relationship="LightSwitchApplication.FK__EmployeeM__EmpID__74AE54BC" ToRole="EmployeeMonth" FromRole="EmployeeTable" />
+    <NavigationProperty Name="EmployeeTables" Relationship="LightSwitchApplication.FK_EmployeeTable_ManagerID" ToRole="EmployeeTable1" FromRole="EmployeeTable" />
+    <NavigationProperty Name="EmployeeTable1" Relationship="LightSwitchApplication.FK_EmployeeTable_ManagerID" ToRole="EmployeeTable" FromRole="EmployeeTable1" />
+  </EntityType>
+  <EntityType Name="EmpProj">
+    <Key>
+      <PropertyRef Name="MonthName" />
+      <PropertyRef Name="Hours" />
+    </Key>
+    <Property Name="MonthName" Type="Edm.String" Nullable="false" MaxLength="20" />
+    <Property Name="SubProject" Type="Edm.String" MaxLength="300" ConcurrencyMode="Fixed" />
+    <Property Name="c_Date" Type="Edm.DateTime" Precision="0" ConcurrencyMode="Fixed" />
+    <Property Name="Hours" Type="Edm.Decimal" Nullable="false" Precision="5" Scale="0" />
+  </EntityType>
+  <EntityType Name="MonthTable">
+    <Key>
+      <PropertyRef Name="MonthID" />
+    </Key>
+    <Property Name="MonthID" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MonthName" Type="Edm.String" Nullable="false" MaxLength="20" ConcurrencyMode="Fixed" />
+    <Property Name="NoOfDays" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="WeekDays" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="EmployeeMonths" Relationship="LightSwitchApplication.FK__EmployeeM__Month__73BA3083" ToRole="EmployeeMonth" FromRole="MonthTable" />
+  </EntityType>
+  <EntityType Name="ProjectTable">
+    <Key>
+      <PropertyRef Name="EmpID" />
+      <PropertyRef Name="ProjectID" />
+    </Key>
+    <Property Name="EmpID" Type="Edm.Int32" Nullable="false" />
+    <Property Name="ProjectID" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectName" Type="Edm.String" MaxLength="50" ConcurrencyMode="Fixed" />
+    <Property Name="Complexity" Type="Edm.Int32" ConcurrencyMode="Fixed" />
+    <Property Name="Scope" Type="Edm.Int32" ConcurrencyMode="Fixed" />
+    <Property Name="ProjectType" Type="Edm.String" MaxLength="30" ConcurrencyMode="Fixed" />
+    <Property Name="ProjectStatus" Type="Edm.String" MaxLength="20" ConcurrencyMode="Fixed" />
+    <Property Name="StartDate" Type="Edm.DateTime" Precision="0" ConcurrencyMode="Fixed" />
+    <Property Name="EndDate" Type="Edm.DateTime" Precision="0" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="EmployeeProjects" Relationship="LightSwitchApplication.FK_EmployeeProject_ProjectTable" ToRole="EmployeeProject" FromRole="ProjectTable" />
+  </EntityType>
+  <Association Name="FK__EmployeeM__EmpID__74AE54BC">
+    <End Role="EmployeeTable" Type="LightSwitchApplication.EmployeeTable" Multiplicity="1" />
+    <End Role="EmployeeMonth" Type="LightSwitchApplication.EmployeeMonth" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeeTable">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="EmployeeMonth">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeTable_ManagerID">
+    <End Role="EmployeeTable" Type="LightSwitchApplication.EmployeeTable" Multiplicity="1" />
+    <End Role="EmployeeTable1" Type="LightSwitchApplication.EmployeeTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeeTable">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="EmployeeTable1">
+        <PropertyRef Name="ManagerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EmployeeM__Month__73BA3083">
+    <End Role="MonthTable" Type="LightSwitchApplication.MonthTable" Multiplicity="1" />
+    <End Role="EmployeeMonth" Type="LightSwitchApplication.EmployeeMonth" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MonthTable">
+        <PropertyRef Name="MonthID" />
+      </Principal>
+      <Dependent Role="EmployeeMonth">
+        <PropertyRef Name="MonthID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeProject_ProjectTable">
+    <End Role="ProjectTable" Type="LightSwitchApplication.ProjectTable" Multiplicity="1" />
+    <End Role="EmployeeProject" Type="LightSwitchApplication.EmployeeProject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectTable">
+        <PropertyRef Name="EmpID" />
+        <PropertyRef Name="ProjectID" />
+      </Principal>
+      <Dependent Role="EmployeeProject">
+        <PropertyRef Name="EmpID" />
+        <PropertyRef Name="ProjectID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LS_UTData" m:IsDefaultEntityContainer="true">
+    <EntitySet Name="EmployeeMonths" EntityType="LightSwitchApplication.EmployeeMonth" />
+    <EntitySet Name="EmployeeProjects" EntityType="LightSwitchApplication.EmployeeProject" />
+    <EntitySet Name="EmployeeTables" EntityType="LightSwitchApplication.EmployeeTable" />
+    <EntitySet Name="EmpProjs" EntityType="LightSwitchApplication.EmpProj" />
+    <EntitySet Name="MonthTables" EntityType="LightSwitchApplication.MonthTable" />
+    <EntitySet Name="ProjectTables" EntityType="LightSwitchApplication.ProjectTable" />
+    <AssociationSet Name="FK__EmployeeM__EmpID__74AE54BC" Association="LightSwitchApplication.FK__EmployeeM__EmpID__74AE54BC">
+      <End Role="EmployeeTable" EntitySet="EmployeeTables" />
+      <End Role="EmployeeMonth" EntitySet="EmployeeMonths" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeTable_ManagerID" Association="LightSwitchApplication.FK_EmployeeTable_ManagerID">
+      <End Role="EmployeeTable" EntitySet="EmployeeTables" />
+      <End Role="EmployeeTable1" EntitySet="EmployeeTables" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EmployeeM__Month__73BA3083" Association="LightSwitchApplication.FK__EmployeeM__Month__73BA3083">
+      <End Role="MonthTable" EntitySet="MonthTables" />
+      <End Role="EmployeeMonth" EntitySet="EmployeeMonths" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeProject_ProjectTable" Association="LightSwitchApplication.FK_EmployeeProject_ProjectTable">
+      <End Role="ProjectTable" EntitySet="ProjectTables" />
+      <End Role="EmployeeProject" EntitySet="EmployeeProjects" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
