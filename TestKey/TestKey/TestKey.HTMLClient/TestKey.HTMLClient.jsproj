@@ -133,12 +133,14 @@
     <LightSwitchModel Include="Screens\COR_INFORMATION_AREAs\AddEditCOR_INFORMATION_AREA.lsml" />
     <LightSwitchModel Include="Screens\COR_INFORMATION_AREAs\BrowseCOR_INFORMATION_AREAs.lsml" />
     <LightSwitchModel Include="Screens\COR_INFORMATION_AREAs\ViewCOR_INFORMATION_AREA.lsml" />
+    <LightSwitchModel Include="Screens\EditInformationArea.lsml" />
     <LightSwitchModel Include="Screens\EmployeeProjects\AddEditEmployeeProject.lsml" />
     <LightSwitchModel Include="Screens\EmployeeProjects\BrowseEmployeeProjects.lsml" />
     <LightSwitchModel Include="Screens\EmployeeProjects\ViewEmployeeProject.lsml" />
     <LightSwitchModel Include="Screens\MonthTables\AddEditMonthTable.lsml" />
     <LightSwitchModel Include="Screens\MonthTables\BrowseMonthTables.lsml" />
     <LightSwitchModel Include="Screens\MonthTables\ViewMonthTable.lsml" />
+    <LightSwitchModel Include="Screens\ViewInformationAreaDetails.lsml" />
   </ItemGroup>
   <ItemGroup>
     <_ClientBuildFile Include="GeneratedArtifacts\model.json">

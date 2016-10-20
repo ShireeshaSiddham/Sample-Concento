@@ -144,6 +144,20 @@
     <Property Name="SUBJECT_AREA_NAME" Type="Edm.String" Nullable="false" MaxLength="800" />
     <Property Name="DATASET_NAME" Type="Edm.String" Nullable="false" MaxLength="800" />
   </EntityType>
+  <EntityType Name="InformationAreaDetail">
+    <Key>
+      <PropertyRef Name="INFORMATION_AREA_NAME" />
+    </Key>
+    <Property Name="INFORMATION_AREA_NAME" Type="Edm.String" Nullable="false" MaxLength="400" />
+    <Property Name="INFORMATION_AREA_DESCRIPTION" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="REVIEW_STATUS" Type="Edm.String" MaxLength="100" ConcurrencyMode="Fixed" />
+    <Property Name="REVIEWED_BY" Type="Edm.String" MaxLength="50" ConcurrencyMode="Fixed" />
+    <Property Name="MODIFIED_BY" Type="Edm.String" MaxLength="200" ConcurrencyMode="Fixed" />
+    <Property Name="MODIFIED_ON" Type="Edm.DateTime" Precision="3" ConcurrencyMode="Fixed" />
+    <Property Name="CREATED_ON" Type="Edm.DateTime" Precision="3" ConcurrencyMode="Fixed" />
+    <Property Name="CREATED_BY" Type="Edm.String" MaxLength="50" ConcurrencyMode="Fixed" />
+    <Property Name="REVIEWED_ON" Type="Edm.DateTime" Precision="3" ConcurrencyMode="Fixed" />
+  </EntityType>
   <EntityType Name="InformationArea">
     <Key>
       <PropertyRef Name="INFORMATION_AREA_NAME" />
@@ -171,20 +185,6 @@
     <Property Name="SUBJECT_AREA_NAME" Type="Edm.String" Nullable="false" MaxLength="800" />
     <Property Name="Cnt" Type="Edm.Int32" ConcurrencyMode="Fixed" />
   </EntityType>
-  <EntityType Name="InformationAreaDetail">
-    <Key>
-      <PropertyRef Name="INFORMATION_AREA_NAME" />
-    </Key>
-    <Property Name="INFORMATION_AREA_NAME" Type="Edm.String" Nullable="false" MaxLength="400" />
-    <Property Name="INFORMATION_AREA_DESCRIPTION" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
-    <Property Name="REVIEW_STATUS" Type="Edm.String" MaxLength="100" ConcurrencyMode="Fixed" />
-    <Property Name="REVIEWED_BY" Type="Edm.String" MaxLength="50" ConcurrencyMode="Fixed" />
-    <Property Name="MODIFIED_BY" Type="Edm.String" MaxLength="200" ConcurrencyMode="Fixed" />
-    <Property Name="MODIFIED_ON" Type="Edm.DateTime" Precision="3" ConcurrencyMode="Fixed" />
-    <Property Name="CREATED_ON" Type="Edm.DateTime" Precision="3" ConcurrencyMode="Fixed" />
-    <Property Name="CREATED_BY" Type="Edm.String" MaxLength="50" ConcurrencyMode="Fixed" />
-    <Property Name="REVIEWED_ON" Type="Edm.DateTime" Precision="3" ConcurrencyMode="Fixed" />
-  </EntityType>
   <Association Name="FK_COR_DATASET_COR_SUBJECT_AREA">
     <End Role="COR_SUBJECT_AREA" Type="LightSwitchApplication.COR_SUBJECT_AREA" Multiplicity="1" />
     <End Role="COR_DATASET" Type="LightSwitchApplication.COR_DATASET" Multiplicity="*" />
@@ -203,10 +203,10 @@
     <EntitySet Name="COR_SUBJECT_AREA_GROUPs" EntityType="LightSwitchApplication.COR_SUBJECT_AREA_GROUP" />
     <EntitySet Name="COR_SUBJECT_AREAs" EntityType="LightSwitchApplication.COR_SUBJECT_AREA" />
     <EntitySet Name="Datasets" EntityType="LightSwitchApplication.Dataset" />
+    <EntitySet Name="InformationAreaDetails" EntityType="LightSwitchApplication.InformationAreaDetail" />
     <EntitySet Name="InformationAreas" EntityType="LightSwitchApplication.InformationArea" />
     <EntitySet Name="Subject_Area_Groups" EntityType="LightSwitchApplication.Subject_Area_Group" />
     <EntitySet Name="Subject_Areas" EntityType="LightSwitchApplication.Subject_Area" />
-    <EntitySet Name="InformationAreaDetails" EntityType="LightSwitchApplication.InformationAreaDetail" />
     <AssociationSet Name="FK_COR_DATASET_COR_SUBJECT_AREA" Association="LightSwitchApplication.FK_COR_DATASET_COR_SUBJECT_AREA">
       <End Role="COR_SUBJECT_AREA" EntitySet="COR_SUBJECT_AREAs" />
       <End Role="COR_DATASET" EntitySet="COR_DATASETs" />

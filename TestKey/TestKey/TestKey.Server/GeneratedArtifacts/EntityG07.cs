@@ -17,32 +17,32 @@ namespace LightSwitchApplication
     /// No Modeled Description Available
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
-    public sealed partial class Subject_Area_Group : global::Microsoft.LightSwitch.Framework.Base.EntityObject<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass>
+    public sealed partial class InformationArea : global::Microsoft.LightSwitch.Framework.Base.EntityObject<global::LightSwitchApplication.InformationArea, global::LightSwitchApplication.InformationArea.DetailsClass>
     {
         #region Constructors
     
         /// <summary>
-        /// Initializes a new instance of the Subject_Area_Group entity.
+        /// Initializes a new instance of the InformationArea entity.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public Subject_Area_Group()
+        public InformationArea()
             : this(null)
         {
         }
     
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public Subject_Area_Group(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.Subject_Area_Group> entitySet)
+        public InformationArea(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.InformationArea> entitySet)
             : base(entitySet)
         {
-            global::LightSwitchApplication.Subject_Area_Group.DetailsClass.Initialize(this);
+            global::LightSwitchApplication.InformationArea.DetailsClass.Initialize(this);
         }
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Subject_Area_Group_Created();
+        partial void InformationArea_Created();
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Subject_Area_Group_AllowSaveWithErrors(ref bool result);
+        partial void InformationArea_AllowSaveWithErrors(ref bool result);
     
         #endregion
     
@@ -87,11 +87,11 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.Subject_Area_Group.DetailsClass.GetValue(this, global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties.INFORMATION_AREA_NAME);
+                return global::LightSwitchApplication.InformationArea.DetailsClass.GetValue(this, global::LightSwitchApplication.InformationArea.DetailsClass.PropertySetProperties.INFORMATION_AREA_NAME);
             }
             set
             {
-                global::LightSwitchApplication.Subject_Area_Group.DetailsClass.SetValue(this, global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties.INFORMATION_AREA_NAME, value);
+                global::LightSwitchApplication.InformationArea.DetailsClass.SetValue(this, global::LightSwitchApplication.InformationArea.DetailsClass.PropertySetProperties.INFORMATION_AREA_NAME, value);
             }
         }
         
@@ -107,39 +107,15 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public string SUBJECT_AREA_GROUP_NAME
-        {
-            get
-            {
-                return global::LightSwitchApplication.Subject_Area_Group.DetailsClass.GetValue(this, global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties.SUBJECT_AREA_GROUP_NAME);
-            }
-            set
-            {
-                global::LightSwitchApplication.Subject_Area_Group.DetailsClass.SetValue(this, global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties.SUBJECT_AREA_GROUP_NAME, value);
-            }
-        }
-        
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void SUBJECT_AREA_GROUP_NAME_IsReadOnly(ref bool result);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void SUBJECT_AREA_GROUP_NAME_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void SUBJECT_AREA_GROUP_NAME_Changed();
-
-        /// <summary>
-        /// No Modeled Description Available
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::System.Nullable<int> Cnt
         {
             get
             {
-                return global::LightSwitchApplication.Subject_Area_Group.DetailsClass.GetValue(this, global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties.Cnt);
+                return global::LightSwitchApplication.InformationArea.DetailsClass.GetValue(this, global::LightSwitchApplication.InformationArea.DetailsClass.PropertySetProperties.Cnt);
             }
             set
             {
-                global::LightSwitchApplication.Subject_Area_Group.DetailsClass.SetValue(this, global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties.Cnt, value);
+                global::LightSwitchApplication.InformationArea.DetailsClass.SetValue(this, global::LightSwitchApplication.InformationArea.DetailsClass.PropertySetProperties.Cnt, value);
             }
         }
         
@@ -159,37 +135,37 @@ namespace LightSwitchApplication
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public sealed class DetailsClass : global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<
-                global::LightSwitchApplication.Subject_Area_Group,
-                global::LightSwitchApplication.Subject_Area_Group.DetailsClass,
-                global::LightSwitchApplication.Subject_Area_Group.DetailsClass.IImplementation,
-                global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySet,
-                global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass>,
-                global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass>>
+                global::LightSwitchApplication.InformationArea,
+                global::LightSwitchApplication.InformationArea.DetailsClass,
+                global::LightSwitchApplication.InformationArea.DetailsClass.IImplementation,
+                global::LightSwitchApplication.InformationArea.DetailsClass.PropertySet,
+                global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.InformationArea, global::LightSwitchApplication.InformationArea.DetailsClass>,
+                global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.InformationArea, global::LightSwitchApplication.InformationArea.DetailsClass>>
         {
     
             static DetailsClass()
             {
-                var initializeEntry = global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties.INFORMATION_AREA_NAME;
+                var initializeEntry = global::LightSwitchApplication.InformationArea.DetailsClass.PropertySetProperties.INFORMATION_AREA_NAME;
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private static readonly global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass>.Entry
-                __Subject_Area_GroupEntry = new global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass>.Entry(
-                    global::LightSwitchApplication.Subject_Area_Group.DetailsClass.__Subject_Area_Group_CreateNew,
-                    global::LightSwitchApplication.Subject_Area_Group.DetailsClass.__Subject_Area_Group_Created,
-                    global::LightSwitchApplication.Subject_Area_Group.DetailsClass.__Subject_Area_Group_AllowSaveWithErrors);
-            private static global::LightSwitchApplication.Subject_Area_Group __Subject_Area_Group_CreateNew(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.Subject_Area_Group> es)
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.InformationArea, global::LightSwitchApplication.InformationArea.DetailsClass>.Entry
+                __InformationAreaEntry = new global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.InformationArea, global::LightSwitchApplication.InformationArea.DetailsClass>.Entry(
+                    global::LightSwitchApplication.InformationArea.DetailsClass.__InformationArea_CreateNew,
+                    global::LightSwitchApplication.InformationArea.DetailsClass.__InformationArea_Created,
+                    global::LightSwitchApplication.InformationArea.DetailsClass.__InformationArea_AllowSaveWithErrors);
+            private static global::LightSwitchApplication.InformationArea __InformationArea_CreateNew(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.InformationArea> es)
             {
-                return new global::LightSwitchApplication.Subject_Area_Group(es);
+                return new global::LightSwitchApplication.InformationArea(es);
             }
-            private static void __Subject_Area_Group_Created(global::LightSwitchApplication.Subject_Area_Group e)
+            private static void __InformationArea_Created(global::LightSwitchApplication.InformationArea e)
             {
-                e.Subject_Area_Group_Created();
+                e.InformationArea_Created();
             }
-            private static bool __Subject_Area_Group_AllowSaveWithErrors(global::LightSwitchApplication.Subject_Area_Group e)
+            private static bool __InformationArea_AllowSaveWithErrors(global::LightSwitchApplication.InformationArea e)
             {
                 bool result = false;
-                e.Subject_Area_Group_AllowSaveWithErrors(ref result);
+                e.InformationArea_AllowSaveWithErrors(ref result);
                 return result;
             }
     
@@ -197,7 +173,7 @@ namespace LightSwitchApplication
             {
             }
     
-            public new global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass> Commands
+            public new global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.InformationArea, global::LightSwitchApplication.InformationArea.DetailsClass> Commands
             {
                 get
                 {
@@ -205,7 +181,7 @@ namespace LightSwitchApplication
                 }
             }
     
-            public new global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass> Methods
+            public new global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.InformationArea, global::LightSwitchApplication.InformationArea.DetailsClass> Methods
             {
                 get
                 {
@@ -213,7 +189,7 @@ namespace LightSwitchApplication
                 }
             }
     
-            public new global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySet Properties
+            public new global::LightSwitchApplication.InformationArea.DetailsClass.PropertySet Properties
             {
                 get
                 {
@@ -225,34 +201,26 @@ namespace LightSwitchApplication
             [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1034:NestedTypesShouldNotBeVisible")]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public sealed class PropertySet : global::Microsoft.LightSwitch.Details.Framework.Base.EntityPropertySet<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass>
+            public sealed class PropertySet : global::Microsoft.LightSwitch.Details.Framework.Base.EntityPropertySet<global::LightSwitchApplication.InformationArea, global::LightSwitchApplication.InformationArea.DetailsClass>
             {
     
                 public PropertySet() : base()
                 {
                 }
     
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass, string> INFORMATION_AREA_NAME
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.InformationArea, global::LightSwitchApplication.InformationArea.DetailsClass, string> INFORMATION_AREA_NAME
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties.INFORMATION_AREA_NAME) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass, string>;
+                        return base.GetItem(global::LightSwitchApplication.InformationArea.DetailsClass.PropertySetProperties.INFORMATION_AREA_NAME) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.InformationArea, global::LightSwitchApplication.InformationArea.DetailsClass, string>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass, string> SUBJECT_AREA_GROUP_NAME
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.InformationArea, global::LightSwitchApplication.InformationArea.DetailsClass, global::System.Nullable<int>> Cnt
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties.SUBJECT_AREA_GROUP_NAME) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass, string>;
-                    }
-                }
-                
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass, global::System.Nullable<int>> Cnt
-                {
-                    get
-                    {
-                        return base.GetItem(global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties.Cnt) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass, global::System.Nullable<int>>;
+                        return base.GetItem(global::LightSwitchApplication.InformationArea.DetailsClass.PropertySetProperties.Cnt) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.InformationArea, global::LightSwitchApplication.InformationArea.DetailsClass, global::System.Nullable<int>>;
                     }
                 }
                 
@@ -263,7 +231,6 @@ namespace LightSwitchApplication
             public interface IImplementation : global::Microsoft.LightSwitch.Internal.IEntityImplementation
             {
                 new string INFORMATION_AREA_NAME { get; set; }
-                new string SUBJECT_AREA_GROUP_NAME { get; set; }
                 new global::System.Nullable<int> Cnt { get; set; }
             }
             #pragma warning restore 109
@@ -275,112 +242,75 @@ namespace LightSwitchApplication
             {
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass, string>.Entry
-                    INFORMATION_AREA_NAME = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass, string>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.InformationArea, global::LightSwitchApplication.InformationArea.DetailsClass, string>.Entry
+                    INFORMATION_AREA_NAME = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.InformationArea, global::LightSwitchApplication.InformationArea.DetailsClass, string>.Entry(
                         "INFORMATION_AREA_NAME",
-                        global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties._INFORMATION_AREA_NAME_Stub,
-                        global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties._INFORMATION_AREA_NAME_ComputeIsReadOnly,
-                        global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties._INFORMATION_AREA_NAME_Validate,
-                        global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties._INFORMATION_AREA_NAME_GetImplementationValue,
-                        global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties._INFORMATION_AREA_NAME_SetImplementationValue,
-                        global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties._INFORMATION_AREA_NAME_OnValueChanged);
-                private static void _INFORMATION_AREA_NAME_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Subject_Area_Group.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass, string>.Data> c, global::LightSwitchApplication.Subject_Area_Group.DetailsClass d, object sf)
+                        global::LightSwitchApplication.InformationArea.DetailsClass.PropertySetProperties._INFORMATION_AREA_NAME_Stub,
+                        global::LightSwitchApplication.InformationArea.DetailsClass.PropertySetProperties._INFORMATION_AREA_NAME_ComputeIsReadOnly,
+                        global::LightSwitchApplication.InformationArea.DetailsClass.PropertySetProperties._INFORMATION_AREA_NAME_Validate,
+                        global::LightSwitchApplication.InformationArea.DetailsClass.PropertySetProperties._INFORMATION_AREA_NAME_GetImplementationValue,
+                        global::LightSwitchApplication.InformationArea.DetailsClass.PropertySetProperties._INFORMATION_AREA_NAME_SetImplementationValue,
+                        global::LightSwitchApplication.InformationArea.DetailsClass.PropertySetProperties._INFORMATION_AREA_NAME_OnValueChanged);
+                private static void _INFORMATION_AREA_NAME_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.InformationArea.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.InformationArea, global::LightSwitchApplication.InformationArea.DetailsClass, string>.Data> c, global::LightSwitchApplication.InformationArea.DetailsClass d, object sf)
                 {
                     c(d, ref d._INFORMATION_AREA_NAME, sf);
                 }
-                private static bool _INFORMATION_AREA_NAME_ComputeIsReadOnly(global::LightSwitchApplication.Subject_Area_Group e)
+                private static bool _INFORMATION_AREA_NAME_ComputeIsReadOnly(global::LightSwitchApplication.InformationArea e)
                 {
                     bool result = false;
                     e.INFORMATION_AREA_NAME_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _INFORMATION_AREA_NAME_Validate(global::LightSwitchApplication.Subject_Area_Group e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _INFORMATION_AREA_NAME_Validate(global::LightSwitchApplication.InformationArea e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.INFORMATION_AREA_NAME_Validate(r);
                 }
-                private static string _INFORMATION_AREA_NAME_GetImplementationValue(global::LightSwitchApplication.Subject_Area_Group.DetailsClass d)
+                private static string _INFORMATION_AREA_NAME_GetImplementationValue(global::LightSwitchApplication.InformationArea.DetailsClass d)
                 {
                     return d.ImplementationEntity.INFORMATION_AREA_NAME;
                 }
-                private static void _INFORMATION_AREA_NAME_SetImplementationValue(global::LightSwitchApplication.Subject_Area_Group.DetailsClass d, string v)
+                private static void _INFORMATION_AREA_NAME_SetImplementationValue(global::LightSwitchApplication.InformationArea.DetailsClass d, string v)
                 {
                     d.ImplementationEntity.INFORMATION_AREA_NAME = v;
                 }
-                private static void _INFORMATION_AREA_NAME_OnValueChanged(global::LightSwitchApplication.Subject_Area_Group e)
+                private static void _INFORMATION_AREA_NAME_OnValueChanged(global::LightSwitchApplication.InformationArea e)
                 {
                     e.INFORMATION_AREA_NAME_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass, string>.Entry
-                    SUBJECT_AREA_GROUP_NAME = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass, string>.Entry(
-                        "SUBJECT_AREA_GROUP_NAME",
-                        global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties._SUBJECT_AREA_GROUP_NAME_Stub,
-                        global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties._SUBJECT_AREA_GROUP_NAME_ComputeIsReadOnly,
-                        global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties._SUBJECT_AREA_GROUP_NAME_Validate,
-                        global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties._SUBJECT_AREA_GROUP_NAME_GetImplementationValue,
-                        global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties._SUBJECT_AREA_GROUP_NAME_SetImplementationValue,
-                        global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties._SUBJECT_AREA_GROUP_NAME_OnValueChanged);
-                private static void _SUBJECT_AREA_GROUP_NAME_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Subject_Area_Group.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass, string>.Data> c, global::LightSwitchApplication.Subject_Area_Group.DetailsClass d, object sf)
-                {
-                    c(d, ref d._SUBJECT_AREA_GROUP_NAME, sf);
-                }
-                private static bool _SUBJECT_AREA_GROUP_NAME_ComputeIsReadOnly(global::LightSwitchApplication.Subject_Area_Group e)
-                {
-                    bool result = false;
-                    e.SUBJECT_AREA_GROUP_NAME_IsReadOnly(ref result);
-                    return result;
-                }
-                private static void _SUBJECT_AREA_GROUP_NAME_Validate(global::LightSwitchApplication.Subject_Area_Group e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
-                {
-                    e.SUBJECT_AREA_GROUP_NAME_Validate(r);
-                }
-                private static string _SUBJECT_AREA_GROUP_NAME_GetImplementationValue(global::LightSwitchApplication.Subject_Area_Group.DetailsClass d)
-                {
-                    return d.ImplementationEntity.SUBJECT_AREA_GROUP_NAME;
-                }
-                private static void _SUBJECT_AREA_GROUP_NAME_SetImplementationValue(global::LightSwitchApplication.Subject_Area_Group.DetailsClass d, string v)
-                {
-                    d.ImplementationEntity.SUBJECT_AREA_GROUP_NAME = v;
-                }
-                private static void _SUBJECT_AREA_GROUP_NAME_OnValueChanged(global::LightSwitchApplication.Subject_Area_Group e)
-                {
-                    e.SUBJECT_AREA_GROUP_NAME_Changed();
-                }
-    
-                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass, global::System.Nullable<int>>.Entry
-                    Cnt = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass, global::System.Nullable<int>>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.InformationArea, global::LightSwitchApplication.InformationArea.DetailsClass, global::System.Nullable<int>>.Entry
+                    Cnt = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.InformationArea, global::LightSwitchApplication.InformationArea.DetailsClass, global::System.Nullable<int>>.Entry(
                         "Cnt",
-                        global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties._Cnt_Stub,
-                        global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties._Cnt_ComputeIsReadOnly,
-                        global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties._Cnt_Validate,
-                        global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties._Cnt_GetImplementationValue,
-                        global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties._Cnt_SetImplementationValue,
-                        global::LightSwitchApplication.Subject_Area_Group.DetailsClass.PropertySetProperties._Cnt_OnValueChanged);
-                private static void _Cnt_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Subject_Area_Group.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass, global::System.Nullable<int>>.Data> c, global::LightSwitchApplication.Subject_Area_Group.DetailsClass d, object sf)
+                        global::LightSwitchApplication.InformationArea.DetailsClass.PropertySetProperties._Cnt_Stub,
+                        global::LightSwitchApplication.InformationArea.DetailsClass.PropertySetProperties._Cnt_ComputeIsReadOnly,
+                        global::LightSwitchApplication.InformationArea.DetailsClass.PropertySetProperties._Cnt_Validate,
+                        global::LightSwitchApplication.InformationArea.DetailsClass.PropertySetProperties._Cnt_GetImplementationValue,
+                        global::LightSwitchApplication.InformationArea.DetailsClass.PropertySetProperties._Cnt_SetImplementationValue,
+                        global::LightSwitchApplication.InformationArea.DetailsClass.PropertySetProperties._Cnt_OnValueChanged);
+                private static void _Cnt_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.InformationArea.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.InformationArea, global::LightSwitchApplication.InformationArea.DetailsClass, global::System.Nullable<int>>.Data> c, global::LightSwitchApplication.InformationArea.DetailsClass d, object sf)
                 {
                     c(d, ref d._Cnt, sf);
                 }
-                private static bool _Cnt_ComputeIsReadOnly(global::LightSwitchApplication.Subject_Area_Group e)
+                private static bool _Cnt_ComputeIsReadOnly(global::LightSwitchApplication.InformationArea e)
                 {
                     bool result = false;
                     e.Cnt_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _Cnt_Validate(global::LightSwitchApplication.Subject_Area_Group e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _Cnt_Validate(global::LightSwitchApplication.InformationArea e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.Cnt_Validate(r);
                 }
-                private static global::System.Nullable<int> _Cnt_GetImplementationValue(global::LightSwitchApplication.Subject_Area_Group.DetailsClass d)
+                private static global::System.Nullable<int> _Cnt_GetImplementationValue(global::LightSwitchApplication.InformationArea.DetailsClass d)
                 {
                     return d.ImplementationEntity.Cnt;
                 }
-                private static void _Cnt_SetImplementationValue(global::LightSwitchApplication.Subject_Area_Group.DetailsClass d, global::System.Nullable<int> v)
+                private static void _Cnt_SetImplementationValue(global::LightSwitchApplication.InformationArea.DetailsClass d, global::System.Nullable<int> v)
                 {
                     d.ImplementationEntity.Cnt = v;
                 }
-                private static void _Cnt_OnValueChanged(global::LightSwitchApplication.Subject_Area_Group e)
+                private static void _Cnt_OnValueChanged(global::LightSwitchApplication.InformationArea e)
                 {
                     e.Cnt_Changed();
                 }
@@ -388,13 +318,10 @@ namespace LightSwitchApplication
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass, string>.Data _INFORMATION_AREA_NAME;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.InformationArea, global::LightSwitchApplication.InformationArea.DetailsClass, string>.Data _INFORMATION_AREA_NAME;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass, string>.Data _SUBJECT_AREA_GROUP_NAME;
-            
-            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Subject_Area_Group, global::LightSwitchApplication.Subject_Area_Group.DetailsClass, global::System.Nullable<int>>.Data _Cnt;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.InformationArea, global::LightSwitchApplication.InformationArea.DetailsClass, global::System.Nullable<int>>.Data _Cnt;
             
         }
     

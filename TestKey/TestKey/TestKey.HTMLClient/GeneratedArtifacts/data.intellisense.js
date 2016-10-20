@@ -90,6 +90,14 @@
         created: [lightSwitchApplication.Dataset]
     });
 
+    msls._addEntryPoints(lightSwitchApplication.InformationAreaDetail, {
+        /// <field>
+        /// Called when a new informationAreaDetail is created.
+        /// <br/>created(msls.application.InformationAreaDetail entity)
+        /// </field>
+        created: [lightSwitchApplication.InformationAreaDetail]
+    });
+
     msls._addEntryPoints(lightSwitchApplication.InformationArea, {
         /// <field>
         /// Called when a new informationArea is created.
@@ -112,14 +120,6 @@
         /// <br/>created(msls.application.Subject_Area entity)
         /// </field>
         created: [lightSwitchApplication.Subject_Area]
-    });
-
-    msls._addEntryPoints(lightSwitchApplication.InformationAreaDetail, {
-        /// <field>
-        /// Called when a new informationAreaDetail is created.
-        /// <br/>created(msls.application.InformationAreaDetail entity)
-        /// </field>
-        created: [lightSwitchApplication.InformationAreaDetail]
     });
 
 }(msls.application));

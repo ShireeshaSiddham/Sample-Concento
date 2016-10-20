@@ -6539,14 +6539,25 @@
                                         "property": { "__id": ":RootControl/Properties[Tap]" },
                                         "source":
                                         {
-                                          "target": { "__id": "BrowseCOR_INFORMATION_AREAs/Methods[showDialog]" },
+                                          "target": { "__id": "!module/Methods[showViewInformationAreaDetails]" },
                                           "arguments":
                                           [
                                             {
-                                              "parameter": { "__id": "BrowseCOR_INFORMATION_AREAs/Methods[showDialog]/Parameters[dialogName]" },
+                                              "parameter": { "__id": "!module/Methods[showViewInformationAreaDetails]/Parameters[InformationAreaName]" },
                                               "value":
                                               {
-                                                "value": "Group3"
+                                                "links":
+                                                [
+                                                  {
+                                                    "member": { "__id": "BrowseCOR_INFORMATION_AREAs/Properties[InformationAreas]" }
+                                                  },
+                                                  {
+                                                    "member": { "__id": "CollectionView$InformationArea/Properties[selectedItem]" }
+                                                  },
+                                                  {
+                                                    "member": { "__id": "InformationArea/Properties[INFORMATION_AREA_NAME]" }
+                                                  }
+                                                ]
                                               }
                                             }
                                           ]
@@ -12249,6 +12260,928 @@
               "propertyType": { "__id": "InformationAreaDetail" }
             }
           ]
+        },
+        {
+          "displayName": "Information Area",
+          "id": "ViewInformationAreaDetails",
+          "name": "ViewInformationAreaDetails",
+          "launchMode": "Single",
+          ":@SaveChangesTo":
+          {
+            "property": { "__id": "DataWorkspace/Members[DDATAPOLICYData]" }
+          },
+          "rootContentItem":
+          {
+            "displayName": "Information Area",
+            "name": "RootContentItem",
+            "kind": "Screen",
+            "view": { "__id": ":Screen" },
+            "childContentItems":
+            [
+              {
+                "displayName": "Tabs",
+                "name": "Tabs",
+                "kind": "Group",
+                "view": { "__id": ":TabPages" },
+                "childContentItems":
+                [
+                  {
+                    "displayName": "Information Area List",
+                    "name": "InformationAreaList",
+                    "kind": "Tab",
+                    "view": { "__id": ":RowsLayout" },
+                    "childContentItems":
+                    [
+                      {
+                        "displayName": "Group",
+                        "name": "Group",
+                        "kind": "Group",
+                        "view": { "__id": ":ColumnsLayout" },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "Edit",
+                            "name": "Edit",
+                            "kind": "Command",
+                            "view": { "__id": ":Button" },
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootControl/Properties[Tap]" },
+                                "source":
+                                {
+                                  "target": { "__id": "!module/Methods[showEditInformationArea]" },
+                                  "arguments":
+                                  [
+                                    {
+                                      "parameter": { "__id": "!module/Methods[showEditInformationArea]/Parameters[InformationAreaName]" },
+                                      "value":
+                                      {
+                                        "links":
+                                        [
+                                          {
+                                            "member": { "__id": "ViewInformationAreaDetails/Properties[InformationAreaName]" }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "displayName": "Delete",
+                            "name": "Delete",
+                            "kind": "Command",
+                            "view": { "__id": ":Button" },
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootControl/Properties[Tap]" },
+                                "source":
+                                {
+                                  "target": { "__id": "ViewInformationAreaDetails/Methods[Delete]" }
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "COR INFORMATION AREAs",
+                        "name": "COR_INFORMATION_AREAs",
+                        "kind": "Collection",
+                        "view": { "__id": ":TileList" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "ViewInformationAreaDetails/Properties[COR_INFORMATION_AREAs]" }
+                        },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "COR INFORMATION AREA",
+                            "name": "COR_INFORMATION_AREAsTemplate",
+                            "kind": "Details",
+                            "view": { "__id": ":RowsLayout" },
+                            "dataSource":
+                            {
+                              "links":
+                              [
+                              ]
+                            },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "INFORMATION AREA ID",
+                                "name": "INFORMATION_AREA_ID",
+                                "isHidden": true,
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[INFORMATION_AREA_ID]" }
+                                }
+                              },
+                              {
+                                "displayName": "INFORMATION AREA NAME",
+                                "name": "INFORMATION_AREA_NAME",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[INFORMATION_AREA_NAME]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "INFORMATION AREA DESCRIPTION",
+                                "name": "INFORMATION_AREA_DESCRIPTION",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[INFORMATION_AREA_DESCRIPTION]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "INFORMATION ARCHITECT ID",
+                                "name": "INFORMATION_ARCHITECT_ID",
+                                "isHidden": true,
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[INFORMATION_ARCHITECT_ID]" }
+                                }
+                              },
+                              {
+                                "displayName": "REVIEW STATUS",
+                                "name": "REVIEW_STATUS",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[REVIEW_STATUS]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "OLD REVIEW STATUS",
+                                "name": "OLD_REVIEW_STATUS",
+                                "isHidden": true,
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[OLD_REVIEW_STATUS]" }
+                                }
+                              },
+                              {
+                                "displayName": "REVIEWED BY",
+                                "name": "REVIEWED_BY",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[REVIEWED_BY]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "REVIEWED ON",
+                                "name": "REVIEWED_ON",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[REVIEWED_ON]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "CREATED BY",
+                                "name": "CREATED_BY",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[CREATED_BY]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "CREATED ON",
+                                "name": "CREATED_ON",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[CREATED_ON]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "MODIFIED ON",
+                                "name": "MODIFIED_ON",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[MODIFIED_ON]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "MODIFIED BY",
+                                "name": "MODIFIED_BY",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[MODIFIED_BY]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "commandItems":
+                    [
+                      {
+                        "displayName": "Search",
+                        "name": "SearchInformationAreas",
+                        "kind": "Command",
+                        "view": { "__id": ":CommandBarButton" },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "links":
+                              [
+                                {
+                                  "member": { "__id": "ViewInformationAreaDetails/Properties[InformationAreas]" }
+                                },
+                                {
+                                  "target": { "__id": "CollectionView$InformationArea/Methods[showSearch]" }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "property": { "__id": ":RootCommand/Properties[Icon]" },
+                            "value": "msls-search"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "propertySources":
+                [
+                  {
+                    "property": { "__id": ":RootControl/Properties[BrowseOnly]" },
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "displayName": "Popups",
+                "name": "Popups",
+                "kind": "Group",
+                "view": { "__id": ":DialogPages" }
+              }
+            ],
+            "propertySources":
+            [
+              {
+                "property": { "__id": ":Screen/Properties[ShowAsDialog]" },
+                "value": true
+              },
+              {
+                "property": { "__id": ":Screen/Properties[HideTabTitles]" },
+                "value": true
+              }
+            ]
+          },
+          "methods":
+          [
+            {
+              "id": "ViewInformationAreaDetails/Methods[showTab]",
+              "name": "showTab",
+              "parameters":
+              [
+                {
+                  "id": "ViewInformationAreaDetails/Methods[showTab]/Parameters[tabName]",
+                  "name": "tabName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            },
+            {
+              "id": "ViewInformationAreaDetails/Methods[showDialog]",
+              "name": "showDialog",
+              "parameters":
+              [
+                {
+                  "id": "ViewInformationAreaDetails/Methods[showDialog]/Parameters[dialogName]",
+                  "name": "dialogName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            },
+            {
+              "id": "ViewInformationAreaDetails/Methods[Edit]",
+              "name": "Edit"
+            },
+            {
+              "id": "ViewInformationAreaDetails/Methods[Delete]",
+              "name": "Delete"
+            }
+          ],
+          "properties":
+          [
+            {
+              "id": "ViewInformationAreaDetails/Properties[InformationAreas]",
+              "name": "InformationAreas",
+              "pageSize": 45,
+              "elementType": { "__id": "InformationArea" },
+              "propertyType": { "__id": "CollectionView$InformationArea" },
+              "query":
+              {
+                "id": "ViewInformationAreaDetails/Properties[InformationAreas]/Query",
+                "name": "InformationAreasQuery",
+                "elementType": { "__id": "InformationArea" },
+                "returnType": { "__id": "InformationArea*" },
+                "source":
+                {
+                  "member": { "__id": "DDATAPOLICYData/Members[InformationAreas]" }
+                }
+              },
+              "source":
+              {
+                "target": { "__id": "ViewInformationAreaDetails/Properties[InformationAreas]/Query" }
+              }
+            },
+            {
+              "id": "ViewInformationAreaDetails/Properties[InformationAreaName]",
+              "name": "InformationAreaName",
+              "elementType": { "__id": ":String" },
+              "propertyType": { "__id": ":String" },
+              ":@Required": { },
+              ":@IsParameter": { }
+            },
+            {
+              "id": "ViewInformationAreaDetails/Properties[COR_INFORMATION_AREAs]",
+              "name": "COR_INFORMATION_AREAs",
+              "pageSize": 45,
+              "elementType": { "__id": "COR_INFORMATION_AREA" },
+              "propertyType": { "__id": "CollectionView$COR_INFORMATION_AREA" },
+              "query":
+              {
+                "id": "ViewInformationAreaDetails/Properties[COR_INFORMATION_AREAs]/Query",
+                "name": "COR_INFORMATION_AREAsQuery",
+                "elementType": { "__id": "COR_INFORMATION_AREA" },
+                "returnType": { "__id": "COR_INFORMATION_AREA*" },
+                "filterExpression":
+                {
+                  "nodeType": "Equal",
+                  "left":
+                  {
+                    "links":
+                    [
+                      {
+                        "member": { "__id": "COR_INFORMATION_AREA/Properties[INFORMATION_AREA_NAME]" }
+                      }
+                    ]
+                  },
+                  "right":
+                  {
+                    "parameter": { "__id": "ViewInformationAreaDetails/Properties[COR_INFORMATION_AREAs]/Query/Parameters[INFORMATION_AREA_NAME]" }
+                  }
+                },
+                "source":
+                {
+                  "member": { "__id": "DDATAPOLICYData/Members[COR_INFORMATION_AREAs]" }
+                },
+                "parameters":
+                [
+                  {
+                    "id": "ViewInformationAreaDetails/Properties[COR_INFORMATION_AREAs]/Query/Parameters[INFORMATION_AREA_NAME]",
+                    "name": "INFORMATION_AREA_NAME",
+                    "parameterType": { "__id": ":String?" }
+                  }
+                ]
+              },
+              "source":
+              {
+                "target": { "__id": "ViewInformationAreaDetails/Properties[COR_INFORMATION_AREAs]/Query" },
+                "arguments":
+                [
+                  {
+                    "parameter": { "__id": "ViewInformationAreaDetails/Properties[COR_INFORMATION_AREAs]/Query/Parameters[INFORMATION_AREA_NAME]" },
+                    "value":
+                    {
+                      "links":
+                      [
+                        {
+                          "member": { "__id": "ViewInformationAreaDetails/Properties[InformationAreaName]" }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "displayName": "Information Area",
+          "id": "EditInformationArea",
+          "name": "EditInformationArea",
+          "launchMode": "Single",
+          ":@SaveChangesTo":
+          {
+            "property": { "__id": "DataWorkspace/Members[DDATAPOLICYData]" }
+          },
+          "rootContentItem":
+          {
+            "displayName": "Information Area",
+            "name": "RootContentItem",
+            "kind": "Screen",
+            "view": { "__id": ":Screen" },
+            "childContentItems":
+            [
+              {
+                "displayName": "Tabs",
+                "name": "Tabs",
+                "kind": "Group",
+                "view": { "__id": ":TabPages" },
+                "childContentItems":
+                [
+                  {
+                    "displayName": "Information Area List",
+                    "name": "InformationAreaList",
+                    "kind": "Tab",
+                    "view": { "__id": ":RowsLayout" },
+                    "childContentItems":
+                    [
+                      {
+                        "displayName": "COR INFORMATION AREAs",
+                        "name": "COR_INFORMATION_AREAs",
+                        "kind": "Collection",
+                        "view": { "__id": ":TileList" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "EditInformationArea/Properties[COR_INFORMATION_AREAs]" }
+                        },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "COR INFORMATION AREA",
+                            "name": "COR_INFORMATION_AREAsTemplate",
+                            "kind": "Details",
+                            "view": { "__id": ":RowsLayout" },
+                            "dataSource":
+                            {
+                              "links":
+                              [
+                              ]
+                            },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "INFORMATION AREA ID",
+                                "name": "INFORMATION_AREA_ID",
+                                "isHidden": true,
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[INFORMATION_AREA_ID]" }
+                                }
+                              },
+                              {
+                                "displayName": "INFORMATION AREA NAME",
+                                "name": "INFORMATION_AREA_NAME",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[INFORMATION_AREA_NAME]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "INFORMATION AREA DESCRIPTION",
+                                "name": "INFORMATION_AREA_DESCRIPTION",
+                                "kind": "Value",
+                                "view": { "__id": ":TextArea" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[INFORMATION_AREA_DESCRIPTION]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "INFORMATION ARCHITECT ID",
+                                "name": "INFORMATION_ARCHITECT_ID",
+                                "isHidden": true,
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[INFORMATION_ARCHITECT_ID]" }
+                                }
+                              },
+                              {
+                                "displayName": "REVIEW STATUS",
+                                "name": "REVIEW_STATUS",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[REVIEW_STATUS]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "OLD REVIEW STATUS",
+                                "name": "OLD_REVIEW_STATUS",
+                                "isHidden": true,
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[OLD_REVIEW_STATUS]" }
+                                }
+                              },
+                              {
+                                "displayName": "REVIEWED BY",
+                                "name": "REVIEWED_BY",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[REVIEWED_BY]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "REVIEWED ON",
+                                "name": "REVIEWED_ON",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[REVIEWED_ON]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "CREATED BY",
+                                "name": "CREATED_BY",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[CREATED_BY]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "CREATED ON",
+                                "name": "CREATED_ON",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[CREATED_ON]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "MODIFIED ON",
+                                "name": "MODIFIED_ON",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[MODIFIED_ON]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "MODIFIED BY",
+                                "name": "MODIFIED_BY",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[MODIFIED_BY]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "commandItems":
+                    [
+                      {
+                        "displayName": "Search",
+                        "name": "SearchInformationAreas",
+                        "kind": "Command",
+                        "view": { "__id": ":CommandBarButton" },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "links":
+                              [
+                                {
+                                  "member": { "__id": "EditInformationArea/Properties[InformationAreas]" }
+                                },
+                                {
+                                  "target": { "__id": "CollectionView$InformationArea/Methods[showSearch]" }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "property": { "__id": ":RootCommand/Properties[Icon]" },
+                            "value": "msls-search"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "propertySources":
+                [
+                  {
+                    "property": { "__id": ":RootControl/Properties[BrowseOnly]" },
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "displayName": "Popups",
+                "name": "Popups",
+                "kind": "Group",
+                "view": { "__id": ":DialogPages" }
+              }
+            ],
+            "propertySources":
+            [
+              {
+                "property": { "__id": ":Screen/Properties[ShowAsDialog]" },
+                "value": true
+              },
+              {
+                "property": { "__id": ":Screen/Properties[HideTabTitles]" },
+                "value": true
+              }
+            ]
+          },
+          "methods":
+          [
+            {
+              "id": "EditInformationArea/Methods[showTab]",
+              "name": "showTab",
+              "parameters":
+              [
+                {
+                  "id": "EditInformationArea/Methods[showTab]/Parameters[tabName]",
+                  "name": "tabName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            },
+            {
+              "id": "EditInformationArea/Methods[showDialog]",
+              "name": "showDialog",
+              "parameters":
+              [
+                {
+                  "id": "EditInformationArea/Methods[showDialog]/Parameters[dialogName]",
+                  "name": "dialogName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            }
+          ],
+          "properties":
+          [
+            {
+              "id": "EditInformationArea/Properties[InformationAreas]",
+              "name": "InformationAreas",
+              "pageSize": 45,
+              "elementType": { "__id": "InformationArea" },
+              "propertyType": { "__id": "CollectionView$InformationArea" },
+              "query":
+              {
+                "id": "EditInformationArea/Properties[InformationAreas]/Query",
+                "name": "InformationAreasQuery",
+                "elementType": { "__id": "InformationArea" },
+                "returnType": { "__id": "InformationArea*" },
+                "source":
+                {
+                  "member": { "__id": "DDATAPOLICYData/Members[InformationAreas]" }
+                }
+              },
+              "source":
+              {
+                "target": { "__id": "EditInformationArea/Properties[InformationAreas]/Query" }
+              }
+            },
+            {
+              "id": "EditInformationArea/Properties[COR_INFORMATION_AREAs]",
+              "name": "COR_INFORMATION_AREAs",
+              "pageSize": 45,
+              "elementType": { "__id": "COR_INFORMATION_AREA" },
+              "propertyType": { "__id": "CollectionView$COR_INFORMATION_AREA" },
+              "query":
+              {
+                "id": "EditInformationArea/Properties[COR_INFORMATION_AREAs]/Query",
+                "name": "COR_INFORMATION_AREAsQuery",
+                "elementType": { "__id": "COR_INFORMATION_AREA" },
+                "returnType": { "__id": "COR_INFORMATION_AREA*" },
+                "filterExpression":
+                {
+                  "nodeType": "Equal",
+                  "left":
+                  {
+                    "links":
+                    [
+                      {
+                        "member": { "__id": "COR_INFORMATION_AREA/Properties[INFORMATION_AREA_NAME]" }
+                      }
+                    ]
+                  },
+                  "right":
+                  {
+                    "parameter": { "__id": "EditInformationArea/Properties[COR_INFORMATION_AREAs]/Query/Parameters[INFORMATION_AREA_NAME]" }
+                  }
+                },
+                "source":
+                {
+                  "member": { "__id": "DDATAPOLICYData/Members[COR_INFORMATION_AREAs]" }
+                },
+                "parameters":
+                [
+                  {
+                    "id": "EditInformationArea/Properties[COR_INFORMATION_AREAs]/Query/Parameters[INFORMATION_AREA_NAME]",
+                    "name": "INFORMATION_AREA_NAME",
+                    "parameterType": { "__id": ":String?" }
+                  }
+                ]
+              },
+              "source":
+              {
+                "target": { "__id": "EditInformationArea/Properties[COR_INFORMATION_AREAs]/Query" },
+                "arguments":
+                [
+                  {
+                    "parameter": { "__id": "EditInformationArea/Properties[COR_INFORMATION_AREAs]/Query/Parameters[INFORMATION_AREA_NAME]" },
+                    "value":
+                    {
+                      "links":
+                      [
+                        {
+                          "member": { "__id": "EditInformationArea/Properties[InformationAreaName]" }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "EditInformationArea/Properties[InformationAreaName]",
+              "name": "InformationAreaName",
+              "elementType": { "__id": ":String" },
+              "propertyType": { "__id": ":String" },
+              ":@Required": { },
+              ":@IsParameter": { }
+            }
+          ]
         }
       ],
       "methods":
@@ -12402,6 +13335,32 @@
           "id": "!module/Methods[showBrowseInformationAreaDetails]",
           "name": "showBrowseInformationAreaDetails",
           ":@ShowScreenMethod": { "targetScreen": { "__id": "BrowseInformationAreaDetails" } }
+        },
+        {
+          "id": "!module/Methods[showViewInformationAreaDetails]",
+          "name": "showViewInformationAreaDetails",
+          ":@ShowScreenMethod": { "targetScreen": { "__id": "ViewInformationAreaDetails" } },
+          "parameters":
+          [
+            {
+              "id": "!module/Methods[showViewInformationAreaDetails]/Parameters[InformationAreaName]",
+              "name": "InformationAreaName",
+              "parameterType": { "__id": ":String" }
+            }
+          ]
+        },
+        {
+          "id": "!module/Methods[showEditInformationArea]",
+          "name": "showEditInformationArea",
+          ":@ShowScreenMethod": { "targetScreen": { "__id": "EditInformationArea" } },
+          "parameters":
+          [
+            {
+              "id": "!module/Methods[showEditInformationArea]/Parameters[InformationAreaName]",
+              "name": "InformationAreaName",
+              "parameterType": { "__id": ":String" }
+            }
+          ]
         }
       ],
       "navigationItems":

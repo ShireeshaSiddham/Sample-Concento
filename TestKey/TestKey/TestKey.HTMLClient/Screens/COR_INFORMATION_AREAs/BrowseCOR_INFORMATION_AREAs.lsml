@@ -272,12 +272,17 @@
                         <ScreenExpressionTree>
                           <ChainExpression>
                             <CallExpression
-                              Target="BrowseCOR_INFORMATION_AREAs/Methods[showDialog]">
+                              Target="!module/Methods[showViewInformationAreaDetails]">
                               <ArgumentExpression
-                                Parameter="dialogName">
-                                <ConstantExpression
-                                  Value="Group3"
-                                  ResultType=":String" />
+                                Parameter="InformationAreaName">
+                                <ChainExpression>
+                                  <MemberExpression
+                                    Member="BrowseCOR_INFORMATION_AREAs/Properties[InformationAreas]" />
+                                  <MemberExpression
+                                    Member="selectedItem" />
+                                  <MemberExpression
+                                    Member="INFORMATION_AREA_NAME" />
+                                </ChainExpression>
                               </ArgumentExpression>
                             </CallExpression>
                           </ChainExpression>

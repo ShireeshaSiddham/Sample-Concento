@@ -627,6 +627,46 @@ window.myapp = msls.application;
         $Entity.call(this, entitySet);
     }
 
+    function InformationAreaDetail(entitySet) {
+        /// <summary>
+        /// Represents the InformationAreaDetail entity type.
+        /// </summary>
+        /// <param name="entitySet" type="msls.EntitySet" optional="true">
+        /// The entity set that should contain this informationAreaDetail.
+        /// </param>
+        /// <field name="INFORMATION_AREA_NAME" type="String">
+        /// Gets or sets the iNFORMATION_AREA_NAME for this informationAreaDetail.
+        /// </field>
+        /// <field name="INFORMATION_AREA_DESCRIPTION" type="String">
+        /// Gets or sets the iNFORMATION_AREA_DESCRIPTION for this informationAreaDetail.
+        /// </field>
+        /// <field name="REVIEW_STATUS" type="String">
+        /// Gets or sets the rEVIEW_STATUS for this informationAreaDetail.
+        /// </field>
+        /// <field name="REVIEWED_BY" type="String">
+        /// Gets or sets the rEVIEWED_BY for this informationAreaDetail.
+        /// </field>
+        /// <field name="MODIFIED_BY" type="String">
+        /// Gets or sets the mODIFIED_BY for this informationAreaDetail.
+        /// </field>
+        /// <field name="MODIFIED_ON" type="Date">
+        /// Gets or sets the mODIFIED_ON for this informationAreaDetail.
+        /// </field>
+        /// <field name="CREATED_ON" type="Date">
+        /// Gets or sets the cREATED_ON for this informationAreaDetail.
+        /// </field>
+        /// <field name="CREATED_BY" type="String">
+        /// Gets or sets the cREATED_BY for this informationAreaDetail.
+        /// </field>
+        /// <field name="REVIEWED_ON" type="Date">
+        /// Gets or sets the rEVIEWED_ON for this informationAreaDetail.
+        /// </field>
+        /// <field name="details" type="msls.application.InformationAreaDetail.Details">
+        /// Gets the details for this informationAreaDetail.
+        /// </field>
+        $Entity.call(this, entitySet);
+    }
+
     function InformationArea(entitySet) {
         /// <summary>
         /// Represents the InformationArea entity type.
@@ -693,46 +733,6 @@ window.myapp = msls.application;
         $Entity.call(this, entitySet);
     }
 
-    function InformationAreaDetail(entitySet) {
-        /// <summary>
-        /// Represents the InformationAreaDetail entity type.
-        /// </summary>
-        /// <param name="entitySet" type="msls.EntitySet" optional="true">
-        /// The entity set that should contain this informationAreaDetail.
-        /// </param>
-        /// <field name="INFORMATION_AREA_NAME" type="String">
-        /// Gets or sets the iNFORMATION_AREA_NAME for this informationAreaDetail.
-        /// </field>
-        /// <field name="INFORMATION_AREA_DESCRIPTION" type="String">
-        /// Gets or sets the iNFORMATION_AREA_DESCRIPTION for this informationAreaDetail.
-        /// </field>
-        /// <field name="REVIEW_STATUS" type="String">
-        /// Gets or sets the rEVIEW_STATUS for this informationAreaDetail.
-        /// </field>
-        /// <field name="REVIEWED_BY" type="String">
-        /// Gets or sets the rEVIEWED_BY for this informationAreaDetail.
-        /// </field>
-        /// <field name="MODIFIED_BY" type="String">
-        /// Gets or sets the mODIFIED_BY for this informationAreaDetail.
-        /// </field>
-        /// <field name="MODIFIED_ON" type="Date">
-        /// Gets or sets the mODIFIED_ON for this informationAreaDetail.
-        /// </field>
-        /// <field name="CREATED_ON" type="Date">
-        /// Gets or sets the cREATED_ON for this informationAreaDetail.
-        /// </field>
-        /// <field name="CREATED_BY" type="String">
-        /// Gets or sets the cREATED_BY for this informationAreaDetail.
-        /// </field>
-        /// <field name="REVIEWED_ON" type="Date">
-        /// Gets or sets the rEVIEWED_ON for this informationAreaDetail.
-        /// </field>
-        /// <field name="details" type="msls.application.InformationAreaDetail.Details">
-        /// Gets the details for this informationAreaDetail.
-        /// </field>
-        $Entity.call(this, entitySet);
-    }
-
     function LS_UTData(dataWorkspace) {
         /// <summary>
         /// Represents the LS_UTData data service.
@@ -786,6 +786,9 @@ window.myapp = msls.application;
         /// <field name="Datasets" type="msls.EntitySet">
         /// Gets the Datasets entity set.
         /// </field>
+        /// <field name="InformationAreaDetails" type="msls.EntitySet">
+        /// Gets the InformationAreaDetails entity set.
+        /// </field>
         /// <field name="InformationAreas" type="msls.EntitySet">
         /// Gets the InformationAreas entity set.
         /// </field>
@@ -794,9 +797,6 @@ window.myapp = msls.application;
         /// </field>
         /// <field name="Subject_Areas" type="msls.EntitySet">
         /// Gets the Subject_Areas entity set.
-        /// </field>
-        /// <field name="InformationAreaDetails" type="msls.EntitySet">
-        /// Gets the InformationAreaDetails entity set.
         /// </field>
         /// <field name="details" type="msls.application.DDATAPOLICYData.Details">
         /// Gets the details for this data service.
@@ -1011,6 +1011,18 @@ window.myapp = msls.application;
             { name: "DATASET_NAME", type: String }
         ]),
 
+        InformationAreaDetail: $defineEntity(InformationAreaDetail, [
+            { name: "INFORMATION_AREA_NAME", type: String },
+            { name: "INFORMATION_AREA_DESCRIPTION", type: String },
+            { name: "REVIEW_STATUS", type: String },
+            { name: "REVIEWED_BY", type: String },
+            { name: "MODIFIED_BY", type: String },
+            { name: "MODIFIED_ON", type: Date },
+            { name: "CREATED_ON", type: Date },
+            { name: "CREATED_BY", type: String },
+            { name: "REVIEWED_ON", type: Date }
+        ]),
+
         InformationArea: $defineEntity(InformationArea, [
             { name: "INFORMATION_AREA_NAME", type: String },
             { name: "Cnt", type: Number }
@@ -1027,18 +1039,6 @@ window.myapp = msls.application;
             { name: "SUBJECT_AREA_GROUP_NAME", type: String },
             { name: "SUBJECT_AREA_NAME", type: String },
             { name: "Cnt", type: Number }
-        ]),
-
-        InformationAreaDetail: $defineEntity(InformationAreaDetail, [
-            { name: "INFORMATION_AREA_NAME", type: String },
-            { name: "INFORMATION_AREA_DESCRIPTION", type: String },
-            { name: "REVIEW_STATUS", type: String },
-            { name: "REVIEWED_BY", type: String },
-            { name: "MODIFIED_BY", type: String },
-            { name: "MODIFIED_ON", type: Date },
-            { name: "CREATED_ON", type: Date },
-            { name: "CREATED_BY", type: String },
-            { name: "REVIEWED_ON", type: Date }
         ]),
 
         LS_UTData: $defineDataService(LS_UTData, lightSwitchApplication.rootUri + "/LS_UTData.svc", [
@@ -1107,10 +1107,10 @@ window.myapp = msls.application;
             { name: "COR_SUBJECT_AREA_GROUPs", elementType: COR_SUBJECT_AREA_GROUP },
             { name: "COR_SUBJECT_AREAs", elementType: COR_SUBJECT_AREA },
             { name: "Datasets", elementType: Dataset },
+            { name: "InformationAreaDetails", elementType: InformationAreaDetail },
             { name: "InformationAreas", elementType: InformationArea },
             { name: "Subject_Area_Groups", elementType: Subject_Area_Group },
-            { name: "Subject_Areas", elementType: Subject_Area },
-            { name: "InformationAreaDetails", elementType: InformationAreaDetail }
+            { name: "Subject_Areas", elementType: Subject_Area }
         ], [
             {
                 name: "COR_DATASETs_SingleOrDefault", value: function (DATASET_ID) {
@@ -1148,6 +1148,13 @@ window.myapp = msls.application;
                 }
             },
             {
+                name: "InformationAreaDetails_SingleOrDefault", value: function (INFORMATION_AREA_NAME) {
+                    return new $DataServiceQuery({ _entitySet: this.InformationAreaDetails },
+                        lightSwitchApplication.rootUri + "/DDATAPOLICYData.svc" + "/InformationAreaDetails(" + "INFORMATION_AREA_NAME=" + $toODataString(INFORMATION_AREA_NAME, "String?") + ")"
+                    );
+                }
+            },
+            {
                 name: "InformationAreas_SingleOrDefault", value: function (INFORMATION_AREA_NAME) {
                     return new $DataServiceQuery({ _entitySet: this.InformationAreas },
                         lightSwitchApplication.rootUri + "/DDATAPOLICYData.svc" + "/InformationAreas(" + "INFORMATION_AREA_NAME=" + $toODataString(INFORMATION_AREA_NAME, "String?") + ")"
@@ -1165,13 +1172,6 @@ window.myapp = msls.application;
                 name: "Subject_Areas_SingleOrDefault", value: function (INFORMATION_AREA_NAME, SUBJECT_AREA_GROUP_NAME, SUBJECT_AREA_NAME) {
                     return new $DataServiceQuery({ _entitySet: this.Subject_Areas },
                         lightSwitchApplication.rootUri + "/DDATAPOLICYData.svc" + "/Subject_Areas(" + "INFORMATION_AREA_NAME=" + $toODataString(INFORMATION_AREA_NAME, "String?") + "," + "SUBJECT_AREA_GROUP_NAME=" + $toODataString(SUBJECT_AREA_GROUP_NAME, "String?") + "," + "SUBJECT_AREA_NAME=" + $toODataString(SUBJECT_AREA_NAME, "String?") + ")"
-                    );
-                }
-            },
-            {
-                name: "InformationAreaDetails_SingleOrDefault", value: function (INFORMATION_AREA_NAME) {
-                    return new $DataServiceQuery({ _entitySet: this.InformationAreaDetails },
-                        lightSwitchApplication.rootUri + "/DDATAPOLICYData.svc" + "/InformationAreaDetails(" + "INFORMATION_AREA_NAME=" + $toODataString(INFORMATION_AREA_NAME, "String?") + ")"
                     );
                 }
             }

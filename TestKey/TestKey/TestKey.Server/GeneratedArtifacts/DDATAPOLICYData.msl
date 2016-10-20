@@ -145,6 +145,21 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="InformationAreaDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.InformationAreaDetail)">
+        <MappingFragment StoreEntitySet="InformationAreaDetails">
+          <ScalarProperty Name="INFORMATION_AREA_NAME" ColumnName="INFORMATION_AREA_NAME" />
+          <ScalarProperty Name="INFORMATION_AREA_DESCRIPTION" ColumnName="INFORMATION_AREA_DESCRIPTION" />
+          <ScalarProperty Name="REVIEW_STATUS" ColumnName="REVIEW_STATUS" />
+          <ScalarProperty Name="REVIEWED_BY" ColumnName="REVIEWED_BY" />
+          <ScalarProperty Name="MODIFIED_BY" ColumnName="MODIFIED_BY" />
+          <ScalarProperty Name="MODIFIED_ON" ColumnName="MODIFIED_ON" />
+          <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="REVIEWED_ON" ColumnName="REVIEWED_ON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="InformationAreas">
       <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.InformationArea)">
         <MappingFragment StoreEntitySet="InformationAreas">
@@ -169,21 +184,6 @@
           <ScalarProperty Name="SUBJECT_AREA_GROUP_NAME" ColumnName="SUBJECT_AREA_GROUP_NAME" />
           <ScalarProperty Name="SUBJECT_AREA_NAME" ColumnName="SUBJECT_AREA_NAME" />
           <ScalarProperty Name="Cnt" ColumnName="Cnt" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="InformationAreaDetails">
-      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.InformationAreaDetail)">
-        <MappingFragment StoreEntitySet="InformationAreaDetails">
-          <ScalarProperty Name="INFORMATION_AREA_NAME" ColumnName="INFORMATION_AREA_NAME" />
-          <ScalarProperty Name="INFORMATION_AREA_DESCRIPTION" ColumnName="INFORMATION_AREA_DESCRIPTION" />
-          <ScalarProperty Name="REVIEW_STATUS" ColumnName="REVIEW_STATUS" />
-          <ScalarProperty Name="REVIEWED_BY" ColumnName="REVIEWED_BY" />
-          <ScalarProperty Name="MODIFIED_BY" ColumnName="MODIFIED_BY" />
-          <ScalarProperty Name="MODIFIED_ON" ColumnName="MODIFIED_ON" />
-          <ScalarProperty Name="CREATED_ON" ColumnName="CREATED_ON" />
-          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
-          <ScalarProperty Name="REVIEWED_ON" ColumnName="REVIEWED_ON" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

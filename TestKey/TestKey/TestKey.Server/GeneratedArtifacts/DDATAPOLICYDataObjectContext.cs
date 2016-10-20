@@ -151,6 +151,22 @@ namespace LightSwitchApplication.Implementation
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
+        public ObjectSet<InformationAreaDetail> InformationAreaDetails
+        {
+            get
+            {
+                if ((_InformationAreaDetails == null))
+                {
+                    _InformationAreaDetails = base.CreateObjectSet<InformationAreaDetail>("InformationAreaDetails");
+                }
+                return _InformationAreaDetails;
+            }
+        }
+        private ObjectSet<InformationAreaDetail> _InformationAreaDetails;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
         public ObjectSet<InformationArea> InformationAreas
         {
             get
@@ -195,22 +211,6 @@ namespace LightSwitchApplication.Implementation
             }
         }
         private ObjectSet<Subject_Area> _Subject_Areas;
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        public ObjectSet<InformationAreaDetail> InformationAreaDetails
-        {
-            get
-            {
-                if ((_InformationAreaDetails == null))
-                {
-                    _InformationAreaDetails = base.CreateObjectSet<InformationAreaDetail>("InformationAreaDetails");
-                }
-                return _InformationAreaDetails;
-            }
-        }
-        private ObjectSet<InformationAreaDetail> _InformationAreaDetails;
 
         #endregion
 
@@ -257,6 +257,14 @@ namespace LightSwitchApplication.Implementation
         }
     
         /// <summary>
+        /// Deprecated Method for adding a new object to the InformationAreaDetails EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToInformationAreaDetails(InformationAreaDetail informationAreaDetail)
+        {
+            base.AddObject("InformationAreaDetails", informationAreaDetail);
+        }
+    
+        /// <summary>
         /// Deprecated Method for adding a new object to the InformationAreas EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
         public void AddToInformationAreas(InformationArea informationArea)
@@ -278,14 +286,6 @@ namespace LightSwitchApplication.Implementation
         public void AddToSubject_Areas(Subject_Area subject_Area)
         {
             base.AddObject("Subject_Areas", subject_Area);
-        }
-    
-        /// <summary>
-        /// Deprecated Method for adding a new object to the InformationAreaDetails EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
-        /// </summary>
-        public void AddToInformationAreaDetails(InformationAreaDetail informationAreaDetail)
-        {
-            base.AddObject("InformationAreaDetails", informationAreaDetail);
         }
 
         #endregion
