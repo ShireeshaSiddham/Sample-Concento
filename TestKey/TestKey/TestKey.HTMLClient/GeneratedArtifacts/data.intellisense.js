@@ -114,4 +114,12 @@
         created: [lightSwitchApplication.Subject_Area]
     });
 
+    msls._addEntryPoints(lightSwitchApplication.InformationAreaDetail, {
+        /// <field>
+        /// Called when a new informationAreaDetail is created.
+        /// <br/>created(msls.application.InformationAreaDetail entity)
+        /// </field>
+        created: [lightSwitchApplication.InformationAreaDetail]
+    });
+
 }(msls.application));

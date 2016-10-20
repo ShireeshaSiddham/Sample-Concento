@@ -280,6 +280,19 @@ namespace LightSwitchApplication
             }
         }
         
+        /// <summary>
+        /// Gets the InformationAreaDetails entity set.  The entity set provides members to access entities of a specific type.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.InformationAreaDetail> InformationAreaDetails
+        {
+            get
+            {
+                return global::LightSwitchApplication.DDATAPOLICYData.DetailsClass.GetValue(this, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass.PropertySetProperties.InformationAreaDetails);
+            }
+        }
+        
         #endregion
     
         #region Queries
@@ -496,6 +509,28 @@ namespace LightSwitchApplication
             return this.Details.Methods.Subject_Areas_SingleOrDefault.CreateInvocation(INFORMATION_AREA_NAME, SUBJECT_AREA_GROUP_NAME, SUBJECT_AREA_NAME).Execute();
         }
         
+        /// <summary>
+        /// Returns the entity whose identity is specified by the parameter(s).
+        /// </summary>
+        /// <param name="INFORMATION_AREA_NAME">
+        /// The value of the 'INFORMATION_AREA_NAME' key property of the entity to retrieve.
+        /// </param>
+        public global::LightSwitchApplication.InformationAreaDetail InformationAreaDetails_Single(string INFORMATION_AREA_NAME)
+        {
+            return this.Details.Methods.InformationAreaDetails_Single.CreateInvocation(INFORMATION_AREA_NAME).Execute();
+        }
+        
+        /// <summary>
+        /// Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists.
+        /// </summary>
+        /// <param name="INFORMATION_AREA_NAME">
+        /// The value of the 'INFORMATION_AREA_NAME' key property of the entity to retrieve.
+        /// </param>
+        public global::LightSwitchApplication.InformationAreaDetail InformationAreaDetails_SingleOrDefault(string INFORMATION_AREA_NAME)
+        {
+            return this.Details.Methods.InformationAreaDetails_SingleOrDefault.CreateInvocation(INFORMATION_AREA_NAME).Execute();
+        }
+        
         #endregion
     
         #region Details Class
@@ -672,6 +707,22 @@ namespace LightSwitchApplication
                     }
                 }
                 
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.InformationAreaDetail> InformationAreaDetails_Single
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.DDATAPOLICYData.DetailsClass.MethodSetProperties.InformationAreaDetails_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.InformationAreaDetail>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.InformationAreaDetail> InformationAreaDetails_SingleOrDefault
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.DDATAPOLICYData.DetailsClass.MethodSetProperties.InformationAreaDetails_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.InformationAreaDetail>;
+                    }
+                }
+                
             }
     
             [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
@@ -746,6 +797,14 @@ namespace LightSwitchApplication
                     get
                     {
                         return base.GetItem(global::LightSwitchApplication.DDATAPOLICYData.DetailsClass.PropertySetProperties.Subject_Areas) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.Subject_Area>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.InformationAreaDetail> InformationAreaDetails
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.DDATAPOLICYData.DetailsClass.PropertySetProperties.InformationAreaDetails) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.InformationAreaDetail>;
                     }
                 }
                 
@@ -917,6 +976,26 @@ namespace LightSwitchApplication
                     c(d, ref d._Subject_Areas_SingleOrDefault, sf);
                 }
     
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.InformationAreaDetail>.Entry
+                    InformationAreaDetails_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.InformationAreaDetail>.Entry(
+                        "InformationAreaDetails_Single",
+                        global::LightSwitchApplication.DDATAPOLICYData.DetailsClass.MethodSetProperties._InformationAreaDetails_Single_Stub);
+                private static void _InformationAreaDetails_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.InformationAreaDetail>.Data> c, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass d, object sf)
+                {
+                    c(d, ref d._InformationAreaDetails_Single, sf);
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.InformationAreaDetail>.Entry
+                    InformationAreaDetails_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.InformationAreaDetail>.Entry(
+                        "InformationAreaDetails_SingleOrDefault",
+                        global::LightSwitchApplication.DDATAPOLICYData.DetailsClass.MethodSetProperties._InformationAreaDetails_SingleOrDefault_Stub);
+                private static void _InformationAreaDetails_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.InformationAreaDetail>.Data> c, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass d, object sf)
+                {
+                    c(d, ref d._InformationAreaDetails_SingleOrDefault, sf);
+                }
+    
             }
     
             [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
@@ -1005,6 +1084,16 @@ namespace LightSwitchApplication
                     c(d, ref d._Subject_Areas, sf);
                 }
      
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.InformationAreaDetail>.Entry
+                    InformationAreaDetails = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.InformationAreaDetail>.Entry(
+                        "InformationAreaDetails",
+                        global::LightSwitchApplication.DDATAPOLICYData.DetailsClass.PropertySetProperties._InformationAreaDetails_Stub);
+                private static void _InformationAreaDetails_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.InformationAreaDetail>.Data> c, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass d, object sf)
+                {
+                    c(d, ref d._InformationAreaDetails, sf);
+                }
+     
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
@@ -1030,6 +1119,9 @@ namespace LightSwitchApplication
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.Subject_Area>.Data _Subject_Areas;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.InformationAreaDetail>.Data _InformationAreaDetails;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.COR_DATASET>.Data _COR_DATASETs_Single;
@@ -1078,6 +1170,12 @@ namespace LightSwitchApplication
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.Subject_Area>.Data _Subject_Areas_SingleOrDefault;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.InformationAreaDetail>.Data _InformationAreaDetails_Single;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.DDATAPOLICYData, global::LightSwitchApplication.DDATAPOLICYData.DetailsClass, global::LightSwitchApplication.InformationAreaDetail>.Data _InformationAreaDetails_SingleOrDefault;
             
         }
     

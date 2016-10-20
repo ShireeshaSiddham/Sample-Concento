@@ -314,6 +314,53 @@
         $Screen.call(this, dataWorkspace, "AddEditCOR_SUBJECT_AREA_GROUP", parameters);
     }
 
+    function AddEditInformationAreaDetail(parameters, dataWorkspace) {
+        /// <summary>
+        /// Represents the AddEditInformationAreaDetail screen.
+        /// </summary>
+        /// <param name="parameters" type="Array">
+        /// An array of screen parameter values.
+        /// </param>
+        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
+        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
+        /// </param>
+        /// <field name="InformationAreaDetail" type="msls.application.InformationAreaDetail">
+        /// Gets or sets the informationAreaDetail for this screen.
+        /// </field>
+        /// <field name="details" type="msls.application.AddEditInformationAreaDetail.Details">
+        /// Gets the details for this screen.
+        /// </field>
+        if (!dataWorkspace) {
+            dataWorkspace = new lightSwitchApplication.DataWorkspace();
+        }
+        $Screen.call(this, dataWorkspace, "AddEditInformationAreaDetail", parameters);
+    }
+
+    function BrowseInformationAreaDetails(parameters, dataWorkspace) {
+        /// <summary>
+        /// Represents the BrowseInformationAreaDetails screen.
+        /// </summary>
+        /// <param name="parameters" type="Array">
+        /// An array of screen parameter values.
+        /// </param>
+        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
+        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
+        /// </param>
+        /// <field name="InformationAreaDetails" type="msls.VisualCollection" elementType="msls.application.InformationAreaDetail">
+        /// Gets the informationAreaDetails for this screen.
+        /// </field>
+        /// <field name="Property1" type="msls.application.InformationAreaDetail">
+        /// Gets or sets the property1 for this screen.
+        /// </field>
+        /// <field name="details" type="msls.application.BrowseInformationAreaDetails.Details">
+        /// Gets the details for this screen.
+        /// </field>
+        if (!dataWorkspace) {
+            dataWorkspace = new lightSwitchApplication.DataWorkspace();
+        }
+        $Screen.call(this, dataWorkspace, "BrowseInformationAreaDetails", parameters);
+    }
+
     msls._addToNamespace("msls.application", {
 
         AddEditCOR_INFORMATION_AREA: $defineScreen(AddEditCOR_INFORMATION_AREA, [
@@ -324,8 +371,8 @@
         BrowseCOR_INFORMATION_AREAs: $defineScreen(BrowseCOR_INFORMATION_AREAs, [
             {
                 name: "COR_INFORMATION_AREAs", kind: "collection", elementType: lightSwitchApplication.COR_INFORMATION_AREA,
-                createQuery: function () {
-                    return this.dataWorkspace.DDATAPOLICYData.COR_INFORMATION_AREAs;
+                createQuery: function (InformationAreaName) {
+                    return this.dataWorkspace.DDATAPOLICYData.COR_INFORMATION_AREAs.filter("" + ((InformationAreaName === undefined || InformationAreaName === null) ? "false" : "(INFORMATION_AREA_NAME eq " + $toODataString(InformationAreaName, "String?") + ")") + "");
                 }
             },
             {
@@ -373,6 +420,11 @@
             { name: "Label", kind: "local", type: String },
             { name: "SAGCount", kind: "local", type: String }
         ], [
+            { name: "Close" },
+            { name: "Search" },
+            { name: "Edit" },
+            { name: "Save" },
+            { name: "Cancel" }
         ]),
 
         ViewCOR_INFORMATION_AREA: $defineScreen(ViewCOR_INFORMATION_AREA, [
@@ -447,6 +499,22 @@
 
         AddEditCOR_SUBJECT_AREA_GROUP: $defineScreen(AddEditCOR_SUBJECT_AREA_GROUP, [
             { name: "COR_SUBJECT_AREA_GROUP", kind: "local", type: lightSwitchApplication.COR_SUBJECT_AREA_GROUP }
+        ], [
+        ]),
+
+        AddEditInformationAreaDetail: $defineScreen(AddEditInformationAreaDetail, [
+            { name: "InformationAreaDetail", kind: "local", type: lightSwitchApplication.InformationAreaDetail }
+        ], [
+        ]),
+
+        BrowseInformationAreaDetails: $defineScreen(BrowseInformationAreaDetails, [
+            {
+                name: "InformationAreaDetails", kind: "collection", elementType: lightSwitchApplication.InformationAreaDetail,
+                createQuery: function () {
+                    return this.dataWorkspace.DDATAPOLICYData.InformationAreaDetails;
+                }
+            },
+            { name: "Property1", kind: "local", type: lightSwitchApplication.InformationAreaDetail }
         ], [
         ]),
 
@@ -592,6 +660,30 @@
             /// <returns type="WinJS.Promise" />
             var parameters = Array.prototype.slice.call(arguments, 0, 1);
             return lightSwitchApplication.showScreen("AddEditCOR_SUBJECT_AREA_GROUP", parameters, options);
+        }),
+
+        showAddEditInformationAreaDetail: $defineShowScreen(function showAddEditInformationAreaDetail(InformationAreaDetail, options) {
+            /// <summary>
+            /// Asynchronously navigates forward to the AddEditInformationAreaDetail screen.
+            /// </summary>
+            /// <param name="options" optional="true">
+            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
+            /// </param>
+            /// <returns type="WinJS.Promise" />
+            var parameters = Array.prototype.slice.call(arguments, 0, 1);
+            return lightSwitchApplication.showScreen("AddEditInformationAreaDetail", parameters, options);
+        }),
+
+        showBrowseInformationAreaDetails: $defineShowScreen(function showBrowseInformationAreaDetails(options) {
+            /// <summary>
+            /// Asynchronously navigates forward to the BrowseInformationAreaDetails screen.
+            /// </summary>
+            /// <param name="options" optional="true">
+            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
+            /// </param>
+            /// <returns type="WinJS.Promise" />
+            var parameters = Array.prototype.slice.call(arguments, 0, 0);
+            return lightSwitchApplication.showScreen("BrowseInformationAreaDetails", parameters, options);
         })
 
     });

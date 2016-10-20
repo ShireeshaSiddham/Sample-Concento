@@ -112,4 +112,10 @@
         Target="ServiceInterface:DDATAPOLICYData" />
     </EntityContainer.Attributes>
   </EntityContainer>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:InformationAreaDetail" />
+    </EntityType.Attributes>
+  </EntityType>
 </Application>

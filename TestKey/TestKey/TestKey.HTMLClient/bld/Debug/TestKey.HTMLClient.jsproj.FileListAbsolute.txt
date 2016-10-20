@@ -4,3 +4,5 @@ C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\Test
 C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\TestKey\TestKey\TestKey.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs
 C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\TestKey.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
 C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\10-14-16\TestKey\TestKey\TestKey.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\14-10-16\TestKey\TestKey\TestKey.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
+C:\Users\DMR-Sireesha\Desktop\lightswitch sample test\concento test\14-10-16\TestKey\TestKey\TestKey.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs

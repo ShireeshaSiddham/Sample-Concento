@@ -7146,14 +7146,14 @@ $( document ).bind( "pagecreate create", function( e ) {
 			shadow: true,
 			corners: true,
 			transition: "none",
-			positionTo: "origin",
+		    positionTo: "origin",	
 			tolerance: null,
 			initSelector: ":jqmData(role='popup')",
 			closeLinkSelector: "a:jqmData(rel='back')",
 			closeLinkEvents: "click.popup",
 			navigateEvents: "navigate.popup",
 			closeEvents: "navigate.popup pagebeforechange.popup",
-			dismissible: true,
+		    dismissible: true,
 
 			// NOTE Windows Phone 7 has a scroll position caching issue that
 			//      requires us to disable popup history management by default
@@ -8021,7 +8021,7 @@ $.widget( "mobile.panel", $.mobile.widget, {
 		animate: true,
 		theme: "c",
 		position: "left",
-		dismissible: true,
+	    dismissible: true,
 		display: "reveal", //accepts reveal, push, overlay
 		initSelector: ":jqmData(role='panel')",
 		swipeClose: true,

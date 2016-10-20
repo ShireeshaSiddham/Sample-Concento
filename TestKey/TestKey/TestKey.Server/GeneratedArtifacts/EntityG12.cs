@@ -17,32 +17,32 @@ namespace LightSwitchApplication
     /// No Modeled Description Available
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
-    public sealed partial class EmpProj : global::Microsoft.LightSwitch.Framework.Base.EntityObject<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass>
+    public sealed partial class EmployeeTable : global::Microsoft.LightSwitch.Framework.Base.EntityObject<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass>
     {
         #region Constructors
     
         /// <summary>
-        /// Initializes a new instance of the EmpProj entity.
+        /// Initializes a new instance of the EmployeeTable entity.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public EmpProj()
+        public EmployeeTable()
             : this(null)
         {
         }
     
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public EmpProj(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.EmpProj> entitySet)
+        public EmployeeTable(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.EmployeeTable> entitySet)
             : base(entitySet)
         {
-            global::LightSwitchApplication.EmpProj.DetailsClass.Initialize(this);
+            global::LightSwitchApplication.EmployeeTable.DetailsClass.Initialize(this);
         }
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void EmpProj_Created();
+        partial void EmployeeTable_Created();
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void EmpProj_AllowSaveWithErrors(ref bool result);
+        partial void EmployeeTable_AllowSaveWithErrors(ref bool result);
     
         #endregion
     
@@ -83,96 +83,190 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public string MonthName
+        public int EmpID
         {
             get
             {
-                return global::LightSwitchApplication.EmpProj.DetailsClass.GetValue(this, global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties.MonthName);
+                return global::LightSwitchApplication.EmployeeTable.DetailsClass.GetValue(this, global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmpID);
             }
             set
             {
-                global::LightSwitchApplication.EmpProj.DetailsClass.SetValue(this, global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties.MonthName, value);
+                global::LightSwitchApplication.EmployeeTable.DetailsClass.SetValue(this, global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmpID, value);
             }
         }
         
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void MonthName_IsReadOnly(ref bool result);
+        partial void EmpID_IsReadOnly(ref bool result);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void MonthName_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        partial void EmpID_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void MonthName_Changed();
+        partial void EmpID_Changed();
 
         /// <summary>
         /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public string SubProject
+        public string EmpName
         {
             get
             {
-                return global::LightSwitchApplication.EmpProj.DetailsClass.GetValue(this, global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties.SubProject);
+                return global::LightSwitchApplication.EmployeeTable.DetailsClass.GetValue(this, global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmpName);
             }
             set
             {
-                global::LightSwitchApplication.EmpProj.DetailsClass.SetValue(this, global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties.SubProject, value);
+                global::LightSwitchApplication.EmployeeTable.DetailsClass.SetValue(this, global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmpName, value);
             }
         }
         
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void SubProject_IsReadOnly(ref bool result);
+        partial void EmpName_IsReadOnly(ref bool result);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void SubProject_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        partial void EmpName_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void SubProject_Changed();
+        partial void EmpName_Changed();
 
         /// <summary>
         /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public global::System.Nullable<global::System.DateTime> c_Date
+        public string Designation
         {
             get
             {
-                return global::LightSwitchApplication.EmpProj.DetailsClass.GetValue(this, global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties.c_Date);
+                return global::LightSwitchApplication.EmployeeTable.DetailsClass.GetValue(this, global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.Designation);
             }
             set
             {
-                global::LightSwitchApplication.EmpProj.DetailsClass.SetValue(this, global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties.c_Date, value);
+                global::LightSwitchApplication.EmployeeTable.DetailsClass.SetValue(this, global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.Designation, value);
             }
         }
         
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void c_Date_IsReadOnly(ref bool result);
+        partial void Designation_IsReadOnly(ref bool result);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void c_Date_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        partial void Designation_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void c_Date_Changed();
+        partial void Designation_Changed();
 
         /// <summary>
         /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public decimal Hours
+        public string Email
         {
             get
             {
-                return global::LightSwitchApplication.EmpProj.DetailsClass.GetValue(this, global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties.Hours);
+                return global::LightSwitchApplication.EmployeeTable.DetailsClass.GetValue(this, global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.Email);
             }
             set
             {
-                global::LightSwitchApplication.EmpProj.DetailsClass.SetValue(this, global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties.Hours, value);
+                global::LightSwitchApplication.EmployeeTable.DetailsClass.SetValue(this, global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.Email, value);
             }
         }
         
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Hours_IsReadOnly(ref bool result);
+        partial void Email_IsReadOnly(ref bool result);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Hours_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        partial void Email_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Hours_Changed();
+        partial void Email_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string UserName
+        {
+            get
+            {
+                return global::LightSwitchApplication.EmployeeTable.DetailsClass.GetValue(this, global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.UserName);
+            }
+            set
+            {
+                global::LightSwitchApplication.EmployeeTable.DetailsClass.SetValue(this, global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.UserName, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void UserName_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void UserName_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void UserName_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::Microsoft.LightSwitch.Framework.EntityCollection<global::LightSwitchApplication.EmployeeMonth> EmployeeMonths
+        {
+            get
+            {
+                return global::LightSwitchApplication.EmployeeTable.DetailsClass.GetValue(this, global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmployeeMonths);
+            }
+        }
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.EmployeeMonth> EmployeeMonthsQuery
+        {
+            get
+            {
+                return global::LightSwitchApplication.EmployeeTable.DetailsClass.GetQuery(this, global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmployeeMonths);
+            }
+        }
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::Microsoft.LightSwitch.Framework.EntityCollection<global::LightSwitchApplication.EmployeeTable> EmployeeTables
+        {
+            get
+            {
+                return global::LightSwitchApplication.EmployeeTable.DetailsClass.GetValue(this, global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmployeeTables);
+            }
+        }
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.EmployeeTable> EmployeeTablesQuery
+        {
+            get
+            {
+                return global::LightSwitchApplication.EmployeeTable.DetailsClass.GetQuery(this, global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmployeeTables);
+            }
+        }
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::LightSwitchApplication.EmployeeTable EmployeeTable1
+        {
+            get
+            {
+                return global::LightSwitchApplication.EmployeeTable.DetailsClass.GetValue(this, global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmployeeTable1);
+            }
+            set
+            {
+                global::LightSwitchApplication.EmployeeTable.DetailsClass.SetValue(this, global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmployeeTable1, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void EmployeeTable1_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void EmployeeTable1_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void EmployeeTable1_Changed();
 
         #endregion
     
@@ -183,37 +277,37 @@ namespace LightSwitchApplication
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public sealed class DetailsClass : global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<
-                global::LightSwitchApplication.EmpProj,
-                global::LightSwitchApplication.EmpProj.DetailsClass,
-                global::LightSwitchApplication.EmpProj.DetailsClass.IImplementation,
-                global::LightSwitchApplication.EmpProj.DetailsClass.PropertySet,
-                global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass>,
-                global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass>>
+                global::LightSwitchApplication.EmployeeTable,
+                global::LightSwitchApplication.EmployeeTable.DetailsClass,
+                global::LightSwitchApplication.EmployeeTable.DetailsClass.IImplementation,
+                global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySet,
+                global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass>,
+                global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass>>
         {
     
             static DetailsClass()
             {
-                var initializeEntry = global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties.MonthName;
+                var initializeEntry = global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmpID;
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private static readonly global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass>.Entry
-                __EmpProjEntry = new global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass>.Entry(
-                    global::LightSwitchApplication.EmpProj.DetailsClass.__EmpProj_CreateNew,
-                    global::LightSwitchApplication.EmpProj.DetailsClass.__EmpProj_Created,
-                    global::LightSwitchApplication.EmpProj.DetailsClass.__EmpProj_AllowSaveWithErrors);
-            private static global::LightSwitchApplication.EmpProj __EmpProj_CreateNew(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.EmpProj> es)
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass>.Entry
+                __EmployeeTableEntry = new global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass>.Entry(
+                    global::LightSwitchApplication.EmployeeTable.DetailsClass.__EmployeeTable_CreateNew,
+                    global::LightSwitchApplication.EmployeeTable.DetailsClass.__EmployeeTable_Created,
+                    global::LightSwitchApplication.EmployeeTable.DetailsClass.__EmployeeTable_AllowSaveWithErrors);
+            private static global::LightSwitchApplication.EmployeeTable __EmployeeTable_CreateNew(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.EmployeeTable> es)
             {
-                return new global::LightSwitchApplication.EmpProj(es);
+                return new global::LightSwitchApplication.EmployeeTable(es);
             }
-            private static void __EmpProj_Created(global::LightSwitchApplication.EmpProj e)
+            private static void __EmployeeTable_Created(global::LightSwitchApplication.EmployeeTable e)
             {
-                e.EmpProj_Created();
+                e.EmployeeTable_Created();
             }
-            private static bool __EmpProj_AllowSaveWithErrors(global::LightSwitchApplication.EmpProj e)
+            private static bool __EmployeeTable_AllowSaveWithErrors(global::LightSwitchApplication.EmployeeTable e)
             {
                 bool result = false;
-                e.EmpProj_AllowSaveWithErrors(ref result);
+                e.EmployeeTable_AllowSaveWithErrors(ref result);
                 return result;
             }
     
@@ -221,7 +315,7 @@ namespace LightSwitchApplication
             {
             }
     
-            public new global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass> Commands
+            public new global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass> Commands
             {
                 get
                 {
@@ -229,7 +323,7 @@ namespace LightSwitchApplication
                 }
             }
     
-            public new global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass> Methods
+            public new global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass> Methods
             {
                 get
                 {
@@ -237,7 +331,7 @@ namespace LightSwitchApplication
                 }
             }
     
-            public new global::LightSwitchApplication.EmpProj.DetailsClass.PropertySet Properties
+            public new global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySet Properties
             {
                 get
                 {
@@ -249,42 +343,74 @@ namespace LightSwitchApplication
             [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1034:NestedTypesShouldNotBeVisible")]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public sealed class PropertySet : global::Microsoft.LightSwitch.Details.Framework.Base.EntityPropertySet<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass>
+            public sealed class PropertySet : global::Microsoft.LightSwitch.Details.Framework.Base.EntityPropertySet<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass>
             {
     
                 public PropertySet() : base()
                 {
                 }
     
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, string> MonthName
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, int> EmpID
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties.MonthName) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, string>;
+                        return base.GetItem(global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmpID) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, int>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, string> SubProject
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string> EmpName
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties.SubProject) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, string>;
+                        return base.GetItem(global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmpName) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, global::System.Nullable<global::System.DateTime>> c_Date
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string> Designation
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties.c_Date) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, global::System.Nullable<global::System.DateTime>>;
+                        return base.GetItem(global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.Designation) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, decimal> Hours
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string> Email
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties.Hours) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, decimal>;
+                        return base.GetItem(global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.Email) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string> UserName
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.UserName) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, global::LightSwitchApplication.EmployeeMonth> EmployeeMonths
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmployeeMonths) as global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, global::LightSwitchApplication.EmployeeMonth>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, global::LightSwitchApplication.EmployeeTable> EmployeeTables
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmployeeTables) as global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, global::LightSwitchApplication.EmployeeTable>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, global::LightSwitchApplication.EmployeeTable> EmployeeTable1
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmployeeTable1) as global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, global::LightSwitchApplication.EmployeeTable>;
                     }
                 }
                 
@@ -294,10 +420,14 @@ namespace LightSwitchApplication
             [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1034:NestedTypesShouldNotBeVisible")]
             public interface IImplementation : global::Microsoft.LightSwitch.Internal.IEntityImplementation
             {
-                new string MonthName { get; set; }
-                new string SubProject { get; set; }
-                new global::System.Nullable<global::System.DateTime> c_Date { get; set; }
-                new decimal Hours { get; set; }
+                new int EmpID { get; set; }
+                new string EmpName { get; set; }
+                new string Designation { get; set; }
+                new string Email { get; set; }
+                new string UserName { get; set; }
+                new global::System.Collections.IEnumerable EmployeeMonths { get; }
+                new global::System.Collections.IEnumerable EmployeeTables { get; }
+                new global::Microsoft.LightSwitch.Internal.IEntityImplementation EmployeeTable1 { get; set; }
             }
             #pragma warning restore 109
     
@@ -308,166 +438,302 @@ namespace LightSwitchApplication
             {
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, string>.Entry
-                    MonthName = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, string>.Entry(
-                        "MonthName",
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._MonthName_Stub,
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._MonthName_ComputeIsReadOnly,
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._MonthName_Validate,
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._MonthName_GetImplementationValue,
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._MonthName_SetImplementationValue,
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._MonthName_OnValueChanged);
-                private static void _MonthName_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.EmpProj.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, string>.Data> c, global::LightSwitchApplication.EmpProj.DetailsClass d, object sf)
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, int>.Entry
+                    EmpID = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, int>.Entry(
+                        "EmpID",
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmpID_Stub,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmpID_ComputeIsReadOnly,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmpID_Validate,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmpID_GetImplementationValue,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmpID_SetImplementationValue,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmpID_OnValueChanged);
+                private static void _EmpID_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.EmployeeTable.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, int>.Data> c, global::LightSwitchApplication.EmployeeTable.DetailsClass d, object sf)
                 {
-                    c(d, ref d._MonthName, sf);
+                    c(d, ref d._EmpID, sf);
                 }
-                private static bool _MonthName_ComputeIsReadOnly(global::LightSwitchApplication.EmpProj e)
+                private static bool _EmpID_ComputeIsReadOnly(global::LightSwitchApplication.EmployeeTable e)
                 {
                     bool result = false;
-                    e.MonthName_IsReadOnly(ref result);
+                    e.EmpID_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _MonthName_Validate(global::LightSwitchApplication.EmpProj e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _EmpID_Validate(global::LightSwitchApplication.EmployeeTable e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
-                    e.MonthName_Validate(r);
+                    e.EmpID_Validate(r);
                 }
-                private static string _MonthName_GetImplementationValue(global::LightSwitchApplication.EmpProj.DetailsClass d)
+                private static int _EmpID_GetImplementationValue(global::LightSwitchApplication.EmployeeTable.DetailsClass d)
                 {
-                    return d.ImplementationEntity.MonthName;
+                    return d.ImplementationEntity.EmpID;
                 }
-                private static void _MonthName_SetImplementationValue(global::LightSwitchApplication.EmpProj.DetailsClass d, string v)
+                private static void _EmpID_SetImplementationValue(global::LightSwitchApplication.EmployeeTable.DetailsClass d, int v)
                 {
-                    d.ImplementationEntity.MonthName = v;
+                    d.ImplementationEntity.EmpID = v;
                 }
-                private static void _MonthName_OnValueChanged(global::LightSwitchApplication.EmpProj e)
+                private static void _EmpID_OnValueChanged(global::LightSwitchApplication.EmployeeTable e)
                 {
-                    e.MonthName_Changed();
+                    e.EmpID_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, string>.Entry
-                    SubProject = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, string>.Entry(
-                        "SubProject",
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._SubProject_Stub,
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._SubProject_ComputeIsReadOnly,
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._SubProject_Validate,
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._SubProject_GetImplementationValue,
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._SubProject_SetImplementationValue,
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._SubProject_OnValueChanged);
-                private static void _SubProject_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.EmpProj.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, string>.Data> c, global::LightSwitchApplication.EmpProj.DetailsClass d, object sf)
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string>.Entry
+                    EmpName = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string>.Entry(
+                        "EmpName",
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmpName_Stub,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmpName_ComputeIsReadOnly,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmpName_Validate,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmpName_GetImplementationValue,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmpName_SetImplementationValue,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmpName_OnValueChanged);
+                private static void _EmpName_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.EmployeeTable.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string>.Data> c, global::LightSwitchApplication.EmployeeTable.DetailsClass d, object sf)
                 {
-                    c(d, ref d._SubProject, sf);
+                    c(d, ref d._EmpName, sf);
                 }
-                private static bool _SubProject_ComputeIsReadOnly(global::LightSwitchApplication.EmpProj e)
+                private static bool _EmpName_ComputeIsReadOnly(global::LightSwitchApplication.EmployeeTable e)
                 {
                     bool result = false;
-                    e.SubProject_IsReadOnly(ref result);
+                    e.EmpName_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _SubProject_Validate(global::LightSwitchApplication.EmpProj e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _EmpName_Validate(global::LightSwitchApplication.EmployeeTable e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
-                    e.SubProject_Validate(r);
+                    e.EmpName_Validate(r);
                 }
-                private static string _SubProject_GetImplementationValue(global::LightSwitchApplication.EmpProj.DetailsClass d)
+                private static string _EmpName_GetImplementationValue(global::LightSwitchApplication.EmployeeTable.DetailsClass d)
                 {
-                    return d.ImplementationEntity.SubProject;
+                    return d.ImplementationEntity.EmpName;
                 }
-                private static void _SubProject_SetImplementationValue(global::LightSwitchApplication.EmpProj.DetailsClass d, string v)
+                private static void _EmpName_SetImplementationValue(global::LightSwitchApplication.EmployeeTable.DetailsClass d, string v)
                 {
-                    d.ImplementationEntity.SubProject = v;
+                    d.ImplementationEntity.EmpName = v;
                 }
-                private static void _SubProject_OnValueChanged(global::LightSwitchApplication.EmpProj e)
+                private static void _EmpName_OnValueChanged(global::LightSwitchApplication.EmployeeTable e)
                 {
-                    e.SubProject_Changed();
+                    e.EmpName_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, global::System.Nullable<global::System.DateTime>>.Entry
-                    c_Date = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, global::System.Nullable<global::System.DateTime>>.Entry(
-                        "c_Date",
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._c_Date_Stub,
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._c_Date_ComputeIsReadOnly,
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._c_Date_Validate,
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._c_Date_GetImplementationValue,
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._c_Date_SetImplementationValue,
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._c_Date_OnValueChanged);
-                private static void _c_Date_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.EmpProj.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, global::System.Nullable<global::System.DateTime>>.Data> c, global::LightSwitchApplication.EmpProj.DetailsClass d, object sf)
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string>.Entry
+                    Designation = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string>.Entry(
+                        "Designation",
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._Designation_Stub,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._Designation_ComputeIsReadOnly,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._Designation_Validate,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._Designation_GetImplementationValue,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._Designation_SetImplementationValue,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._Designation_OnValueChanged);
+                private static void _Designation_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.EmployeeTable.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string>.Data> c, global::LightSwitchApplication.EmployeeTable.DetailsClass d, object sf)
                 {
-                    c(d, ref d._c_Date, sf);
+                    c(d, ref d._Designation, sf);
                 }
-                private static bool _c_Date_ComputeIsReadOnly(global::LightSwitchApplication.EmpProj e)
+                private static bool _Designation_ComputeIsReadOnly(global::LightSwitchApplication.EmployeeTable e)
                 {
                     bool result = false;
-                    e.c_Date_IsReadOnly(ref result);
+                    e.Designation_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _c_Date_Validate(global::LightSwitchApplication.EmpProj e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _Designation_Validate(global::LightSwitchApplication.EmployeeTable e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
-                    e.c_Date_Validate(r);
+                    e.Designation_Validate(r);
                 }
-                private static global::System.Nullable<global::System.DateTime> _c_Date_GetImplementationValue(global::LightSwitchApplication.EmpProj.DetailsClass d)
+                private static string _Designation_GetImplementationValue(global::LightSwitchApplication.EmployeeTable.DetailsClass d)
                 {
-                    return d.ImplementationEntity.c_Date;
+                    return d.ImplementationEntity.Designation;
                 }
-                private static void _c_Date_SetImplementationValue(global::LightSwitchApplication.EmpProj.DetailsClass d, global::System.Nullable<global::System.DateTime> v)
+                private static void _Designation_SetImplementationValue(global::LightSwitchApplication.EmployeeTable.DetailsClass d, string v)
                 {
-                    d.ImplementationEntity.c_Date = global::LightSwitchApplication.EmpProj.DetailsClass.TruncateDate(v);
+                    d.ImplementationEntity.Designation = v;
                 }
-                private static void _c_Date_OnValueChanged(global::LightSwitchApplication.EmpProj e)
+                private static void _Designation_OnValueChanged(global::LightSwitchApplication.EmployeeTable e)
                 {
-                    e.c_Date_Changed();
+                    e.Designation_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, decimal>.Entry
-                    Hours = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, decimal>.Entry(
-                        "Hours",
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._Hours_Stub,
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._Hours_ComputeIsReadOnly,
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._Hours_Validate,
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._Hours_GetImplementationValue,
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._Hours_SetImplementationValue,
-                        global::LightSwitchApplication.EmpProj.DetailsClass.PropertySetProperties._Hours_OnValueChanged);
-                private static void _Hours_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.EmpProj.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, decimal>.Data> c, global::LightSwitchApplication.EmpProj.DetailsClass d, object sf)
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string>.Entry
+                    Email = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string>.Entry(
+                        "Email",
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._Email_Stub,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._Email_ComputeIsReadOnly,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._Email_Validate,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._Email_GetImplementationValue,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._Email_SetImplementationValue,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._Email_OnValueChanged);
+                private static void _Email_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.EmployeeTable.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string>.Data> c, global::LightSwitchApplication.EmployeeTable.DetailsClass d, object sf)
                 {
-                    c(d, ref d._Hours, sf);
+                    c(d, ref d._Email, sf);
                 }
-                private static bool _Hours_ComputeIsReadOnly(global::LightSwitchApplication.EmpProj e)
+                private static bool _Email_ComputeIsReadOnly(global::LightSwitchApplication.EmployeeTable e)
                 {
                     bool result = false;
-                    e.Hours_IsReadOnly(ref result);
+                    e.Email_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _Hours_Validate(global::LightSwitchApplication.EmpProj e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _Email_Validate(global::LightSwitchApplication.EmployeeTable e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
-                    e.Hours_Validate(r);
+                    e.Email_Validate(r);
                 }
-                private static decimal _Hours_GetImplementationValue(global::LightSwitchApplication.EmpProj.DetailsClass d)
+                private static string _Email_GetImplementationValue(global::LightSwitchApplication.EmployeeTable.DetailsClass d)
                 {
-                    return d.ImplementationEntity.Hours;
+                    return d.ImplementationEntity.Email;
                 }
-                private static void _Hours_SetImplementationValue(global::LightSwitchApplication.EmpProj.DetailsClass d, decimal v)
+                private static void _Email_SetImplementationValue(global::LightSwitchApplication.EmployeeTable.DetailsClass d, string v)
                 {
-                    d.ImplementationEntity.Hours = v;
+                    d.ImplementationEntity.Email = v;
                 }
-                private static void _Hours_OnValueChanged(global::LightSwitchApplication.EmpProj e)
+                private static void _Email_OnValueChanged(global::LightSwitchApplication.EmployeeTable e)
                 {
-                    e.Hours_Changed();
+                    e.Email_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string>.Entry
+                    UserName = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string>.Entry(
+                        "UserName",
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._UserName_Stub,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._UserName_ComputeIsReadOnly,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._UserName_Validate,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._UserName_GetImplementationValue,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._UserName_SetImplementationValue,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._UserName_OnValueChanged);
+                private static void _UserName_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.EmployeeTable.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string>.Data> c, global::LightSwitchApplication.EmployeeTable.DetailsClass d, object sf)
+                {
+                    c(d, ref d._UserName, sf);
+                }
+                private static bool _UserName_ComputeIsReadOnly(global::LightSwitchApplication.EmployeeTable e)
+                {
+                    bool result = false;
+                    e.UserName_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _UserName_Validate(global::LightSwitchApplication.EmployeeTable e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.UserName_Validate(r);
+                }
+                private static string _UserName_GetImplementationValue(global::LightSwitchApplication.EmployeeTable.DetailsClass d)
+                {
+                    return d.ImplementationEntity.UserName;
+                }
+                private static void _UserName_SetImplementationValue(global::LightSwitchApplication.EmployeeTable.DetailsClass d, string v)
+                {
+                    d.ImplementationEntity.UserName = v;
+                }
+                private static void _UserName_OnValueChanged(global::LightSwitchApplication.EmployeeTable e)
+                {
+                    e.UserName_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, global::LightSwitchApplication.EmployeeMonth>.Entry
+                    EmployeeMonths = new global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, global::LightSwitchApplication.EmployeeMonth>.Entry(
+                        "EmployeeMonths",
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmployeeMonths_Stub,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmployeeMonths_GetReferencedEntities,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmployeeMonths_GetEntityCollection);
+                private static void _EmployeeMonths_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.EmployeeTable.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, global::LightSwitchApplication.EmployeeMonth>.Data> c, global::LightSwitchApplication.EmployeeTable.DetailsClass d, object sf)
+                {
+                    c(d, ref d._EmployeeMonths, sf);
+                }
+                private static global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.EmployeeMonth> _EmployeeMonths_GetReferencedEntities(global::LightSwitchApplication.EmployeeTable.DetailsClass d)
+                {
+                    return d.GetReferencedEntities<global::LightSwitchApplication.EmployeeMonth, global::LightSwitchApplication.EmployeeMonth.DetailsClass>(global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmployeeMonths, ref d._EmployeeMonths);
+                }
+                private static global::System.Collections.IEnumerable _EmployeeMonths_GetEntityCollection(global::LightSwitchApplication.EmployeeTable.DetailsClass d)
+                {
+                    return d.ImplementationEntity.EmployeeMonths;
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, global::LightSwitchApplication.EmployeeTable>.Entry
+                    EmployeeTables = new global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, global::LightSwitchApplication.EmployeeTable>.Entry(
+                        "EmployeeTables",
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmployeeTables_Stub,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmployeeTables_GetReferencedEntities,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmployeeTables_GetEntityCollection);
+                private static void _EmployeeTables_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.EmployeeTable.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, global::LightSwitchApplication.EmployeeTable>.Data> c, global::LightSwitchApplication.EmployeeTable.DetailsClass d, object sf)
+                {
+                    c(d, ref d._EmployeeTables, sf);
+                }
+                private static global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.EmployeeTable> _EmployeeTables_GetReferencedEntities(global::LightSwitchApplication.EmployeeTable.DetailsClass d)
+                {
+                    return d.GetReferencedEntities<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass>(global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmployeeTables, ref d._EmployeeTables);
+                }
+                private static global::System.Collections.IEnumerable _EmployeeTables_GetEntityCollection(global::LightSwitchApplication.EmployeeTable.DetailsClass d)
+                {
+                    return d.ImplementationEntity.EmployeeTables;
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, global::LightSwitchApplication.EmployeeTable>.Entry
+                    EmployeeTable1 = new global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, global::LightSwitchApplication.EmployeeTable>.Entry(
+                        "EmployeeTable1",
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmployeeTable1_Stub,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmployeeTable1_ComputeIsReadOnly,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmployeeTable1_Validate,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmployeeTable1_GetCoreImplementationValue,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmployeeTable1_GetImplementationValue,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmployeeTable1_SetImplementationValue,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmployeeTable1_Refresh,
+                        global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties._EmployeeTable1_OnValueChanged);
+                private static void _EmployeeTable1_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.EmployeeTable.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, global::LightSwitchApplication.EmployeeTable>.Data> c, global::LightSwitchApplication.EmployeeTable.DetailsClass d, object sf)
+                {
+                    c(d, ref d._EmployeeTable1, sf);
+                }
+                private static bool _EmployeeTable1_ComputeIsReadOnly(global::LightSwitchApplication.EmployeeTable e)
+                {
+                    bool result = false;
+                    e.EmployeeTable1_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _EmployeeTable1_Validate(global::LightSwitchApplication.EmployeeTable e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.EmployeeTable1_Validate(r);
+                }
+                private static global::Microsoft.LightSwitch.Internal.IEntityImplementation _EmployeeTable1_GetCoreImplementationValue(global::LightSwitchApplication.EmployeeTable.DetailsClass d)
+                {
+                    return d.ImplementationEntity.EmployeeTable1;
+                }
+                private static global::LightSwitchApplication.EmployeeTable _EmployeeTable1_GetImplementationValue(global::LightSwitchApplication.EmployeeTable.DetailsClass d)
+                {
+                    return d.GetImplementationValue<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass>(global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmployeeTable1, ref d._EmployeeTable1);
+                }
+                private static void _EmployeeTable1_SetImplementationValue(global::LightSwitchApplication.EmployeeTable.DetailsClass d, global::LightSwitchApplication.EmployeeTable v)
+                {
+                    d.SetImplementationValue(global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmployeeTable1, ref d._EmployeeTable1, (i, ev) => i.EmployeeTable1 = ev, v);
+                }
+                private static void _EmployeeTable1_Refresh(global::LightSwitchApplication.EmployeeTable.DetailsClass d)
+                {
+                    d.RefreshNavigationProperty(global::LightSwitchApplication.EmployeeTable.DetailsClass.PropertySetProperties.EmployeeTable1, ref d._EmployeeTable1);
+                }
+                private static void _EmployeeTable1_OnValueChanged(global::LightSwitchApplication.EmployeeTable e)
+                {
+                    e.EmployeeTable1_Changed();
                 }
     
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, string>.Data _MonthName;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, int>.Data _EmpID;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, string>.Data _SubProject;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string>.Data _EmpName;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, global::System.Nullable<global::System.DateTime>>.Data _c_Date;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string>.Data _Designation;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmpProj, global::LightSwitchApplication.EmpProj.DetailsClass, decimal>.Data _Hours;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string>.Data _Email;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, string>.Data _UserName;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, global::LightSwitchApplication.EmployeeMonth>.Data _EmployeeMonths;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, global::LightSwitchApplication.EmployeeTable>.Data _EmployeeTables;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.EmployeeTable, global::LightSwitchApplication.EmployeeTable.DetailsClass, global::LightSwitchApplication.EmployeeTable>.Data _EmployeeTable1;
             
         }
     

@@ -57,13 +57,6 @@ table {
     border-collapse: collapse;
     border: 1px solid #808080;
 }
-.visuallyAppealingTileContent
-{
-    color :black;
-    line-height : 100px ;
-    background-color:green;
-    font-weight:bold;
-}
 
 .msls-large-icon .ui-icon-msls-trash {
     background-position: -850px 0px;
@@ -77,48 +70,53 @@ table {
 }
 
 .add {
-     background-image: url('Images/add1.gif')!important;
-    /*padding: 1px 6px 1px 6px;*/
+    background-image: url('Images/add1.gif') !important;
     width: 20px;
     height: 20px;
+    /*top: -30px;*/
     background-position: center;
-    background-color: transparent;
-    box-shadow: 1px 1px .5px #888888;
+    background-color: transparent !important;
     text-indent: -9999px;
-    text-transform: capitalize;
     background-repeat: no-repeat;
-    float: right;
     border-style: none;
-    position :fixed;
-  
-      }
+}
 
 .search {
     background-image: url('Images/search.png.gif') !important;
-    padding: 1px 6px 1px 6px;
     width: 20px;
     height: 20px;
+    /*top: -30px;*/
     background-position: center;
-    /*border: 1px solid black !important;*/
-    background-color: transparent;
-    box-shadow: 1px 1px .5px #888888;
+    background-color: transparent !important;
     text-indent: -9999px;
-    text-transform: capitalize;
     background-repeat: no-repeat;
-    float: right;
     border-style: none;
-    left: 60%;
 }
 
 .View {
     background-image: url('Images/Details.png') !important;
-    width: 20px;
-    height: 25px;
     background-position: center;
     background-color: transparent;
     min-width: 20px !important;
     text-indent: -9999px;
-    text-transform: capitalize;
     background-repeat: no-repeat;
     border-style: none;
+    width: 20px;
+    height: 20px;    
 }
+
+.msls-background-page .msls-ctl-value-dropdown .ui-btn-text > span:empty:after,
+.ui-page-active .msls-ctl-value-dropdown .ui-btn-text > span:empty:after,
+.msls-background-page .msls-text > span:empty:after,
+.ui-page-active .msls-text > span:empty:after,
+.msls-background-page .msls-text > a:empty:after,
+.ui-page-active .msls-text > a:empty:after {
+    display:none;
+}
+
+.msls-popup-content.msls-hauto, .msls-popup-content > .msls-ctl-image.msls-hauto {
+    margin: 10px 10px 10px 10px;
+    background-color: white;
+}
+
+

@@ -195,6 +195,22 @@ namespace LightSwitchApplication.Implementation
             }
         }
         private ObjectSet<Subject_Area> _Subject_Areas;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<InformationAreaDetail> InformationAreaDetails
+        {
+            get
+            {
+                if ((_InformationAreaDetails == null))
+                {
+                    _InformationAreaDetails = base.CreateObjectSet<InformationAreaDetail>("InformationAreaDetails");
+                }
+                return _InformationAreaDetails;
+            }
+        }
+        private ObjectSet<InformationAreaDetail> _InformationAreaDetails;
 
         #endregion
 
@@ -262,6 +278,14 @@ namespace LightSwitchApplication.Implementation
         public void AddToSubject_Areas(Subject_Area subject_Area)
         {
             base.AddObject("Subject_Areas", subject_Area);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the InformationAreaDetails EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToInformationAreaDetails(InformationAreaDetail informationAreaDetail)
+        {
+            base.AddObject("InformationAreaDetails", informationAreaDetail);
         }
 
         #endregion
@@ -3349,6 +3373,255 @@ namespace LightSwitchApplication.Implementation
         private Nullable<global::System.Int32> _Cnt;
         partial void OnCntChanging(Nullable<global::System.Int32> value);
         partial void OnCntChanged();
+
+        #endregion
+
+    
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="LightSwitchApplication", Name="InformationAreaDetail")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class InformationAreaDetail : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new InformationAreaDetail object.
+        /// </summary>
+        /// <param name="iNFORMATION_AREA_NAME">Initial value of the INFORMATION_AREA_NAME property.</param>
+        public static InformationAreaDetail CreateInformationAreaDetail(global::System.String iNFORMATION_AREA_NAME)
+        {
+            InformationAreaDetail informationAreaDetail = new InformationAreaDetail();
+            informationAreaDetail.INFORMATION_AREA_NAME = iNFORMATION_AREA_NAME;
+            return informationAreaDetail;
+        }
+
+        #endregion
+
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String INFORMATION_AREA_NAME
+        {
+            get
+            {
+                return _INFORMATION_AREA_NAME;
+            }
+            set
+            {
+                if (_INFORMATION_AREA_NAME != value)
+                {
+                    OnINFORMATION_AREA_NAMEChanging(value);
+                    ReportPropertyChanging("INFORMATION_AREA_NAME");
+                    _INFORMATION_AREA_NAME = value;
+                    ReportPropertyChanged("INFORMATION_AREA_NAME");
+                    OnINFORMATION_AREA_NAMEChanged();
+                }
+            }
+        }
+        private global::System.String _INFORMATION_AREA_NAME;
+        partial void OnINFORMATION_AREA_NAMEChanging(global::System.String value);
+        partial void OnINFORMATION_AREA_NAMEChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String INFORMATION_AREA_DESCRIPTION
+        {
+            get
+            {
+                return _INFORMATION_AREA_DESCRIPTION;
+            }
+            set
+            {
+                OnINFORMATION_AREA_DESCRIPTIONChanging(value);
+                ReportPropertyChanging("INFORMATION_AREA_DESCRIPTION");
+                _INFORMATION_AREA_DESCRIPTION = value;
+                ReportPropertyChanged("INFORMATION_AREA_DESCRIPTION");
+                OnINFORMATION_AREA_DESCRIPTIONChanged();
+            }
+        }
+        private global::System.String _INFORMATION_AREA_DESCRIPTION;
+        partial void OnINFORMATION_AREA_DESCRIPTIONChanging(global::System.String value);
+        partial void OnINFORMATION_AREA_DESCRIPTIONChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String REVIEW_STATUS
+        {
+            get
+            {
+                return _REVIEW_STATUS;
+            }
+            set
+            {
+                OnREVIEW_STATUSChanging(value);
+                ReportPropertyChanging("REVIEW_STATUS");
+                _REVIEW_STATUS = value;
+                ReportPropertyChanged("REVIEW_STATUS");
+                OnREVIEW_STATUSChanged();
+            }
+        }
+        private global::System.String _REVIEW_STATUS;
+        partial void OnREVIEW_STATUSChanging(global::System.String value);
+        partial void OnREVIEW_STATUSChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String REVIEWED_BY
+        {
+            get
+            {
+                return _REVIEWED_BY;
+            }
+            set
+            {
+                OnREVIEWED_BYChanging(value);
+                ReportPropertyChanging("REVIEWED_BY");
+                _REVIEWED_BY = value;
+                ReportPropertyChanged("REVIEWED_BY");
+                OnREVIEWED_BYChanged();
+            }
+        }
+        private global::System.String _REVIEWED_BY;
+        partial void OnREVIEWED_BYChanging(global::System.String value);
+        partial void OnREVIEWED_BYChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String MODIFIED_BY
+        {
+            get
+            {
+                return _MODIFIED_BY;
+            }
+            set
+            {
+                OnMODIFIED_BYChanging(value);
+                ReportPropertyChanging("MODIFIED_BY");
+                _MODIFIED_BY = value;
+                ReportPropertyChanged("MODIFIED_BY");
+                OnMODIFIED_BYChanged();
+            }
+        }
+        private global::System.String _MODIFIED_BY;
+        partial void OnMODIFIED_BYChanging(global::System.String value);
+        partial void OnMODIFIED_BYChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> MODIFIED_ON
+        {
+            get
+            {
+                return _MODIFIED_ON;
+            }
+            set
+            {
+                OnMODIFIED_ONChanging(value);
+                ReportPropertyChanging("MODIFIED_ON");
+                _MODIFIED_ON = value;
+                ReportPropertyChanged("MODIFIED_ON");
+                OnMODIFIED_ONChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _MODIFIED_ON;
+        partial void OnMODIFIED_ONChanging(Nullable<global::System.DateTime> value);
+        partial void OnMODIFIED_ONChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> CREATED_ON
+        {
+            get
+            {
+                return _CREATED_ON;
+            }
+            set
+            {
+                OnCREATED_ONChanging(value);
+                ReportPropertyChanging("CREATED_ON");
+                _CREATED_ON = value;
+                ReportPropertyChanged("CREATED_ON");
+                OnCREATED_ONChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _CREATED_ON;
+        partial void OnCREATED_ONChanging(Nullable<global::System.DateTime> value);
+        partial void OnCREATED_ONChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CREATED_BY
+        {
+            get
+            {
+                return _CREATED_BY;
+            }
+            set
+            {
+                OnCREATED_BYChanging(value);
+                ReportPropertyChanging("CREATED_BY");
+                _CREATED_BY = value;
+                ReportPropertyChanged("CREATED_BY");
+                OnCREATED_BYChanged();
+            }
+        }
+        private global::System.String _CREATED_BY;
+        partial void OnCREATED_BYChanging(global::System.String value);
+        partial void OnCREATED_BYChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> REVIEWED_ON
+        {
+            get
+            {
+                return _REVIEWED_ON;
+            }
+            set
+            {
+                OnREVIEWED_ONChanging(value);
+                ReportPropertyChanging("REVIEWED_ON");
+                _REVIEWED_ON = value;
+                ReportPropertyChanged("REVIEWED_ON");
+                OnREVIEWED_ONChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _REVIEWED_ON;
+        partial void OnREVIEWED_ONChanging(Nullable<global::System.DateTime> value);
+        partial void OnREVIEWED_ONChanged();
 
         #endregion
 

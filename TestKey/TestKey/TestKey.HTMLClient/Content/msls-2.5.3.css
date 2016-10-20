@@ -1149,7 +1149,7 @@ body.msls-opening-transition.msls-stage2.msls-full-animation .msls-header.msls-i
             position: absolute;
             left: -218px;
             top: -48px;
-        }
+        }msls-presenter-content 
 
 select {
     margin: 0px;
@@ -1236,7 +1236,8 @@ select {
 }
 
 .msls-li .msls-text {
-    white-space: nowrap;
+    /*removed by developer*/
+    /*white-space: nowrap;*/
     text-overflow: ellipsis;
 }
 
@@ -1247,6 +1248,7 @@ select {
 .msls-background-page .msls-text > a:empty:after,
 .ui-page-active .msls-text > a:empty:after {
     content: "\a0";
+  
 }
 
 
@@ -1349,6 +1351,7 @@ select {
 
 .msls-modal-picker-clear-container {
     float: right;
+    
 }
 
 .msls-ctl-details-modal-picker .msls-presenter-content > .msls-text {
@@ -1374,7 +1377,8 @@ select {
 }
 
 .msls-ctl-details-modal-picker .id-container {
-    position: relative;
+    position:center;
+    /*position:relative;*/
 }
 
 .msls-ctl-details-modal-picker .id-modal-button.msls-has-search {

@@ -128,6 +128,8 @@
     <LightSwitchModel Include="Screens\AddEditCOR_DATASET.lsml" />
     <LightSwitchModel Include="Screens\AddEditCOR_SUBJECT_AREA.lsml" />
     <LightSwitchModel Include="Screens\AddEditCOR_SUBJECT_AREA_GROUP.lsml" />
+    <LightSwitchModel Include="Screens\AddEditInformationAreaDetail.lsml" />
+    <LightSwitchModel Include="Screens\BrowseInformationAreaDetails.lsml" />
     <LightSwitchModel Include="Screens\COR_INFORMATION_AREAs\AddEditCOR_INFORMATION_AREA.lsml" />
     <LightSwitchModel Include="Screens\COR_INFORMATION_AREAs\BrowseCOR_INFORMATION_AREAs.lsml" />
     <LightSwitchModel Include="Screens\COR_INFORMATION_AREAs\ViewCOR_INFORMATION_AREA.lsml" />

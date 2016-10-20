@@ -240,6 +240,15 @@ namespace LightSwitchApplication
         partial void Subject_Areas_Filter(ref global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.Subject_Area, bool>> filter);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InformationAreaDetails_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InformationAreaDetails_Validate(global::LightSwitchApplication.InformationAreaDetail entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InformationAreaDetails_Filter(ref global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.InformationAreaDetail, bool>> filter);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void SaveChanges_CanExecute(ref bool result);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -715,6 +724,40 @@ namespace LightSwitchApplication
             {
                 global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.Subject_Area, bool>> filter = null;
                 d.Subject_Areas_Filter(ref filter);
+                return filter;
+            }
+            
+            [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.DDATAPOLICYDataService, global::LightSwitchApplication.InformationAreaDetail>
+                __InformationAreaDetailsEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.DDATAPOLICYDataService, global::LightSwitchApplication.InformationAreaDetail>(
+                    "InformationAreaDetails",
+                    null,
+                    null,
+                    null,
+                    global::LightSwitchApplication.DDATAPOLICYDataService.DetailsClass.__InformationAreaDetails_CanRead,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    global::LightSwitchApplication.DDATAPOLICYDataService.DetailsClass.__InformationAreaDetails_Validate,
+                    global::LightSwitchApplication.DDATAPOLICYDataService.DetailsClass.__InformationAreaDetails_Filter);
+            private static bool __InformationAreaDetails_CanRead(global::LightSwitchApplication.DDATAPOLICYDataService d)
+            {
+                bool result = true;
+                d.InformationAreaDetails_CanRead(ref result);
+                return result;
+            }
+            private static void __InformationAreaDetails_Validate(global::LightSwitchApplication.DDATAPOLICYDataService d, global::LightSwitchApplication.InformationAreaDetail e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.InformationAreaDetails_Validate(e, r);
+            }
+            private static global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.InformationAreaDetail, bool>> __InformationAreaDetails_Filter(global::LightSwitchApplication.DDATAPOLICYDataService d)
+            {
+                global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.InformationAreaDetail, bool>> filter = null;
+                d.InformationAreaDetails_Filter(ref filter);
                 return filter;
             }
             
