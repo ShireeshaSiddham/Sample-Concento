@@ -4649,6 +4649,464 @@
         REVIEWED_ON_postRender: [$element, function () { return new lightSwitchApplication.BrowseInformationAreaDetails().findContentItem("REVIEWED_ON"); }]
     });
 
+    lightSwitchApplication.EditInformationArea.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.EditInformationArea
+        },
+        InformationAreaList: {
+            _$class: msls.ContentItem,
+            _$name: "InformationAreaList",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.EditInformationArea,
+            data: lightSwitchApplication.EditInformationArea,
+            value: lightSwitchApplication.EditInformationArea
+        },
+        COR_INFORMATION_AREAs: {
+            _$class: msls.ContentItem,
+            _$name: "COR_INFORMATION_AREAs",
+            _$parentName: "InformationAreaList",
+            screen: lightSwitchApplication.EditInformationArea,
+            data: lightSwitchApplication.EditInformationArea,
+            value: {
+                _$class: msls.VisualCollection,
+                screen: lightSwitchApplication.EditInformationArea,
+                _$entry: {
+                    elementType: lightSwitchApplication.COR_INFORMATION_AREA
+                }
+            }
+        },
+        COR_INFORMATION_AREAsTemplate: {
+            _$class: msls.ContentItem,
+            _$name: "COR_INFORMATION_AREAsTemplate",
+            _$parentName: "COR_INFORMATION_AREAs",
+            screen: lightSwitchApplication.EditInformationArea,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: lightSwitchApplication.COR_INFORMATION_AREA
+        },
+        INFORMATION_AREA_ID: {
+            _$class: msls.ContentItem,
+            _$name: "INFORMATION_AREA_ID",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationArea,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: String
+        },
+        INFORMATION_AREA_NAME: {
+            _$class: msls.ContentItem,
+            _$name: "INFORMATION_AREA_NAME",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationArea,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: String
+        },
+        INFORMATION_AREA_DESCRIPTION: {
+            _$class: msls.ContentItem,
+            _$name: "INFORMATION_AREA_DESCRIPTION",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationArea,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: String
+        },
+        INFORMATION_ARCHITECT_ID: {
+            _$class: msls.ContentItem,
+            _$name: "INFORMATION_ARCHITECT_ID",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationArea,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: String
+        },
+        REVIEW_STATUS: {
+            _$class: msls.ContentItem,
+            _$name: "REVIEW_STATUS",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationArea,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: String
+        },
+        OLD_REVIEW_STATUS: {
+            _$class: msls.ContentItem,
+            _$name: "OLD_REVIEW_STATUS",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationArea,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: String
+        },
+        REVIEWED_BY: {
+            _$class: msls.ContentItem,
+            _$name: "REVIEWED_BY",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationArea,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: String
+        },
+        REVIEWED_ON: {
+            _$class: msls.ContentItem,
+            _$name: "REVIEWED_ON",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationArea,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: Date
+        },
+        CREATED_BY: {
+            _$class: msls.ContentItem,
+            _$name: "CREATED_BY",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationArea,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: String
+        },
+        CREATED_ON: {
+            _$class: msls.ContentItem,
+            _$name: "CREATED_ON",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationArea,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: Date
+        },
+        MODIFIED_ON: {
+            _$class: msls.ContentItem,
+            _$name: "MODIFIED_ON",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationArea,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: Date
+        },
+        MODIFIED_BY: {
+            _$class: msls.ContentItem,
+            _$name: "MODIFIED_BY",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationArea,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: String
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.EditInformationArea
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.EditInformationArea, {
+        /// <field>
+        /// Called when a new EditInformationArea screen is created.
+        /// <br/>created(msls.application.EditInformationArea screen)
+        /// </field>
+        created: [lightSwitchApplication.EditInformationArea],
+        /// <field>
+        /// Called before changes on an active EditInformationArea screen are applied.
+        /// <br/>beforeApplyChanges(msls.application.EditInformationArea screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.EditInformationArea],
+        /// <field>
+        /// Called after the InformationAreaList content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        InformationAreaList_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("InformationAreaList"); }],
+        /// <field>
+        /// Called after the COR_INFORMATION_AREAs content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        COR_INFORMATION_AREAs_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("COR_INFORMATION_AREAs"); }],
+        /// <field>
+        /// Called after the COR_INFORMATION_AREAsTemplate content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        COR_INFORMATION_AREAsTemplate_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("COR_INFORMATION_AREAsTemplate"); }],
+        /// <field>
+        /// Called after the INFORMATION_AREA_ID content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        INFORMATION_AREA_ID_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("INFORMATION_AREA_ID"); }],
+        /// <field>
+        /// Called after the INFORMATION_AREA_NAME content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        INFORMATION_AREA_NAME_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("INFORMATION_AREA_NAME"); }],
+        /// <field>
+        /// Called after the INFORMATION_AREA_DESCRIPTION content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        INFORMATION_AREA_DESCRIPTION_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("INFORMATION_AREA_DESCRIPTION"); }],
+        /// <field>
+        /// Called after the INFORMATION_ARCHITECT_ID content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        INFORMATION_ARCHITECT_ID_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("INFORMATION_ARCHITECT_ID"); }],
+        /// <field>
+        /// Called after the REVIEW_STATUS content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        REVIEW_STATUS_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("REVIEW_STATUS"); }],
+        /// <field>
+        /// Called after the OLD_REVIEW_STATUS content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        OLD_REVIEW_STATUS_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("OLD_REVIEW_STATUS"); }],
+        /// <field>
+        /// Called after the REVIEWED_BY content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        REVIEWED_BY_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("REVIEWED_BY"); }],
+        /// <field>
+        /// Called after the REVIEWED_ON content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        REVIEWED_ON_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("REVIEWED_ON"); }],
+        /// <field>
+        /// Called after the CREATED_BY content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        CREATED_BY_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("CREATED_BY"); }],
+        /// <field>
+        /// Called after the CREATED_ON content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        CREATED_ON_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("CREATED_ON"); }],
+        /// <field>
+        /// Called after the MODIFIED_ON content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        MODIFIED_ON_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("MODIFIED_ON"); }],
+        /// <field>
+        /// Called after the MODIFIED_BY content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        MODIFIED_BY_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("MODIFIED_BY"); }]
+    });
+
+    lightSwitchApplication.EditInformationAreaDetails.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.EditInformationAreaDetails
+        },
+        Details: {
+            _$class: msls.ContentItem,
+            _$name: "Details",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.EditInformationAreaDetails,
+            data: lightSwitchApplication.EditInformationAreaDetails,
+            value: lightSwitchApplication.EditInformationAreaDetails
+        },
+        COR_INFORMATION_AREAs: {
+            _$class: msls.ContentItem,
+            _$name: "COR_INFORMATION_AREAs",
+            _$parentName: "Details",
+            screen: lightSwitchApplication.EditInformationAreaDetails,
+            data: lightSwitchApplication.EditInformationAreaDetails,
+            value: {
+                _$class: msls.VisualCollection,
+                screen: lightSwitchApplication.EditInformationAreaDetails,
+                _$entry: {
+                    elementType: lightSwitchApplication.COR_INFORMATION_AREA
+                }
+            }
+        },
+        COR_INFORMATION_AREAsTemplate: {
+            _$class: msls.ContentItem,
+            _$name: "COR_INFORMATION_AREAsTemplate",
+            _$parentName: "COR_INFORMATION_AREAs",
+            screen: lightSwitchApplication.EditInformationAreaDetails,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: lightSwitchApplication.COR_INFORMATION_AREA
+        },
+        INFORMATION_AREA_ID: {
+            _$class: msls.ContentItem,
+            _$name: "INFORMATION_AREA_ID",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationAreaDetails,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: String
+        },
+        INFORMATION_AREA_NAME: {
+            _$class: msls.ContentItem,
+            _$name: "INFORMATION_AREA_NAME",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationAreaDetails,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: String
+        },
+        INFORMATION_AREA_DESCRIPTION: {
+            _$class: msls.ContentItem,
+            _$name: "INFORMATION_AREA_DESCRIPTION",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationAreaDetails,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: String
+        },
+        INFORMATION_ARCHITECT_ID: {
+            _$class: msls.ContentItem,
+            _$name: "INFORMATION_ARCHITECT_ID",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationAreaDetails,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: String
+        },
+        REVIEW_STATUS: {
+            _$class: msls.ContentItem,
+            _$name: "REVIEW_STATUS",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationAreaDetails,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: String
+        },
+        OLD_REVIEW_STATUS: {
+            _$class: msls.ContentItem,
+            _$name: "OLD_REVIEW_STATUS",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationAreaDetails,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: String
+        },
+        REVIEWED_BY: {
+            _$class: msls.ContentItem,
+            _$name: "REVIEWED_BY",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationAreaDetails,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: String
+        },
+        REVIEWED_ON: {
+            _$class: msls.ContentItem,
+            _$name: "REVIEWED_ON",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationAreaDetails,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: Date
+        },
+        CREATED_BY: {
+            _$class: msls.ContentItem,
+            _$name: "CREATED_BY",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationAreaDetails,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: String
+        },
+        CREATED_ON: {
+            _$class: msls.ContentItem,
+            _$name: "CREATED_ON",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationAreaDetails,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: Date
+        },
+        MODIFIED_ON: {
+            _$class: msls.ContentItem,
+            _$name: "MODIFIED_ON",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationAreaDetails,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: Date
+        },
+        MODIFIED_BY: {
+            _$class: msls.ContentItem,
+            _$name: "MODIFIED_BY",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationAreaDetails,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: String
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.EditInformationAreaDetails
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.EditInformationAreaDetails, {
+        /// <field>
+        /// Called when a new EditInformationAreaDetails screen is created.
+        /// <br/>created(msls.application.EditInformationAreaDetails screen)
+        /// </field>
+        created: [lightSwitchApplication.EditInformationAreaDetails],
+        /// <field>
+        /// Called before changes on an active EditInformationAreaDetails screen are applied.
+        /// <br/>beforeApplyChanges(msls.application.EditInformationAreaDetails screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.EditInformationAreaDetails],
+        /// <field>
+        /// Called after the Details content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Details_postRender: [$element, function () { return new lightSwitchApplication.EditInformationAreaDetails().findContentItem("Details"); }],
+        /// <field>
+        /// Called after the COR_INFORMATION_AREAs content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        COR_INFORMATION_AREAs_postRender: [$element, function () { return new lightSwitchApplication.EditInformationAreaDetails().findContentItem("COR_INFORMATION_AREAs"); }],
+        /// <field>
+        /// Called after the COR_INFORMATION_AREAsTemplate content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        COR_INFORMATION_AREAsTemplate_postRender: [$element, function () { return new lightSwitchApplication.EditInformationAreaDetails().findContentItem("COR_INFORMATION_AREAsTemplate"); }],
+        /// <field>
+        /// Called after the INFORMATION_AREA_ID content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        INFORMATION_AREA_ID_postRender: [$element, function () { return new lightSwitchApplication.EditInformationAreaDetails().findContentItem("INFORMATION_AREA_ID"); }],
+        /// <field>
+        /// Called after the INFORMATION_AREA_NAME content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        INFORMATION_AREA_NAME_postRender: [$element, function () { return new lightSwitchApplication.EditInformationAreaDetails().findContentItem("INFORMATION_AREA_NAME"); }],
+        /// <field>
+        /// Called after the INFORMATION_AREA_DESCRIPTION content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        INFORMATION_AREA_DESCRIPTION_postRender: [$element, function () { return new lightSwitchApplication.EditInformationAreaDetails().findContentItem("INFORMATION_AREA_DESCRIPTION"); }],
+        /// <field>
+        /// Called after the INFORMATION_ARCHITECT_ID content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        INFORMATION_ARCHITECT_ID_postRender: [$element, function () { return new lightSwitchApplication.EditInformationAreaDetails().findContentItem("INFORMATION_ARCHITECT_ID"); }],
+        /// <field>
+        /// Called after the REVIEW_STATUS content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        REVIEW_STATUS_postRender: [$element, function () { return new lightSwitchApplication.EditInformationAreaDetails().findContentItem("REVIEW_STATUS"); }],
+        /// <field>
+        /// Called after the OLD_REVIEW_STATUS content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        OLD_REVIEW_STATUS_postRender: [$element, function () { return new lightSwitchApplication.EditInformationAreaDetails().findContentItem("OLD_REVIEW_STATUS"); }],
+        /// <field>
+        /// Called after the REVIEWED_BY content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        REVIEWED_BY_postRender: [$element, function () { return new lightSwitchApplication.EditInformationAreaDetails().findContentItem("REVIEWED_BY"); }],
+        /// <field>
+        /// Called after the REVIEWED_ON content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        REVIEWED_ON_postRender: [$element, function () { return new lightSwitchApplication.EditInformationAreaDetails().findContentItem("REVIEWED_ON"); }],
+        /// <field>
+        /// Called after the CREATED_BY content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        CREATED_BY_postRender: [$element, function () { return new lightSwitchApplication.EditInformationAreaDetails().findContentItem("CREATED_BY"); }],
+        /// <field>
+        /// Called after the CREATED_ON content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        CREATED_ON_postRender: [$element, function () { return new lightSwitchApplication.EditInformationAreaDetails().findContentItem("CREATED_ON"); }],
+        /// <field>
+        /// Called after the MODIFIED_ON content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        MODIFIED_ON_postRender: [$element, function () { return new lightSwitchApplication.EditInformationAreaDetails().findContentItem("MODIFIED_ON"); }],
+        /// <field>
+        /// Called after the MODIFIED_BY content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        MODIFIED_BY_postRender: [$element, function () { return new lightSwitchApplication.EditInformationAreaDetails().findContentItem("MODIFIED_BY"); }]
+    });
+
     lightSwitchApplication.ViewInformationAreaDetails.prototype._$contentItems = {
         Tabs: {
             _$class: msls.ContentItem,
@@ -4931,235 +5389,6 @@
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         MODIFIED_BY_postRender: [$element, function () { return new lightSwitchApplication.ViewInformationAreaDetails().findContentItem("MODIFIED_BY"); }]
-    });
-
-    lightSwitchApplication.EditInformationArea.prototype._$contentItems = {
-        Tabs: {
-            _$class: msls.ContentItem,
-            _$name: "Tabs",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.EditInformationArea
-        },
-        InformationAreaList: {
-            _$class: msls.ContentItem,
-            _$name: "InformationAreaList",
-            _$parentName: "Tabs",
-            screen: lightSwitchApplication.EditInformationArea,
-            data: lightSwitchApplication.EditInformationArea,
-            value: lightSwitchApplication.EditInformationArea
-        },
-        COR_INFORMATION_AREAs: {
-            _$class: msls.ContentItem,
-            _$name: "COR_INFORMATION_AREAs",
-            _$parentName: "InformationAreaList",
-            screen: lightSwitchApplication.EditInformationArea,
-            data: lightSwitchApplication.EditInformationArea,
-            value: {
-                _$class: msls.VisualCollection,
-                screen: lightSwitchApplication.EditInformationArea,
-                _$entry: {
-                    elementType: lightSwitchApplication.COR_INFORMATION_AREA
-                }
-            }
-        },
-        COR_INFORMATION_AREAsTemplate: {
-            _$class: msls.ContentItem,
-            _$name: "COR_INFORMATION_AREAsTemplate",
-            _$parentName: "COR_INFORMATION_AREAs",
-            screen: lightSwitchApplication.EditInformationArea,
-            data: lightSwitchApplication.COR_INFORMATION_AREA,
-            value: lightSwitchApplication.COR_INFORMATION_AREA
-        },
-        INFORMATION_AREA_ID: {
-            _$class: msls.ContentItem,
-            _$name: "INFORMATION_AREA_ID",
-            _$parentName: "COR_INFORMATION_AREAsTemplate",
-            screen: lightSwitchApplication.EditInformationArea,
-            data: lightSwitchApplication.COR_INFORMATION_AREA,
-            value: String
-        },
-        INFORMATION_AREA_NAME: {
-            _$class: msls.ContentItem,
-            _$name: "INFORMATION_AREA_NAME",
-            _$parentName: "COR_INFORMATION_AREAsTemplate",
-            screen: lightSwitchApplication.EditInformationArea,
-            data: lightSwitchApplication.COR_INFORMATION_AREA,
-            value: String
-        },
-        INFORMATION_AREA_DESCRIPTION: {
-            _$class: msls.ContentItem,
-            _$name: "INFORMATION_AREA_DESCRIPTION",
-            _$parentName: "COR_INFORMATION_AREAsTemplate",
-            screen: lightSwitchApplication.EditInformationArea,
-            data: lightSwitchApplication.COR_INFORMATION_AREA,
-            value: String
-        },
-        INFORMATION_ARCHITECT_ID: {
-            _$class: msls.ContentItem,
-            _$name: "INFORMATION_ARCHITECT_ID",
-            _$parentName: "COR_INFORMATION_AREAsTemplate",
-            screen: lightSwitchApplication.EditInformationArea,
-            data: lightSwitchApplication.COR_INFORMATION_AREA,
-            value: String
-        },
-        REVIEW_STATUS: {
-            _$class: msls.ContentItem,
-            _$name: "REVIEW_STATUS",
-            _$parentName: "COR_INFORMATION_AREAsTemplate",
-            screen: lightSwitchApplication.EditInformationArea,
-            data: lightSwitchApplication.COR_INFORMATION_AREA,
-            value: String
-        },
-        OLD_REVIEW_STATUS: {
-            _$class: msls.ContentItem,
-            _$name: "OLD_REVIEW_STATUS",
-            _$parentName: "COR_INFORMATION_AREAsTemplate",
-            screen: lightSwitchApplication.EditInformationArea,
-            data: lightSwitchApplication.COR_INFORMATION_AREA,
-            value: String
-        },
-        REVIEWED_BY: {
-            _$class: msls.ContentItem,
-            _$name: "REVIEWED_BY",
-            _$parentName: "COR_INFORMATION_AREAsTemplate",
-            screen: lightSwitchApplication.EditInformationArea,
-            data: lightSwitchApplication.COR_INFORMATION_AREA,
-            value: String
-        },
-        REVIEWED_ON: {
-            _$class: msls.ContentItem,
-            _$name: "REVIEWED_ON",
-            _$parentName: "COR_INFORMATION_AREAsTemplate",
-            screen: lightSwitchApplication.EditInformationArea,
-            data: lightSwitchApplication.COR_INFORMATION_AREA,
-            value: Date
-        },
-        CREATED_BY: {
-            _$class: msls.ContentItem,
-            _$name: "CREATED_BY",
-            _$parentName: "COR_INFORMATION_AREAsTemplate",
-            screen: lightSwitchApplication.EditInformationArea,
-            data: lightSwitchApplication.COR_INFORMATION_AREA,
-            value: String
-        },
-        CREATED_ON: {
-            _$class: msls.ContentItem,
-            _$name: "CREATED_ON",
-            _$parentName: "COR_INFORMATION_AREAsTemplate",
-            screen: lightSwitchApplication.EditInformationArea,
-            data: lightSwitchApplication.COR_INFORMATION_AREA,
-            value: Date
-        },
-        MODIFIED_ON: {
-            _$class: msls.ContentItem,
-            _$name: "MODIFIED_ON",
-            _$parentName: "COR_INFORMATION_AREAsTemplate",
-            screen: lightSwitchApplication.EditInformationArea,
-            data: lightSwitchApplication.COR_INFORMATION_AREA,
-            value: Date
-        },
-        MODIFIED_BY: {
-            _$class: msls.ContentItem,
-            _$name: "MODIFIED_BY",
-            _$parentName: "COR_INFORMATION_AREAsTemplate",
-            screen: lightSwitchApplication.EditInformationArea,
-            data: lightSwitchApplication.COR_INFORMATION_AREA,
-            value: String
-        },
-        Popups: {
-            _$class: msls.ContentItem,
-            _$name: "Popups",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.EditInformationArea
-        }
-    };
-
-    msls._addEntryPoints(lightSwitchApplication.EditInformationArea, {
-        /// <field>
-        /// Called when a new EditInformationArea screen is created.
-        /// <br/>created(msls.application.EditInformationArea screen)
-        /// </field>
-        created: [lightSwitchApplication.EditInformationArea],
-        /// <field>
-        /// Called before changes on an active EditInformationArea screen are applied.
-        /// <br/>beforeApplyChanges(msls.application.EditInformationArea screen)
-        /// </field>
-        beforeApplyChanges: [lightSwitchApplication.EditInformationArea],
-        /// <field>
-        /// Called after the InformationAreaList content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        InformationAreaList_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("InformationAreaList"); }],
-        /// <field>
-        /// Called after the COR_INFORMATION_AREAs content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        COR_INFORMATION_AREAs_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("COR_INFORMATION_AREAs"); }],
-        /// <field>
-        /// Called after the COR_INFORMATION_AREAsTemplate content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        COR_INFORMATION_AREAsTemplate_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("COR_INFORMATION_AREAsTemplate"); }],
-        /// <field>
-        /// Called after the INFORMATION_AREA_ID content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        INFORMATION_AREA_ID_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("INFORMATION_AREA_ID"); }],
-        /// <field>
-        /// Called after the INFORMATION_AREA_NAME content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        INFORMATION_AREA_NAME_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("INFORMATION_AREA_NAME"); }],
-        /// <field>
-        /// Called after the INFORMATION_AREA_DESCRIPTION content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        INFORMATION_AREA_DESCRIPTION_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("INFORMATION_AREA_DESCRIPTION"); }],
-        /// <field>
-        /// Called after the INFORMATION_ARCHITECT_ID content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        INFORMATION_ARCHITECT_ID_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("INFORMATION_ARCHITECT_ID"); }],
-        /// <field>
-        /// Called after the REVIEW_STATUS content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        REVIEW_STATUS_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("REVIEW_STATUS"); }],
-        /// <field>
-        /// Called after the OLD_REVIEW_STATUS content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        OLD_REVIEW_STATUS_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("OLD_REVIEW_STATUS"); }],
-        /// <field>
-        /// Called after the REVIEWED_BY content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        REVIEWED_BY_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("REVIEWED_BY"); }],
-        /// <field>
-        /// Called after the REVIEWED_ON content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        REVIEWED_ON_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("REVIEWED_ON"); }],
-        /// <field>
-        /// Called after the CREATED_BY content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        CREATED_BY_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("CREATED_BY"); }],
-        /// <field>
-        /// Called after the CREATED_ON content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        CREATED_ON_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("CREATED_ON"); }],
-        /// <field>
-        /// Called after the MODIFIED_ON content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        MODIFIED_ON_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("MODIFIED_ON"); }],
-        /// <field>
-        /// Called after the MODIFIED_BY content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        MODIFIED_BY_postRender: [$element, function () { return new lightSwitchApplication.EditInformationArea().findContentItem("MODIFIED_BY"); }]
     });
 
 }(msls.application));

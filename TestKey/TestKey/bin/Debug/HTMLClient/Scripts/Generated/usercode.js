@@ -6,3 +6,4 @@ document.writeln("<script type=\"text/javascript\" src=\"Screens/EmployeeProject
 document.writeln("<script type=\"text/javascript\" src=\"Screens/EmployeeProjects/ViewEmployeeProject.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/MonthTables/BrowseMonthTables.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/MonthTables/ViewMonthTable.lsml.js\"></script>");
+document.writeln("<script type=\"text/javascript\" src=\"Screens/ViewInformationAreaDetails.lsml.js\"></script>");

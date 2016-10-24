@@ -5,12 +5,10 @@
     <Partial />
   </Application.Attributes>
   <Screen
-    Name="ViewInformationAreaDetails">
+    Name="EditInformationAreaDetails">
     <Screen.Attributes>
       <SaveChangesTo
         EntityContainer="DDATAPOLICYData" />
-      <DisplayName
-        Value="Information Area" />
     </Screen.Attributes>
     <Screen.RootContentItem>
       <ContentItem
@@ -22,51 +20,13 @@
           Kind="Group"
           View="Microsoft.LightSwitch.MobileWeb:TabPages">
           <ContentItem
-            Name="InformationAreaList"
-            Kind="Group">
-            <ContentItem
-              Name="Group"
-              Kind="Group"
-              View="Microsoft.LightSwitch.MobileWeb:ColumnsLayout">
-              <ContentItem
-                Name="Edit"
-                Kind="Command">
-                <ContentItem.PropertySources>
-                  <ControlPropertySource
-                    Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <CallExpression
-                          Target="!module/Methods[showEditInformationAreaDetails]">
-                          <ArgumentExpression
-                            Parameter="InformationAreaName">
-                            <ChainExpression>
-                              <MemberExpression
-                                Member="ViewInformationAreaDetails/Properties[InformationAreaName]" />
-                            </ChainExpression>
-                          </ArgumentExpression>
-                        </CallExpression>
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ControlPropertySource>
-                </ContentItem.PropertySources>
-              </ContentItem>
-              <ContentItem
-                Name="Delete"
-                Kind="Command">
-                <ContentItem.PropertySources>
-                  <ControlPropertySource
-                    Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <CallExpression
-                          Target="ViewInformationAreaDetails/Methods[Delete]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ControlPropertySource>
-                </ContentItem.PropertySources>
-              </ContentItem>
-            </ContentItem>
+            Name="Details"
+            Kind="Group"
+            View="Microsoft.LightSwitch.MobileWeb:RowsLayout">
+            <ContentItem.Attributes>
+              <DisplayName
+                Value="Details" />
+            </ContentItem.Attributes>
             <ContentItem
               Name="COR_INFORMATION_AREAs"
               Kind="Collection"
@@ -76,7 +36,7 @@
                 <ScreenExpressionTree>
                   <ChainExpression>
                     <MemberExpression
-                      Member="ViewInformationAreaDetails/Properties[COR_INFORMATION_AREAs]" />
+                      Member="EditInformationAreaDetails/Properties[COR_INFORMATION_AREAs]" />
                   </ChainExpression>
                 </ScreenExpressionTree>
               </ContentItem.DataSource>
@@ -106,7 +66,8 @@
                 <ContentItem
                   Name="INFORMATION_AREA_NAME"
                   Kind="Value"
-                  DataType=":String">
+                  DataType=":String"
+                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
@@ -131,7 +92,8 @@
                 <ContentItem
                   Name="INFORMATION_AREA_DESCRIPTION"
                   Kind="Value"
-                  DataType=":String?">
+                  DataType=":String?"
+                  View="Microsoft.LightSwitch.MobileWeb:TextArea">
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
@@ -170,7 +132,8 @@
                 <ContentItem
                   Name="REVIEW_STATUS"
                   Kind="Value"
-                  DataType=":String?">
+                  DataType=":String?"
+                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
@@ -209,7 +172,8 @@
                 <ContentItem
                   Name="REVIEWED_BY"
                   Kind="Value"
-                  DataType=":String?">
+                  DataType=":String?"
+                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
@@ -356,33 +320,9 @@
                     </ControlPropertySource>
                   </ContentItem.PropertySources>
                 </ContentItem>
-                <ContentItem.PropertySources>
-                  <ControlPropertySource
-                    Property="Microsoft.LightSwitch.MobileWeb:RootGroup/Properties[CompactMargins]">
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <ConstantExpression
-                          Value="False"
-                          ResultType=":Boolean" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ControlPropertySource>
-                </ContentItem.PropertySources>
               </ContentItem>
             </ContentItem>
           </ContentItem>
-          <ContentItem.PropertySources>
-            <ControlPropertySource
-              Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[BrowseOnly]">
-              <ScreenExpressionTree>
-                <ChainExpression>
-                  <ConstantExpression
-                    Value="True"
-                    ResultType=":Boolean" />
-                </ChainExpression>
-              </ScreenExpressionTree>
-            </ControlPropertySource>
-          </ContentItem.PropertySources>
         </ContentItem>
         <ContentItem
           Name="Popups"
@@ -390,17 +330,17 @@
           View="Microsoft.LightSwitch.MobileWeb:DialogPages" />
         <ContentItem.PropertySources>
           <ControlPropertySource
-            Property="Microsoft.LightSwitch.MobileWeb:Screen/Properties[ShowAsDialog]">
+            Property="Microsoft.LightSwitch.MobileWeb:Screen/Properties[ScreenType]">
             <ScreenExpressionTree>
               <ChainExpression>
                 <ConstantExpression
-                  Value="True"
-                  ResultType=":Boolean" />
+                  Value="Edit"
+                  ResultType=":String" />
               </ChainExpression>
             </ScreenExpressionTree>
           </ControlPropertySource>
           <ControlPropertySource
-            Property="Microsoft.LightSwitch.MobileWeb:Screen/Properties[HideTabTitles]">
+            Property="Microsoft.LightSwitch.MobileWeb:Screen/Properties[ShowAsDialog]">
             <ScreenExpressionTree>
               <ChainExpression>
                 <ConstantExpression
@@ -435,46 +375,8 @@
           Name="dialogName"
           ParameterType=":String" />
       </ScreenMethod>
-      <ScreenMethod
-        Name="Edit" />
-      <ScreenMethod
-        Name="Delete" />
     </Screen.Methods>
     <Screen.Properties>
-      <ScreenCollectionProperty
-        Name="InformationAreas"
-        PageSize="45"
-        PropertyType="CollectionView$InformationArea">
-        <ScreenCollectionProperty.Query>
-          <ScreenQueryDefinition
-            Name="InformationAreasQuery"
-            ReturnType="InformationArea*">
-            <ScreenQueryDefinition.FilterExpression>
-              <QueryFilterExpressionTree />
-            </ScreenQueryDefinition.FilterExpression>
-            <ScreenQueryDefinition.Source>
-              <QuerySourceExpressionTree>
-                <MemberExpression
-                  Member="DDATAPOLICYData/Members[InformationAreas]" />
-              </QuerySourceExpressionTree>
-            </ScreenQueryDefinition.Source>
-          </ScreenQueryDefinition>
-        </ScreenCollectionProperty.Query>
-        <ScreenExpressionTree>
-          <ChainExpression>
-            <CallExpression
-              Target="ViewInformationAreaDetails/Properties[InformationAreas]/Query" />
-          </ChainExpression>
-        </ScreenExpressionTree>
-      </ScreenCollectionProperty>
-      <ScreenProperty
-        Name="InformationAreaName"
-        PropertyType=":String">
-        <ScreenProperty.Attributes>
-          <Required />
-          <IsParameter />
-        </ScreenProperty.Attributes>
-      </ScreenProperty>
       <ScreenCollectionProperty
         Name="COR_INFORMATION_AREAs"
         PageSize="45"
@@ -516,26 +418,34 @@
         <ScreenExpressionTree>
           <ChainExpression>
             <CallExpression
-              Target="ViewInformationAreaDetails/Properties[COR_INFORMATION_AREAs]/Query">
+              Target="EditInformationAreaDetails/Properties[COR_INFORMATION_AREAs]/Query">
               <ArgumentExpression
                 Parameter="INFORMATION_AREA_NAME">
                 <ChainExpression>
                   <MemberExpression
-                    Member="ViewInformationAreaDetails/Properties[InformationAreaName]" />
+                    Member="EditInformationAreaDetails/Properties[InformationAreaName]" />
                 </ChainExpression>
               </ArgumentExpression>
             </CallExpression>
           </ChainExpression>
         </ScreenExpressionTree>
       </ScreenCollectionProperty>
+      <ScreenProperty
+        Name="InformationAreaName"
+        PropertyType=":String">
+        <ScreenProperty.Attributes>
+          <Required />
+          <IsParameter />
+        </ScreenProperty.Attributes>
+      </ScreenProperty>
     </Screen.Properties>
   </Screen>
   <Application.Methods>
     <ApplicationMethod
-      Name="showViewInformationAreaDetails">
+      Name="showEditInformationAreaDetails">
       <ApplicationMethod.Attributes>
         <ShowScreenMethod
-          TargetScreen="ViewInformationAreaDetails" />
+          TargetScreen="EditInformationAreaDetails" />
       </ApplicationMethod.Attributes>
       <ApplicationMethodParameter
         Name="InformationAreaName"

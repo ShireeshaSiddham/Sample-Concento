@@ -195,6 +195,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataSources\LS_UTData\_LS_UTDataService.lsml.cs" />
+    <Compile Include="deleteRecords.ashx.cs">
+      <DependentUpon>deleteRecords.ashx</DependentUpon>
+    </Compile>
     <Compile Include="getRecordsCount.ashx.cs">
       <DependentUpon>getRecordsCount.ashx</DependentUpon>
     </Compile>
@@ -230,6 +233,7 @@
     <LightSwitchModel Include="Properties\DataSources\DDATAPOLICYData.lsml" />
     <Content Include="getRecordsCount.ashx" />
     <LightSwitchModel Include="DataSources\DDATAPOLICYData\InformationAreaDetails.lsml" />
+    <Content Include="deleteRecords.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
