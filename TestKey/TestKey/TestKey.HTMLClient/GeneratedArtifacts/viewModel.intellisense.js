@@ -4915,6 +4915,12 @@
             data: lightSwitchApplication.COR_INFORMATION_AREA,
             value: lightSwitchApplication.COR_INFORMATION_AREA
         },
+        Label: {
+            _$class: msls.ContentItem,
+            _$name: "Label",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationAreaDetails
+        },
         INFORMATION_AREA_ID: {
             _$class: msls.ContentItem,
             _$name: "INFORMATION_AREA_ID",
@@ -4979,6 +4985,12 @@
             data: lightSwitchApplication.COR_INFORMATION_AREA,
             value: Date
         },
+        Label1: {
+            _$class: msls.ContentItem,
+            _$name: "Label1",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.EditInformationAreaDetails
+        },
         CREATED_BY: {
             _$class: msls.ContentItem,
             _$name: "CREATED_BY",
@@ -5031,6 +5043,16 @@
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.EditInformationAreaDetails],
         /// <field>
+        /// Called to determine if the Label method can be executed.
+        /// <br/>canExecute(msls.application.EditInformationAreaDetails screen)
+        /// </field>
+        Label_canExecute: [lightSwitchApplication.EditInformationAreaDetails],
+        /// <field>
+        /// Called to execute the Label method.
+        /// <br/>execute(msls.application.EditInformationAreaDetails screen)
+        /// </field>
+        Label_execute: [lightSwitchApplication.EditInformationAreaDetails],
+        /// <field>
         /// Called after the Details content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
@@ -5045,6 +5067,11 @@
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         COR_INFORMATION_AREAsTemplate_postRender: [$element, function () { return new lightSwitchApplication.EditInformationAreaDetails().findContentItem("COR_INFORMATION_AREAsTemplate"); }],
+        /// <field>
+        /// Called after the Label content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Label_postRender: [$element, function () { return new lightSwitchApplication.EditInformationAreaDetails().findContentItem("Label"); }],
         /// <field>
         /// Called after the INFORMATION_AREA_ID content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
@@ -5085,6 +5112,11 @@
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         REVIEWED_ON_postRender: [$element, function () { return new lightSwitchApplication.EditInformationAreaDetails().findContentItem("REVIEWED_ON"); }],
+        /// <field>
+        /// Called after the Label1 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Label1_postRender: [$element, function () { return new lightSwitchApplication.EditInformationAreaDetails().findContentItem("Label1"); }],
         /// <field>
         /// Called after the CREATED_BY content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
@@ -5172,6 +5204,12 @@
             data: lightSwitchApplication.COR_INFORMATION_AREA,
             value: String
         },
+        Label: {
+            _$class: msls.ContentItem,
+            _$name: "Label",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.ViewInformationAreaDetails
+        },
         INFORMATION_AREA_NAME: {
             _$class: msls.ContentItem,
             _$name: "INFORMATION_AREA_NAME",
@@ -5228,6 +5266,28 @@
             data: lightSwitchApplication.COR_INFORMATION_AREA,
             value: Date
         },
+        Label1: {
+            _$class: msls.ContentItem,
+            _$name: "Label1",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.ViewInformationAreaDetails
+        },
+        MODIFIED_BY: {
+            _$class: msls.ContentItem,
+            _$name: "MODIFIED_BY",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.ViewInformationAreaDetails,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: String
+        },
+        MODIFIED_ON: {
+            _$class: msls.ContentItem,
+            _$name: "MODIFIED_ON",
+            _$parentName: "COR_INFORMATION_AREAsTemplate",
+            screen: lightSwitchApplication.ViewInformationAreaDetails,
+            data: lightSwitchApplication.COR_INFORMATION_AREA,
+            value: Date
+        },
         CREATED_BY: {
             _$class: msls.ContentItem,
             _$name: "CREATED_BY",
@@ -5244,21 +5304,11 @@
             data: lightSwitchApplication.COR_INFORMATION_AREA,
             value: Date
         },
-        MODIFIED_ON: {
+        Method: {
             _$class: msls.ContentItem,
-            _$name: "MODIFIED_ON",
+            _$name: "Method",
             _$parentName: "COR_INFORMATION_AREAsTemplate",
-            screen: lightSwitchApplication.ViewInformationAreaDetails,
-            data: lightSwitchApplication.COR_INFORMATION_AREA,
-            value: Date
-        },
-        MODIFIED_BY: {
-            _$class: msls.ContentItem,
-            _$name: "MODIFIED_BY",
-            _$parentName: "COR_INFORMATION_AREAsTemplate",
-            screen: lightSwitchApplication.ViewInformationAreaDetails,
-            data: lightSwitchApplication.COR_INFORMATION_AREA,
-            value: String
+            screen: lightSwitchApplication.ViewInformationAreaDetails
         },
         Popups: {
             _$class: msls.ContentItem,
@@ -5300,6 +5350,26 @@
         /// </field>
         Delete_execute: [lightSwitchApplication.ViewInformationAreaDetails],
         /// <field>
+        /// Called to determine if the Label method can be executed.
+        /// <br/>canExecute(msls.application.ViewInformationAreaDetails screen)
+        /// </field>
+        Label_canExecute: [lightSwitchApplication.ViewInformationAreaDetails],
+        /// <field>
+        /// Called to execute the Label method.
+        /// <br/>execute(msls.application.ViewInformationAreaDetails screen)
+        /// </field>
+        Label_execute: [lightSwitchApplication.ViewInformationAreaDetails],
+        /// <field>
+        /// Called to determine if the Method method can be executed.
+        /// <br/>canExecute(msls.application.ViewInformationAreaDetails screen)
+        /// </field>
+        Method_canExecute: [lightSwitchApplication.ViewInformationAreaDetails],
+        /// <field>
+        /// Called to execute the Method method.
+        /// <br/>execute(msls.application.ViewInformationAreaDetails screen)
+        /// </field>
+        Method_execute: [lightSwitchApplication.ViewInformationAreaDetails],
+        /// <field>
         /// Called after the InformationAreaList content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
@@ -5334,6 +5404,11 @@
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         INFORMATION_AREA_ID_postRender: [$element, function () { return new lightSwitchApplication.ViewInformationAreaDetails().findContentItem("INFORMATION_AREA_ID"); }],
+        /// <field>
+        /// Called after the Label content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Label_postRender: [$element, function () { return new lightSwitchApplication.ViewInformationAreaDetails().findContentItem("Label"); }],
         /// <field>
         /// Called after the INFORMATION_AREA_NAME content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
@@ -5370,6 +5445,21 @@
         /// </field>
         REVIEWED_ON_postRender: [$element, function () { return new lightSwitchApplication.ViewInformationAreaDetails().findContentItem("REVIEWED_ON"); }],
         /// <field>
+        /// Called after the Label1 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Label1_postRender: [$element, function () { return new lightSwitchApplication.ViewInformationAreaDetails().findContentItem("Label1"); }],
+        /// <field>
+        /// Called after the MODIFIED_BY content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        MODIFIED_BY_postRender: [$element, function () { return new lightSwitchApplication.ViewInformationAreaDetails().findContentItem("MODIFIED_BY"); }],
+        /// <field>
+        /// Called after the MODIFIED_ON content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        MODIFIED_ON_postRender: [$element, function () { return new lightSwitchApplication.ViewInformationAreaDetails().findContentItem("MODIFIED_ON"); }],
+        /// <field>
         /// Called after the CREATED_BY content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
@@ -5380,15 +5470,10 @@
         /// </field>
         CREATED_ON_postRender: [$element, function () { return new lightSwitchApplication.ViewInformationAreaDetails().findContentItem("CREATED_ON"); }],
         /// <field>
-        /// Called after the MODIFIED_ON content item has been rendered.
+        /// Called after the Method content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        MODIFIED_ON_postRender: [$element, function () { return new lightSwitchApplication.ViewInformationAreaDetails().findContentItem("MODIFIED_ON"); }],
-        /// <field>
-        /// Called after the MODIFIED_BY content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        MODIFIED_BY_postRender: [$element, function () { return new lightSwitchApplication.ViewInformationAreaDetails().findContentItem("MODIFIED_BY"); }]
+        Method_postRender: [$element, function () { return new lightSwitchApplication.ViewInformationAreaDetails().findContentItem("Method"); }]
     });
 
 }(msls.application));

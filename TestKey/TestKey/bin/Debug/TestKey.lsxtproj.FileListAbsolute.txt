@@ -499,3 +499,4 @@ C:\Users\DMR-Sireesha\Documents\GitHub\Sample-Concento\TestKey\TestKey\bin\Debug
 C:\Users\DMR-Sireesha\Documents\GitHub\Sample-Concento\TestKey\TestKey\bin\Debug\HTMLClient\Content\Resources\msls.lang-en-us.resjson
 C:\Users\DMR-Sireesha\Documents\GitHub\Sample-Concento\TestKey\TestKey\bin\Debug\HTMLClient\Screens\ViewInformationAreaDetails.lsml.js
 C:\Users\DMR-Sireesha\Documents\GitHub\Sample-Concento\TestKey\TestKey\bin\Debug\deleteRecords.ashx
+C:\Users\DMR-Sireesha\Documents\GitHub\Sample-Concento\TestKey\TestKey\bin\Debug\HTMLClient\Content\Images\book.png

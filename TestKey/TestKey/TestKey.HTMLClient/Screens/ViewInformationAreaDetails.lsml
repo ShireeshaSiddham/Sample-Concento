@@ -104,6 +104,25 @@
                   </ContentItem.DataSource>
                 </ContentItem>
                 <ContentItem
+                  Name="Label"
+                  Kind="Command">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="Details" />
+                  </ContentItem.Attributes>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <CallExpression
+                            Target="ViewInformationAreaDetails/Methods[Label]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
+                </ContentItem>
+                <ContentItem
                   Name="INFORMATION_AREA_NAME"
                   Kind="Value"
                   DataType=":String">
@@ -155,7 +174,6 @@
                 </ContentItem>
                 <ContentItem
                   Name="INFORMATION_ARCHITECT_ID"
-                  IsHidden="True"
                   Kind="Value"
                   DataType=":String?">
                   <ContentItem.DataSource>
@@ -166,6 +184,18 @@
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[AttachedLabelPosition]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="LeftAligned"
+                            ResultType=":String" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
                 </ContentItem>
                 <ContentItem
                   Name="REVIEW_STATUS"
@@ -257,6 +287,75 @@
                   </ContentItem.PropertySources>
                 </ContentItem>
                 <ContentItem
+                  Name="Label1"
+                  Kind="Command">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="Audit" />
+                  </ContentItem.Attributes>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <CallExpression
+                            Target="ViewInformationAreaDetails/Methods[Label]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
+                </ContentItem>
+                <ContentItem
+                  Name="MODIFIED_BY"
+                  Kind="Value"
+                  DataType=":String?">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="COR_INFORMATION_AREA/Properties[MODIFIED_BY]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[AttachedLabelPosition]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="LeftAligned"
+                            ResultType=":String" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
+                </ContentItem>
+                <ContentItem
+                  Name="MODIFIED_ON"
+                  Kind="Value"
+                  DataType=":DateTime?">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="COR_INFORMATION_AREA/Properties[MODIFIED_ON]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[AttachedLabelPosition]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="LeftAligned"
+                            ResultType=":String" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
+                </ContentItem>
+                <ContentItem
                   Name="CREATED_BY"
                   Kind="Value"
                   DataType=":String?">
@@ -307,50 +406,26 @@
                   </ContentItem.PropertySources>
                 </ContentItem>
                 <ContentItem
-                  Name="MODIFIED_ON"
-                  Kind="Value"
-                  DataType=":DateTime?">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="COR_INFORMATION_AREA/Properties[MODIFIED_ON]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
+                  Name="Method"
+                  Kind="Command"
+                  View="Microsoft.LightSwitch.MobileWeb:Button">
                   <ContentItem.PropertySources>
                     <ControlPropertySource
-                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[AttachedLabelPosition]">
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
                       <ScreenExpressionTree>
                         <ChainExpression>
-                          <ConstantExpression
-                            Value="LeftAligned"
-                            ResultType=":String" />
+                          <CallExpression
+                            Target="ViewInformationAreaDetails/Methods[Method]" />
                         </ChainExpression>
                       </ScreenExpressionTree>
                     </ControlPropertySource>
-                  </ContentItem.PropertySources>
-                </ContentItem>
-                <ContentItem
-                  Name="MODIFIED_BY"
-                  Kind="Value"
-                  DataType=":String?">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="COR_INFORMATION_AREA/Properties[MODIFIED_BY]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                  <ContentItem.PropertySources>
                     <ControlPropertySource
-                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[AttachedLabelPosition]">
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[MinWidth]">
                       <ScreenExpressionTree>
                         <ChainExpression>
                           <ConstantExpression
-                            Value="LeftAligned"
-                            ResultType=":String" />
+                            Value="20"
+                            ResultType=":Double" />
                         </ChainExpression>
                       </ScreenExpressionTree>
                     </ControlPropertySource>
@@ -439,6 +514,10 @@
         Name="Edit" />
       <ScreenMethod
         Name="Delete" />
+      <ScreenMethod
+        Name="Label" />
+      <ScreenMethod
+        Name="Method" />
     </Screen.Methods>
     <Screen.Properties>
       <ScreenCollectionProperty
@@ -528,6 +607,13 @@
           </ChainExpression>
         </ScreenExpressionTree>
       </ScreenCollectionProperty>
+      <ScreenProperty
+        Name="Text"
+        PropertyType=":String">
+        <ScreenProperty.Attributes>
+          <Required />
+        </ScreenProperty.Attributes>
+      </ScreenProperty>
     </Screen.Properties>
   </Screen>
   <Application.Methods>

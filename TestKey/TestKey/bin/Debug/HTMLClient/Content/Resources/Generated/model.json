@@ -12364,13 +12364,19 @@
                               {
                                 "displayName": "INFORMATION ARCHITECT ID",
                                 "name": "INFORMATION_ARCHITECT_ID",
-                                "isHidden": true,
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
                                 "dataSource":
                                 {
                                   "member": { "__id": "COR_INFORMATION_AREA/Properties[INFORMATION_ARCHITECT_ID]" }
-                                }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
                               },
                               {
                                 "displayName": "REVIEW STATUS",
@@ -12753,6 +12759,22 @@
                             "childContentItems":
                             [
                               {
+                                "displayName": "Details",
+                                "name": "Label",
+                                "kind": "Command",
+                                "view": { "__id": ":Button" },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[Tap]" },
+                                    "source":
+                                    {
+                                      "target": { "__id": "EditInformationAreaDetails/Methods[Label]" }
+                                    }
+                                  }
+                                ]
+                              },
+                              {
                                 "displayName": "INFORMATION AREA ID",
                                 "name": "INFORMATION_AREA_ID",
                                 "isHidden": true,
@@ -12867,6 +12889,22 @@
                                   {
                                     "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
                                     "value": "LeftAligned"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "Audit",
+                                "name": "Label1",
+                                "kind": "Command",
+                                "view": { "__id": ":Button" },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[Tap]" },
+                                    "source":
+                                    {
+                                      "target": { "__id": "EditInformationAreaDetails/Methods[Label]" }
+                                    }
                                   }
                                 ]
                               },
@@ -12990,6 +13028,10 @@
                   "parameterType": { "__id": ":String" }
                 }
               ]
+            },
+            {
+              "id": "EditInformationAreaDetails/Methods[Label]",
+              "name": "Label"
             }
           ],
           "properties":
@@ -13189,6 +13231,22 @@
                                 }
                               },
                               {
+                                "displayName": "Details",
+                                "name": "Label",
+                                "kind": "Command",
+                                "view": { "__id": ":Button" },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[Tap]" },
+                                    "source":
+                                    {
+                                      "target": { "__id": "ViewInformationAreaDetails/Methods[Label]" }
+                                    }
+                                  }
+                                ]
+                              },
+                              {
                                 "displayName": "INFORMATION AREA NAME",
                                 "name": "INFORMATION_AREA_NAME",
                                 "kind": "Value",
@@ -13225,13 +13283,19 @@
                               {
                                 "displayName": "INFORMATION ARCHITECT ID",
                                 "name": "INFORMATION_ARCHITECT_ID",
-                                "isHidden": true,
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
                                 "dataSource":
                                 {
                                   "member": { "__id": "COR_INFORMATION_AREA/Properties[INFORMATION_ARCHITECT_ID]" }
-                                }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
                               },
                               {
                                 "displayName": "REVIEW STATUS",
@@ -13296,6 +13360,56 @@
                                 ]
                               },
                               {
+                                "displayName": "Audit",
+                                "name": "Label1",
+                                "kind": "Command",
+                                "view": { "__id": ":Button" },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[Tap]" },
+                                    "source":
+                                    {
+                                      "target": { "__id": "ViewInformationAreaDetails/Methods[Label]" }
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "MODIFIED BY",
+                                "name": "MODIFIED_BY",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[MODIFIED_BY]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "MODIFIED ON",
+                                "name": "MODIFIED_ON",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[MODIFIED_ON]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "LeftAligned"
+                                  }
+                                ]
+                              },
+                              {
                                 "displayName": "CREATED BY",
                                 "name": "CREATED_BY",
                                 "kind": "Value",
@@ -13330,36 +13444,22 @@
                                 ]
                               },
                               {
-                                "displayName": "MODIFIED ON",
-                                "name": "MODIFIED_ON",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[MODIFIED_ON]" }
-                                },
+                                "displayName": "Method",
+                                "name": "Method",
+                                "kind": "Command",
+                                "view": { "__id": ":Button" },
                                 "propertySources":
                                 [
                                   {
-                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
-                                    "value": "LeftAligned"
-                                  }
-                                ]
-                              },
-                              {
-                                "displayName": "MODIFIED BY",
-                                "name": "MODIFIED_BY",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "COR_INFORMATION_AREA/Properties[MODIFIED_BY]" }
-                                },
-                                "propertySources":
-                                [
+                                    "property": { "__id": ":RootControl/Properties[Tap]" },
+                                    "source":
+                                    {
+                                      "target": { "__id": "ViewInformationAreaDetails/Methods[Method]" }
+                                    }
+                                  },
                                   {
-                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
-                                    "value": "LeftAligned"
+                                    "property": { "__id": ":RootControl/Properties[MinWidth]" },
+                                    "value": 20
                                   }
                                 ]
                               }
@@ -13437,6 +13537,14 @@
             {
               "id": "ViewInformationAreaDetails/Methods[Delete]",
               "name": "Delete"
+            },
+            {
+              "id": "ViewInformationAreaDetails/Methods[Label]",
+              "name": "Label"
+            },
+            {
+              "id": "ViewInformationAreaDetails/Methods[Method]",
+              "name": "Method"
             }
           ],
           "properties":
@@ -13532,6 +13640,13 @@
                   }
                 ]
               }
+            },
+            {
+              "id": "ViewInformationAreaDetails/Properties[Text]",
+              "name": "Text",
+              "elementType": { "__id": ":String" },
+              "propertyType": { "__id": ":String" },
+              ":@Required": { }
             }
           ]
         }

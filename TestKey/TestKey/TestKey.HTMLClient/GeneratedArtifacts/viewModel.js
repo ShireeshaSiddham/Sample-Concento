@@ -433,6 +433,9 @@
         /// <field name="COR_INFORMATION_AREAs" type="msls.VisualCollection" elementType="msls.application.COR_INFORMATION_AREA">
         /// Gets the cOR_INFORMATION_AREAs for this screen.
         /// </field>
+        /// <field name="Text" type="String">
+        /// Gets or sets the text for this screen.
+        /// </field>
         /// <field name="details" type="msls.application.ViewInformationAreaDetails.Details">
         /// Gets the details for this screen.
         /// </field>
@@ -625,6 +628,7 @@
             },
             { name: "InformationAreaName", kind: "local", type: String }
         ], [
+            { name: "Label" }
         ]),
 
         ViewInformationAreaDetails: $defineScreen(ViewInformationAreaDetails, [
@@ -640,10 +644,13 @@
                 createQuery: function (INFORMATION_AREA_NAME) {
                     return this.dataWorkspace.DDATAPOLICYData.COR_INFORMATION_AREAs.filter("" + ((INFORMATION_AREA_NAME === undefined || INFORMATION_AREA_NAME === null) ? "false" : "(INFORMATION_AREA_NAME eq " + $toODataString(INFORMATION_AREA_NAME, "String?") + ")") + "");
                 }
-            }
+            },
+            { name: "Text", kind: "local", type: String }
         ], [
             { name: "Edit" },
-            { name: "Delete" }
+            { name: "Delete" },
+            { name: "Label" },
+            { name: "Method" }
         ]),
 
         showAddEditCOR_INFORMATION_AREA: $defineShowScreen(function showAddEditCOR_INFORMATION_AREA(COR_INFORMATION_AREA, options) {

@@ -42,3 +42,30 @@ myapp.ViewInformationAreaDetails.Delete_execute = function (screen)
         });
     });
 };
+
+
+myapp.ViewInformationAreaDetails.created = function (screen) {
+    var count = 13;
+     //Write code here.
+    screen.findContentItem("Method").displayName = count;
+   
+};
+myapp.ViewInformationAreaDetails.Method_postRender = function (element, contentItem) {
+    // Write code here.
+    $(element).children().css({ "width": "100px" });
+    $(element).children().css({ "background-image": "url('Content/Images/book.png')" });
+    $(element).children().css({ "background-repeat": "no-repeat" });
+    $(element).children().css({ "background-position": "20% 20%" });    
+};
+
+//myapp.ViewInformationAreaDetails.Label1_postRender = function (element, contentItem) {
+    // Write code here.
+    //$(element).children().css({ "width": "100px" });
+    //$(element).children().css({ "text-decoration": "underline" });
+    //$(element).children().css({ "border": "none" });
+    //$(element).children().css({ "background": "none" });    
+//};
+myapp.ViewInformationAreaDetails.INFORMATION_ARCHITECT_ID_postRender = function (element, contentItem) {
+    // Write code here.
+    $(element).children().css({ "text-decoration": "underline" });
+};

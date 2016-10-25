@@ -50,6 +50,25 @@
                   </ScreenExpressionTree>
                 </ContentItem.DataSource>
                 <ContentItem
+                  Name="Label"
+                  Kind="Command">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="Details" />
+                  </ContentItem.Attributes>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <CallExpression
+                            Target="EditInformationAreaDetails/Methods[Label]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
+                </ContentItem>
+                <ContentItem
                   Name="INFORMATION_AREA_ID"
                   IsHidden="True"
                   Kind="Value"
@@ -221,6 +240,25 @@
                   </ContentItem.PropertySources>
                 </ContentItem>
                 <ContentItem
+                  Name="Label1"
+                  Kind="Command">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="Audit" />
+                  </ContentItem.Attributes>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <CallExpression
+                            Target="EditInformationAreaDetails/Methods[Label]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
+                </ContentItem>
+                <ContentItem
                   Name="CREATED_BY"
                   Kind="Value"
                   DataType=":String?">
@@ -375,6 +413,8 @@
           Name="dialogName"
           ParameterType=":String" />
       </ScreenMethod>
+      <ScreenMethod
+        Name="Label" />
     </Screen.Methods>
     <Screen.Properties>
       <ScreenCollectionProperty
