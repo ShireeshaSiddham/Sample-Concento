@@ -176,6 +176,10 @@
                   Name="INFORMATION_ARCHITECT_ID"
                   Kind="Value"
                   DataType=":String?">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="INFORMATION ARCHITECT NAME" />
+                  </ContentItem.Attributes>
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>

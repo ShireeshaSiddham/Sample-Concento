@@ -105,6 +105,7 @@ table {
     height: 20px;    
 }
 
+/*Removes additional space in the panel*/
 .msls-background-page .msls-ctl-value-dropdown .ui-btn-text > span:empty:after,
 .ui-page-active .msls-ctl-value-dropdown .ui-btn-text > span:empty:after,
 .msls-background-page .msls-text > span:empty:after,
@@ -118,7 +119,12 @@ table {
     margin: 10px 10px 10px 10px;
     background-color: white;
 }
-a.button:hover{
-     background: red;
-}
 
+
+/*Tile list hover color*/
+ul.msls-listview .ui-li .ui-btn-inner a.ui-link-inherit, ul.msls-listview .ui-li.ui-li-static, ul.msls-listview li
+{
+    cursor:default;
+    background:White;
+
+}

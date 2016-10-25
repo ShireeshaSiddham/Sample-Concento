@@ -69,3 +69,8 @@ myapp.ViewInformationAreaDetails.INFORMATION_ARCHITECT_ID_postRender = function 
     // Write code here.
     $(element).children().css({ "text-decoration": "underline" });
 };
+
+myapp.ViewInformationAreaDetails.COR_INFORMATION_AREAs_postRender = function (element, contentItem) {
+    // Write code here.
+   // $(element).addClass("visuallyAppealingTileContent");
+};

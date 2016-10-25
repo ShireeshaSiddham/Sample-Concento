@@ -12362,7 +12362,7 @@
                                 ]
                               },
                               {
-                                "displayName": "INFORMATION ARCHITECT ID",
+                                "displayName": "INFORMATION ARCHITECT NAME",
                                 "name": "INFORMATION_ARCHITECT_ID",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -13281,7 +13281,7 @@
                                 ]
                               },
                               {
-                                "displayName": "INFORMATION ARCHITECT ID",
+                                "displayName": "INFORMATION ARCHITECT NAME",
                                 "name": "INFORMATION_ARCHITECT_ID",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
